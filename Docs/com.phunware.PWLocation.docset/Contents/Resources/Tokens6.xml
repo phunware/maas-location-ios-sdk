@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/PWLocationManager.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/PWLocationManager</TokenIdentifier>
+			<Abstract type="html">The PWLocationManager protocol defines the methods used to create a location manager. This location manager is typically used with indoor location providers.</Abstract>
+			<DeclaredIn>PWLocationManager.h</DeclaredIn>
+            
+			
+			<NodeRef refid="6"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/PWLocationManager/setFloorIDMapping:</TokenIdentifier>
+			<Abstract type="html">The floor ID mapping dictionary that is used to define the mapping between the location provider floor ID and the Phunware floor ID. The dictionary format should look like: @{CUSTOMERFLOORID : PHUNWAREFLOOR_ID}.</Abstract>
+			<DeclaredIn>PWLocationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary *floorIDMapping</Declaration>
+			
+			
+			<Anchor>//api/name/floorIDMapping</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/PWLocationManager/floorIDMapping</TokenIdentifier>
+			<Abstract type="html">The floor ID mapping dictionary that is used to define the mapping between the location provider floor ID and the Phunware floor ID. The dictionary format should look like: @{CUSTOMERFLOORID : PHUNWAREFLOOR_ID}.</Abstract>
+			<DeclaredIn>PWLocationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary *floorIDMapping</Declaration>
+			
+			
+			<Anchor>//api/name/floorIDMapping</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/PWLocationManager/floorIDMapping</TokenIdentifier>
+			<Abstract type="html">The floor ID mapping dictionary that is used to define the mapping between the location provider floor ID and the Phunware floor ID. The dictionary format should look like: @{CUSTOMERFLOORID : PHUNWAREFLOOR_ID}.</Abstract>
+			<DeclaredIn>PWLocationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary *floorIDMapping</Declaration>
+			
+			
+			<Anchor>//api/name/floorIDMapping</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/PWLocationManager/setLocation:</TokenIdentifier>
+			<Abstract type="html">The most recently retrieved indoor location.</Abstract>
+			<DeclaredIn>PWLocationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) PWIndoorLocation *location</Declaration>
+			
+			
+			<Anchor>//api/name/location</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/PWLocationManager/location</TokenIdentifier>
+			<Abstract type="html">The most recently retrieved indoor location.</Abstract>
+			<DeclaredIn>PWLocationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) PWIndoorLocation *location</Declaration>
+			
+			
+			<Anchor>//api/name/location</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/PWLocationManager/location</TokenIdentifier>
+			<Abstract type="html">The most recently retrieved indoor location.</Abstract>
+			<DeclaredIn>PWLocationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) PWIndoorLocation *location</Declaration>
+			
+			
+			<Anchor>//api/name/location</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/PWLocationManager/locationServicesAvailable</TokenIdentifier>
+			<Abstract type="html">Returns a Boolean value indicating whether location services are enabled on the device.</Abstract>
+			<DeclaredIn>PWLocationManager.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)locationServicesAvailable</Declaration>
+			
+			
+			<Anchor>//api/name/locationServicesAvailable</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/PWLocationManager/startUpdatingLocation</TokenIdentifier>
+			<Abstract type="html">Starts the generation of updates that report the user’s current location.</Abstract>
+			<DeclaredIn>PWLocationManager.h</DeclaredIn>
+			
+			<Declaration>- (void)startUpdatingLocation</Declaration>
+			
+			
+			<Anchor>//api/name/startUpdatingLocation</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/PWLocationManager/stopUpdatingLocation</TokenIdentifier>
+			<Abstract type="html">Stops the generation of location updates.</Abstract>
+			<DeclaredIn>PWLocationManager.h</DeclaredIn>
+			
+			<Declaration>- (void)stopUpdatingLocation</Declaration>
+			
+			
+			<Anchor>//api/name/stopUpdatingLocation</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/PWLocationManager/setDelegate:</TokenIdentifier>
+			<Abstract type="html">The PWLocationManagerDelegate protocol defines the methods used to receive location updates from an object that subscribes to the PWLocationManager protocol.</Abstract>
+			<DeclaredIn>PWLocationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) id&lt;PWLocationManagerDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/PWLocationManager/delegate</TokenIdentifier>
+			<Abstract type="html">The PWLocationManagerDelegate protocol defines the methods used to receive location updates from an object that subscribes to the PWLocationManager protocol.</Abstract>
+			<DeclaredIn>PWLocationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) id&lt;PWLocationManagerDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/PWLocationManager/delegate</TokenIdentifier>
+			<Abstract type="html">The PWLocationManagerDelegate protocol defines the methods used to receive location updates from an object that subscribes to the PWLocationManager protocol.</Abstract>
+			<DeclaredIn>PWLocationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) id&lt;PWLocationManagerDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

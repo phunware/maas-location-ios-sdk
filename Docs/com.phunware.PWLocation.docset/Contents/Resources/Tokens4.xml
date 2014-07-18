@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PWSLLocationManager.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PWSLLocationManager</TokenIdentifier>
+			<Abstract type="html">The PWSLLocationManager class defines the interface for configuring the delivery of Senion Lab (SL) location-related events to your application. You use an instance of this class to establish the parameters that determine when location events should be delivered and to start and stop the actual delivery of those events. This class conforms to the PWLocationManager protocol.</Abstract>
+			<DeclaredIn>PWSLLocationManager.h</DeclaredIn>
+            
+			
+			<NodeRef refid="4"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWSLLocationManager/setLocation:</TokenIdentifier>
+			<Abstract type="html">The most recently retrieved indoor location.</Abstract>
+			<DeclaredIn>PWSLLocationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) PWIndoorLocation *location</Declaration>
+			
+			
+			<Anchor>//api/name/location</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWSLLocationManager/location</TokenIdentifier>
+			<Abstract type="html">The most recently retrieved indoor location.</Abstract>
+			<DeclaredIn>PWSLLocationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) PWIndoorLocation *location</Declaration>
+			
+			
+			<Anchor>//api/name/location</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWSLLocationManager/location</TokenIdentifier>
+			<Abstract type="html">The most recently retrieved indoor location.</Abstract>
+			<DeclaredIn>PWSLLocationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) PWIndoorLocation *location</Declaration>
+			
+			
+			<Anchor>//api/name/location</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWSLLocationManager/setFloorIDMapping:</TokenIdentifier>
+			<Abstract type="html">The floorIDMapping is the mapping of SenionLab floorID and Phunware floorID.</Abstract>
+			<DeclaredIn>PWSLLocationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary *floorIDMapping</Declaration>
+			
+			
+			<Anchor>//api/name/floorIDMapping</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWSLLocationManager/floorIDMapping</TokenIdentifier>
+			<Abstract type="html">The floorIDMapping is the mapping of SenionLab floorID and Phunware floorID.</Abstract>
+			<DeclaredIn>PWSLLocationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary *floorIDMapping</Declaration>
+			
+			
+			<Anchor>//api/name/floorIDMapping</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWSLLocationManager/floorIDMapping</TokenIdentifier>
+			<Abstract type="html">The floorIDMapping is the mapping of SenionLab floorID and Phunware floorID.</Abstract>
+			<DeclaredIn>PWSLLocationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary *floorIDMapping</Declaration>
+			
+			
+			<Anchor>//api/name/floorIDMapping</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWSLLocationManager/setMapID:</TokenIdentifier>
+			<Abstract type="html">The mapID obtain from SenionLab. (read-only)</Abstract>
+			<DeclaredIn>PWSLLocationManager+Private.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *mapID</Declaration>
+			
+			
+			<Anchor>//api/name/mapID</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWSLLocationManager/mapID</TokenIdentifier>
+			<Abstract type="html">The mapID obtain from SenionLab. (read-only)</Abstract>
+			<DeclaredIn>PWSLLocationManager+Private.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *mapID</Declaration>
+			
+			
+			<Anchor>//api/name/mapID</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWSLLocationManager/mapID</TokenIdentifier>
+			<Abstract type="html">The mapID obtain from SenionLab. (read-only)</Abstract>
+			<DeclaredIn>PWSLLocationManager+Private.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *mapID</Declaration>
+			
+			
+			<Anchor>//api/name/mapID</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWSLLocationManager/setCustomerID:</TokenIdentifier>
+			<Abstract type="html">The customerID obtain from SenionLab. (read-only)</Abstract>
+			<DeclaredIn>PWSLLocationManager+Private.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *customerID</Declaration>
+			
+			
+			<Anchor>//api/name/customerID</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWSLLocationManager/customerID</TokenIdentifier>
+			<Abstract type="html">The customerID obtain from SenionLab. (read-only)</Abstract>
+			<DeclaredIn>PWSLLocationManager+Private.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *customerID</Declaration>
+			
+			
+			<Anchor>//api/name/customerID</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWSLLocationManager/customerID</TokenIdentifier>
+			<Abstract type="html">The customerID obtain from SenionLab. (read-only)</Abstract>
+			<DeclaredIn>PWSLLocationManager+Private.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *customerID</Declaration>
+			
+			
+			<Anchor>//api/name/customerID</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWSLLocationManager/initWithMapIdentifier:customerIdentifier:location:</TokenIdentifier>
+			<Abstract type="html">Initializes the location manager with the specified venue GUID and the venue location.</Abstract>
+			<DeclaredIn>PWSLLocationManager.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithMapIdentifier:(NSString *)mapID customerIdentifier:(NSString *)customerID location:(CLLocationCoordinate2D)venueLocation</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>mapID</Name>
+					<Abstract type="html">- obtain from SenionLab.</Abstract>
+				</Parameter><Parameter>
+					<Name>customerID</Name>
+					<Abstract type="html">- obtain from SenionLab.</Abstract>
+				</Parameter><Parameter>
+					<Name>venueLocation</Name>
+					<Abstract type="html">- The location of the venue.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The location manager object.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithMapIdentifier:customerIdentifier:location:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWSLLocationManager/locationServicesAvailable</TokenIdentifier>
+			<Abstract type="html">Returns a Boolean value indicating whether location services are enabled on the device.</Abstract>
+			<DeclaredIn>PWSLLocationManager.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)locationServicesAvailable</Declaration>
+			
+			
+			<Anchor>//api/name/locationServicesAvailable</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWSLLocationManager/startUpdatingLocation</TokenIdentifier>
+			<Abstract type="html">Starts the generation of updates that report the user’s current location.</Abstract>
+			<DeclaredIn>PWSLLocationManager.h</DeclaredIn>
+			
+			<Declaration>- (void)startUpdatingLocation</Declaration>
+			
+			
+			<Anchor>//api/name/startUpdatingLocation</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWSLLocationManager/stopUpdatingLocation</TokenIdentifier>
+			<Abstract type="html">Stops the generation of location updates.</Abstract>
+			<DeclaredIn>PWSLLocationManager.h</DeclaredIn>
+			
+			<Declaration>- (void)stopUpdatingLocation</Declaration>
+			
+			
+			<Anchor>//api/name/stopUpdatingLocation</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWSLLocationManager/setVenueID:</TokenIdentifier>
+			<Abstract type="html">The venue ID associated with the location manager.</Abstract>
+			<DeclaredIn>PWSLLocationManager+Private.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *venueID</Declaration>
+			
+			
+			<Anchor>//api/name/venueID</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWSLLocationManager/venueID</TokenIdentifier>
+			<Abstract type="html">The venue ID associated with the location manager.</Abstract>
+			<DeclaredIn>PWSLLocationManager+Private.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *venueID</Declaration>
+			
+			
+			<Anchor>//api/name/venueID</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWSLLocationManager/venueID</TokenIdentifier>
+			<Abstract type="html">The venue ID associated with the location manager.</Abstract>
+			<DeclaredIn>PWSLLocationManager+Private.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *venueID</Declaration>
+			
+			
+			<Anchor>//api/name/venueID</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWSLLocationManager/setVenueLocation:</TokenIdentifier>
+			<Abstract type="html">The venue location associated with the location manager.</Abstract>
+			<DeclaredIn>PWSLLocationManager+Private.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CLLocationCoordinate2D venueLocation</Declaration>
+			
+			
+			<Anchor>//api/name/venueLocation</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWSLLocationManager/venueLocation</TokenIdentifier>
+			<Abstract type="html">The venue location associated with the location manager.</Abstract>
+			<DeclaredIn>PWSLLocationManager+Private.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CLLocationCoordinate2D venueLocation</Declaration>
+			
+			
+			<Anchor>//api/name/venueLocation</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWSLLocationManager/venueLocation</TokenIdentifier>
+			<Abstract type="html">The venue location associated with the location manager.</Abstract>
+			<DeclaredIn>PWSLLocationManager+Private.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CLLocationCoordinate2D venueLocation</Declaration>
+			
+			
+			<Anchor>//api/name/venueLocation</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWSLLocationManager/setLocationManager:</TokenIdentifier>
+			<Abstract type="html">The location-based service provided by Senion Lab</Abstract>
+			<DeclaredIn>PWSLLocationManager+Private.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) SLIndoorLocationManager *locationManager</Declaration>
+			
+			
+			<Anchor>//api/name/locationManager</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWSLLocationManager/locationManager</TokenIdentifier>
+			<Abstract type="html">The location-based service provided by Senion Lab</Abstract>
+			<DeclaredIn>PWSLLocationManager+Private.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) SLIndoorLocationManager *locationManager</Declaration>
+			
+			
+			<Anchor>//api/name/locationManager</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWSLLocationManager/locationManager</TokenIdentifier>
+			<Abstract type="html">The location-based service provided by Senion Lab</Abstract>
+			<DeclaredIn>PWSLLocationManager+Private.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) SLIndoorLocationManager *locationManager</Declaration>
+			
+			
+			<Anchor>//api/name/locationManager</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWSLLocationManager/setGpsLocationManager:</TokenIdentifier>
+			<Abstract type="html">The core location manager</Abstract>
+			<DeclaredIn>PWSLLocationManager+Private.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CLLocationManager *gpsLocationManager</Declaration>
+			
+			
+			<Anchor>//api/name/gpsLocationManager</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWSLLocationManager/gpsLocationManager</TokenIdentifier>
+			<Abstract type="html">The core location manager</Abstract>
+			<DeclaredIn>PWSLLocationManager+Private.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CLLocationManager *gpsLocationManager</Declaration>
+			
+			
+			<Anchor>//api/name/gpsLocationManager</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWSLLocationManager/gpsLocationManager</TokenIdentifier>
+			<Abstract type="html">The core location manager</Abstract>
+			<DeclaredIn>PWSLLocationManager+Private.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CLLocationManager *gpsLocationManager</Declaration>
+			
+			
+			<Anchor>//api/name/gpsLocationManager</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWSLLocationManager/setLastGoodLocation:</TokenIdentifier>
+			<Abstract type="html">The latest location got from core location service.</Abstract>
+			<DeclaredIn>PWSLLocationManager+Private.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CLLocation *lastGoodLocation</Declaration>
+			
+			
+			<Anchor>//api/name/lastGoodLocation</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWSLLocationManager/lastGoodLocation</TokenIdentifier>
+			<Abstract type="html">The latest location got from core location service.</Abstract>
+			<DeclaredIn>PWSLLocationManager+Private.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CLLocation *lastGoodLocation</Declaration>
+			
+			
+			<Anchor>//api/name/lastGoodLocation</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWSLLocationManager/lastGoodLocation</TokenIdentifier>
+			<Abstract type="html">The latest location got from core location service.</Abstract>
+			<DeclaredIn>PWSLLocationManager+Private.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CLLocation *lastGoodLocation</Declaration>
+			
+			
+			<Anchor>//api/name/lastGoodLocation</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWSLLocationManager/setLastIndoorLocation:</TokenIdentifier>
+			<Abstract type="html">The latest indoor locatin got from Senion Lab location service.</Abstract>
+			<DeclaredIn>PWSLLocationManager+Private.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) PWIndoorLocation *lastIndoorLocation</Declaration>
+			
+			
+			<Anchor>//api/name/lastIndoorLocation</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWSLLocationManager/lastIndoorLocation</TokenIdentifier>
+			<Abstract type="html">The latest indoor locatin got from Senion Lab location service.</Abstract>
+			<DeclaredIn>PWSLLocationManager+Private.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) PWIndoorLocation *lastIndoorLocation</Declaration>
+			
+			
+			<Anchor>//api/name/lastIndoorLocation</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWSLLocationManager/lastIndoorLocation</TokenIdentifier>
+			<Abstract type="html">The latest indoor locatin got from Senion Lab location service.</Abstract>
+			<DeclaredIn>PWSLLocationManager+Private.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) PWIndoorLocation *lastIndoorLocation</Declaration>
+			
+			
+			<Anchor>//api/name/lastIndoorLocation</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWSLLocationManager/setError:</TokenIdentifier>
+			<Abstract type="html">The error information.</Abstract>
+			<DeclaredIn>PWSLLocationManager+Private.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSError *error</Declaration>
+			
+			
+			<Anchor>//api/name/error</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWSLLocationManager/error</TokenIdentifier>
+			<Abstract type="html">The error information.</Abstract>
+			<DeclaredIn>PWSLLocationManager+Private.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSError *error</Declaration>
+			
+			
+			<Anchor>//api/name/error</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWSLLocationManager/error</TokenIdentifier>
+			<Abstract type="html">The error information.</Abstract>
+			<DeclaredIn>PWSLLocationManager+Private.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSError *error</Declaration>
+			
+			
+			<Anchor>//api/name/error</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWSLLocationManager/startMockupLocationWithLocation:floorNumber:andUncertaintyRadius:andTimeInterval:</TokenIdentifier>
+			<Abstract type="html">* This function can be called to simulate a position for testing purposes when testing off site.</Abstract>
+			<DeclaredIn>PWSLLocationManager+Private.h</DeclaredIn>
+			
+			<Declaration>- (void)startMockupLocationWithLocation:(CLLocationCoordinate2D)location floorNumber:(NSInteger)floorNumber andUncertaintyRadius:(double)uncertaintyRadius andTimeInterval:(double)timeInterval</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>location</Name>
+					<Abstract type="html">- The location.</Abstract>
+				</Parameter><Parameter>
+					<Name>floorNumber</Name>
+					<Abstract type="html">- The floor ID associated with the location.</Abstract>
+				</Parameter><Parameter>
+					<Name>uncertaintyRadius</Name>
+					<Abstract type="html">- The uncertain radius associated with the location.</Abstract>
+				</Parameter><Parameter>
+					<Name>timeInterval</Name>
+					<Abstract type="html">- The interval between twice location updates.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/startMockupLocationWithLocation:floorNumber:andUncertaintyRadius:andTimeInterval:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWSLLocationManager/stopUpdatingMockupLocation</TokenIdentifier>
+			<Abstract type="html">Stop mockup location updates. This function is also invoked if SLIndoorLocationManager::stopUpdatingLocation is called.</Abstract>
+			<DeclaredIn>PWSLLocationManager+Private.h</DeclaredIn>
+			
+			<Declaration>- (void)stopUpdatingMockupLocation</Declaration>
+			
+			
+			<Anchor>//api/name/stopUpdatingMockupLocation</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>
