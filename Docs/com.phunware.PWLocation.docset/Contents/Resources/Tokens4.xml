@@ -4,7 +4,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/cl/PWSLLocationManager</TokenIdentifier>
-			<Abstract type="html">The PWSLLocationManager class defines the interface for configuring the delivery of Senion Lab (SL) location-related events to your application. You use an instance of this class to establish the parameters that determine when location events should be delivered and to start and stop the actual delivery of those events. This class conforms to the PWLocationManager protocol.</Abstract>
+			<Abstract type="html">The PWSLLocationManager class defines the interface for configuring the delivery of BLE location-related events to your application. You use an instance of this class to establish the parameters that determine when location events should be delivered and to start and stop the actual delivery of those events. This class conforms to the PWLocationManager protocol.</Abstract>
 			<DeclaredIn>PWSLLocationManager.h</DeclaredIn>
             
 			
@@ -14,7 +14,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/PWSLLocationManager/setLocation:</TokenIdentifier>
-			<Abstract type="html">The most recently retrieved indoor location.</Abstract>
+			<Abstract type="html">The latest indoor location got from BLE location service.</Abstract>
 			<DeclaredIn>PWSLLocationManager.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly) PWIndoorLocation *location</Declaration>
@@ -26,7 +26,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/PWSLLocationManager/location</TokenIdentifier>
-			<Abstract type="html">The most recently retrieved indoor location.</Abstract>
+			<Abstract type="html">The latest indoor location got from BLE location service.</Abstract>
 			<DeclaredIn>PWSLLocationManager.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly) PWIndoorLocation *location</Declaration>
@@ -38,7 +38,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/PWSLLocationManager/location</TokenIdentifier>
-			<Abstract type="html">The most recently retrieved indoor location.</Abstract>
+			<Abstract type="html">The latest indoor location got from BLE location service.</Abstract>
 			<DeclaredIn>PWSLLocationManager.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly) PWIndoorLocation *location</Declaration>
@@ -50,7 +50,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/PWSLLocationManager/setFloorIDMapping:</TokenIdentifier>
-			<Abstract type="html">The floorIDMapping is the mapping of SenionLab floorID and Phunware floorID.</Abstract>
+			<Abstract type="html">The floorIDMapping is the mapping of BLE floorID and Phunware floorID.</Abstract>
 			<DeclaredIn>PWSLLocationManager.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, strong) NSDictionary *floorIDMapping</Declaration>
@@ -62,7 +62,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/PWSLLocationManager/floorIDMapping</TokenIdentifier>
-			<Abstract type="html">The floorIDMapping is the mapping of SenionLab floorID and Phunware floorID.</Abstract>
+			<Abstract type="html">The floorIDMapping is the mapping of BLE floorID and Phunware floorID.</Abstract>
 			<DeclaredIn>PWSLLocationManager.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, strong) NSDictionary *floorIDMapping</Declaration>
@@ -74,7 +74,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/PWSLLocationManager/floorIDMapping</TokenIdentifier>
-			<Abstract type="html">The floorIDMapping is the mapping of SenionLab floorID and Phunware floorID.</Abstract>
+			<Abstract type="html">The floorIDMapping is the mapping of BLE floorID and Phunware floorID.</Abstract>
 			<DeclaredIn>PWSLLocationManager.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, strong) NSDictionary *floorIDMapping</Declaration>
@@ -86,7 +86,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/PWSLLocationManager/setMapID:</TokenIdentifier>
-			<Abstract type="html">The mapID obtain from SenionLab. (read-only)</Abstract>
+			<Abstract type="html">The mapID obtain from Phunware for the BLE location manager. (read-only)</Abstract>
 			<DeclaredIn>PWSLLocationManager+Private.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly) NSString *mapID</Declaration>
@@ -98,7 +98,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/PWSLLocationManager/mapID</TokenIdentifier>
-			<Abstract type="html">The mapID obtain from SenionLab. (read-only)</Abstract>
+			<Abstract type="html">The mapID obtain from Phunware for the BLE location manager. (read-only)</Abstract>
 			<DeclaredIn>PWSLLocationManager+Private.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly) NSString *mapID</Declaration>
@@ -110,7 +110,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/PWSLLocationManager/mapID</TokenIdentifier>
-			<Abstract type="html">The mapID obtain from SenionLab. (read-only)</Abstract>
+			<Abstract type="html">The mapID obtain from Phunware for the BLE location manager. (read-only)</Abstract>
 			<DeclaredIn>PWSLLocationManager+Private.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly) NSString *mapID</Declaration>
@@ -122,7 +122,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/PWSLLocationManager/setCustomerID:</TokenIdentifier>
-			<Abstract type="html">The customerID obtain from SenionLab. (read-only)</Abstract>
+			<Abstract type="html">The customerID obtain from Phunware for the BLE location manager. (read-only)</Abstract>
 			<DeclaredIn>PWSLLocationManager+Private.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly) NSString *customerID</Declaration>
@@ -134,7 +134,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/PWSLLocationManager/customerID</TokenIdentifier>
-			<Abstract type="html">The customerID obtain from SenionLab. (read-only)</Abstract>
+			<Abstract type="html">The customerID obtain from Phunware for the BLE location manager. (read-only)</Abstract>
 			<DeclaredIn>PWSLLocationManager+Private.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly) NSString *customerID</Declaration>
@@ -146,7 +146,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/PWSLLocationManager/customerID</TokenIdentifier>
-			<Abstract type="html">The customerID obtain from SenionLab. (read-only)</Abstract>
+			<Abstract type="html">The customerID obtain from Phunware for the BLE location manager. (read-only)</Abstract>
 			<DeclaredIn>PWSLLocationManager+Private.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly) NSString *customerID</Declaration>
@@ -165,10 +165,10 @@
 			<Parameters>
 				<Parameter>
 					<Name>mapID</Name>
-					<Abstract type="html">- obtain from SenionLab.</Abstract>
+					<Abstract type="html">- Obtained from Phunware.</Abstract>
 				</Parameter><Parameter>
 					<Name>customerID</Name>
-					<Abstract type="html">- obtain from SenionLab.</Abstract>
+					<Abstract type="html">- Obtained from Phunware.</Abstract>
 				</Parameter><Parameter>
 					<Name>venueLocation</Name>
 					<Abstract type="html">- The location of the venue.</Abstract>

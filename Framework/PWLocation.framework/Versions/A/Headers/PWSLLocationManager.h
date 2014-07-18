@@ -14,35 +14,38 @@
 @protocol PWSLLocationManagerDelegate;
 
 /**
- The `PWSLLocationManager` class defines the interface for configuring the delivery of Senion Lab (SL) location-related events to your application. You use an instance of this class to establish the parameters that determine when location events should be delivered and to start and stop the actual delivery of those events. This class conforms to the `PWLocationManager` protocol.
+ The `PWSLLocationManager` class defines the interface for configuring the delivery of BLE location-related events to your application. You use an instance of this class to establish the parameters that determine when location events should be delivered and to start and stop the actual delivery of those events. This class conforms to the `PWLocationManager` protocol.
  */
 
 @interface PWSLLocationManager : NSObject <PWLocationManager>
 
+/**
+ The latest indoor location got from BLE location service.
+ */
 @property (nonatomic, readonly) PWIndoorLocation *location;
 
 /**
- The floorIDMapping is the mapping of SenionLab floorID and Phunware floorID.
+ The floorIDMapping is the mapping of BLE floorID and Phunware floorID.
  */
 
 @property (nonatomic, strong) NSDictionary *floorIDMapping;
 
 /**
-The mapID obtain from SenionLab. (read-only)
+The mapID obtain from Phunware for the BLE location manager. (read-only)
  */
 
 @property (nonatomic, readonly) NSString *mapID;
 
 /**
- The customerID obtain from SenionLab. (read-only)
+ The customerID obtain from Phunware for the BLE location manager. (read-only)
  */
 
 @property (nonatomic, readonly) NSString *customerID;
 
 /**
  Initializes the location manager with the specified venue GUID and the venue location.
- @param mapID - obtain from SenionLab.
- @param customerID - obtain from SenionLab.
+ @param mapID - Obtained from Phunware.
+ @param customerID - Obtained from Phunware.
  @param venueLocation - The location of the venue.
  @discussion If the device is not within 5 kilometers of the venue location, then location updates will fail.
  @return The location manager object.

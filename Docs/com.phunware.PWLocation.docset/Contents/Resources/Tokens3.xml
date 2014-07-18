@@ -86,7 +86,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/PWMSELocationManager/setLocation:</TokenIdentifier>
-			<Abstract type="html">The most recently retrieved indoor location.</Abstract>
+			<Abstract type="html">The latest indoor locatin got from Phunware location service.</Abstract>
 			<DeclaredIn>PWMSELocationManager.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly) PWIndoorLocation *location</Declaration>
@@ -98,7 +98,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/PWMSELocationManager/location</TokenIdentifier>
-			<Abstract type="html">The most recently retrieved indoor location.</Abstract>
+			<Abstract type="html">The latest indoor locatin got from Phunware location service.</Abstract>
 			<DeclaredIn>PWMSELocationManager.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly) PWIndoorLocation *location</Declaration>
@@ -110,7 +110,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/PWMSELocationManager/location</TokenIdentifier>
-			<Abstract type="html">The most recently retrieved indoor location.</Abstract>
+			<Abstract type="html">The latest indoor locatin got from Phunware location service.</Abstract>
 			<DeclaredIn>PWMSELocationManager.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly) PWIndoorLocation *location</Declaration>

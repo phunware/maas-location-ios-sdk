@@ -26,6 +26,9 @@
  */
 @property (nonatomic, readonly) CLLocationCoordinate2D venueLocation;
 
+/**
+ The latest indoor locatin got from Phunware location service.
+ */
 @property (nonatomic, readonly) PWIndoorLocation *location;
 
 /**
@@ -52,7 +55,22 @@
 
 @protocol PWMSELocationManagerDelegate <PWLocationManagerDelegate>
 
-- (void)locationManager:(PWMSELocationManager *)manager didUpdateToLocation:(PWIndoorLocation *)location;
+/**
+ Tells the delegate that a new location update is available.
+ @param manager The location manager object that generated the update event.
+ @param location A location object with the updated location information. This object conforms to the `PWLocation` protocol.
+ @discussion Implementation of this method is optional but recommended.
+ */
+- (void)locationManager:(id<PWLocationManager>)manager didUpdateToLocation:(id<PWLocation>)location;
+
+/**
+ Tells the delegate that the location manager was unable to retrieve a location value.
+ @param manager The location manager object that was unable to retrieve the location.
+ @param error The error object containing the reason the location could not be retrieved.
+ @discussion Implementation of this method is optional but recommended.
+ 
+ The location manager calls this method when it encounters an error trying to get the location data. If an error is encountered, the location manager will keep attempting to update until `stopUpdatingLocation` is called.
+ */
 - (void)locationManager:(PWMSELocationManager *)manager failedWithError:(NSError *)error;
 
 @end 

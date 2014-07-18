@@ -17,7 +17,7 @@
 			<Abstract type="html">Tells the delegate that a new location update is available.</Abstract>
 			<DeclaredIn>PWMSELocationManager.h</DeclaredIn>
 			
-			<Declaration>- (void)locationManager:(PWMSELocationManager *)manager didUpdateToLocation:(PWIndoorLocation *)location</Declaration>
+			<Declaration>- (void)locationManager:(id&lt;PWLocationManager&gt;)manager didUpdateToLocation:(id&lt;PWLocation&gt;)location</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>manager</Name>
