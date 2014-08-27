@@ -18,6 +18,8 @@
  The JSON format for configurations should be as follows:
  
  {
+     "name" : "Bistro to Elevator",          <!-- Location update interval -->
+     "description" : "Normal route...",      <!-- Location update interval -->
      "updateInterval" : 2.0,                 <!-- Location update interval -->
      "locations": [
          {
@@ -35,6 +37,16 @@
 
 
 @interface PWMockLocationManagerConfiguration : NSObject
+
+/**
+ The name of the configuration
+ */
+@property (readonly) NSString *name;
+
+/**
+ The description of the configuration.
+ */
+@property (readonly) NSString *configurationDescription;
 
 /**
  An array of `PWMockLocationStep` objects
