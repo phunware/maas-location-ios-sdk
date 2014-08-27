@@ -2,7 +2,6 @@
 //  PWLocation.h
 //  PWLocation
 //
-//  Created by Illya Busigin on 6/25/14.
 //  Copyright (c) 2014 Phunware Inc. All rights reserved.
 //
 
@@ -13,6 +12,7 @@
 #import <PWLocation/PWLocationManager.h>
 #import <PWLocation/PWMSELocationManager.h>
 #import <PWLocation/PWSLLocationManager.h>
+#import <PWLocation/PWMockLocationManager.h>
 
 /**
  PWLocation is a location based SDK.

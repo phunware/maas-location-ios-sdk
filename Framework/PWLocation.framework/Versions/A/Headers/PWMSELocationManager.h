@@ -1,6 +1,6 @@
 //
 //  PWMSELocationManager.h
-//  PWMapKit
+//  PWLocation
 //
 //  Copyright (c) 2014 Phunware. All rights reserved.
 //

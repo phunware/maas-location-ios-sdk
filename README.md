@@ -1,7 +1,7 @@
 PWLocation SDK for iOS (BETA)
 ================
 
-Version 0.5.0
+Version 0.8.0
 
 This is Phunware's iOS SDK for the Location module. Visit http://maas.phunware.com/ for more details and to sign up.
 
@@ -28,7 +28,7 @@ Getting Started
 Installation
 ------------
 
-The easiest way to use PWLocation is via CocoaPods. Simple add `pod PWLocation` to your `PodFile`. Alternatively:
+The easiest way to use PWLocation is via CocoaPods. Simple add `pod PWLocation` to your `Podfile`. Alternatively:
 
 The following Phunware frameworks are required:
 ````
@@ -59,4 +59,71 @@ Documentation is included in the Documents folder in the repository as both HTML
 Integration
 -----------
 
-TBD
+`PWLocation` is meant to be used in conjunction with PWMapKit but can be used standalone.
+
+## PWMSELocationManager
+
+The `PWMSELocationManager` class defines the interface for configuring the delivery of Cisco Mobility Services Engine (MSE) location-related events to your application. You use an instance of this class to establish the parameters that determine when location events should be delivered and to start and stop the actual delivery of those events. This class conforms to the `PWLocationManager` protocol.
+
+````objective-c
+// Initialization
+CLLocationCoordinate2d location = CLLocationCoordinate2DMake(30.360016, -97.742507);
+
+PWMSELocationManager *locationManager = [[PWMSELocationManager alloc] initWithVenueGUID:@"YOUR_VENUE_GUID" location:location];
+locationManager.delegate = self;
+
+// Start fetching location updates
+[locationManager startUpdatingLocation];
+````
+
+## PWSLLocationManager
+
+The `PWSLLocationManager` class defines the interface for configuring the delivery of BLE location-related events to your application. You use an instance of this class to establish the parameters that determine when location events should be delivered and to start and stop the actual delivery of those events. This class conforms to the `PWLocationManager` protocol.
+
+````objective-c
+// Initialization
+CLLocationCoordinate2d location = CLLocationCoordinate2DMake(30.360016, -97.742507);
+
+PWSLLocationManager *locationManager = [[PWSLLocationManager alloc] initWithMapIdentifier:@"YOUR_MAP_ID" customerIdentifier:@"YOUR_CUSTOMER_ID" location];
+locationManager.delegate = self;
+
+// Start fetching location updates
+[locationManager startUpdatingLocation];
+````
+
+## PWMockLocationManager
+
+The `PWMockLocationManager` class allows you to implement a mock provider for testing and validation. This is extremely useful for location testing when you are not able to be on location at a venue which was a proper location provider. The mock location manager is initialized with configuration object which is populated with JSON data.
+
+ It's important to note that the `floorIDMapping` property does not need to be specified for the `PWMockLocationManager`. The location floor IDs in the JSON should be equivalent to the building floor IDs.
+
+````objective-c
+// Initialize the configuration	
+NSURL *configurationURL = [NSURL URLWithString:@"YOUR_FILE_URL"];
+NSData *data = [NSData dataWithContentsOfURL:configurationURL];
+NSDictionary *configurationData = [NSJSONSerialization JSONObjectWithData:data options:0 error:NULL];
+PWMockLocationManagerConfiguration *configuration = [PWMockLocationManagerConfiguration unpack:configurationData];
+
+// Initializing the location manager
+PWMockLocationManager *locationManager = [[PWMockLocationManager alloc] initWithMockLocationManagerWithConfiguration:configuration];
+locationManager.delegate = self;
+
+// Start fetching location updates
+[locationManager startUpdatingLocation];
+````
+
+## Location Updates
+
+Location updates are returned via the delegate. Update events are very similar to `CLLocationManagerDelegate` events.
+
+````objective-c
+- (void)locationManager:(id<PWLocationManager>)manager didUpdateToLocation:(id<PWLocation>)location
+{
+    // Handle update...
+}
+
+- (void)locationManager:(id<PWLocationManager>)manager failedWithError:(NSError *)error
+{
+    // Handle failure...
+}
+````

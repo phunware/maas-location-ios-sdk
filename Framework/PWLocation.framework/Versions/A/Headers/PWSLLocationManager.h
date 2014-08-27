@@ -2,7 +2,6 @@
 //  PWSLLocationManager.h
 //  PWLocation
 //
-//  Created by Illya Busigin on 7/9/14.
 //  Copyright (c) 2014 Phunware Inc. All rights reserved.
 //
 

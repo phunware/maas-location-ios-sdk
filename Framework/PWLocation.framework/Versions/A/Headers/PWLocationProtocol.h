@@ -21,7 +21,7 @@ static const NSInteger kPWUnknownFloorID = NSNotFound;
 
 /**
  The radius of uncertainty for the location, in meters. (read-only)
- @discussion The location’s latitude and longitude identify the center of the circle, this value would indicate the radius of that circle. A negative value indicates that the location’s latitude and longitude are invalid.
+ @discussion The location’s latitude and longitude identify the center of the circle, this value would indicate the radius of that circle. A value of -1 indicates that the location’s latitude and longitude are invalid.
  */
 @property (readonly) CLLocationAccuracy horizontalAccuracy;
 

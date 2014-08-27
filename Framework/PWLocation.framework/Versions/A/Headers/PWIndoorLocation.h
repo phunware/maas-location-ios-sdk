@@ -1,12 +1,12 @@
 //
 //  PWMSELocation.h
-//  PWMapKit
+//  PWLocation
 //
 //  Copyright (c) 2014 Phunware. All rights reserved.
 //
 
 #import <CoreLocation/CoreLocation.h>
-#import "PWLocationProtocol.h"
+#import <PWLocation/PWLocationProtocol.h>
 
 @protocol PWLocation;
 
@@ -33,17 +33,7 @@
  Initializes and returns a location object with the specified coordinate information.
  @param coordinate A coordinate structure containing the latitude and longitude values.
  @param floorID The floor ID associated with the location object. If the floor ID is unknown or unspecified, initialize with `kPWUnknownFloorID`.
- @param hAccuracy The accuracy of the coordinate value. Specifying a negative number indicates that the coordinate value is invalid.
  @return A location object initialized with the specified information.
- */
-- (instancetype)initWithCoordinate:(CLLocationCoordinate2D)coordinate floorID:(NSUInteger)floorID horizontalAccuracy:(CLLocationAccuracy)hAccuracy;
-
-/**
- Initializes and returns a location object with the specified latitude and longitude values and floor ID.
- @param coordinate A coordinate structure containing the latitude and longitude values.
- @param floorID The floor ID associated with the location object. If the floor ID is unknown or unspecified, initialize with `kPWUnknownFloorID`.
- @return A location object initialized with the specified coordinate point.
- @discussion  When using this method, the other properties of the object are initialized to appropriate values. In particular, the horizontalAccuracy property is set to -1 and the type is set to `PWLocationTypeUnknown`.
  */
 - (instancetype)initWithCoordinate:(CLLocationCoordinate2D)coordinate floorID:(NSUInteger)floorID;
 
@@ -51,8 +41,9 @@
  Initializes and returns a location object with the specified coordinate information.
  @param coordinate A coordinate structure containing the latitude and longitude values.
  @param floorID The floor ID associated with the location object. If the floor ID is unknown or unspecified, initialize with `kPWUnknownFloorID`.
+ @param hAccuracy The accuracy of the coordinate value. Specifying a negative number indicates that the horizontal accuracy value is invalid.
  @return A location object initialized with the specified information.
  */
-- (instancetype)initWithCLLocationCoordinate2D:(CLLocationCoordinate2D)coordinate floorID:(NSUInteger)floorID;
+- (instancetype)initWithCoordinate:(CLLocationCoordinate2D)coordinate floorID:(NSUInteger)floorID horizontalAccuracy:(CLLocationAccuracy)hAccuracy;
 
 @end

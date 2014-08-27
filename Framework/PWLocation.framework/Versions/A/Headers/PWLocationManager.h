@@ -25,7 +25,11 @@ typedef NS_ENUM(NSUInteger, PWLocationManagerError) {
     /** The location request timed out. */
     PWLocationManagerErrorRequestTimeout = 408,
     /** Location services are unavailable. */
-    PWLocationManagerErrorServiceUnavailable = 503
+    PWLocationManagerErrorServiceUnavailable = 503,
+    /** Mock location data is invalid. */
+    PWLocationManagerErrorMockDataInvalid = 1000,
+    /** Mock location data is invalid. */
+    PWLocationManagerErrorUnconfirmLocation = 1001
 };
 
 /**
