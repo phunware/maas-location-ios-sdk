@@ -1,5 +1,10 @@
 #PWLocation Changelog
 
+##0.9.0 (BETA) (Wednesday, September 17th, 2014)
+ * Several bug fixes related to BLE location updates
+ * Several bug fixes related to MSE related location updates
+ * Improved documentation
+
 ##0.8.0 (Tuesday, September 2nd, 2014)
  * Added mock location manager for location testing
  * Fixed several issues with the SLLocationManager callback events not firing
