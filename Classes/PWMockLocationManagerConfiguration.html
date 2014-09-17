@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
-		<title>PWLocation Protocol Reference</title>
+		<title>PWMockLocationManagerConfiguration Class Reference</title>
 		<meta id="xcode-display" name="xcode-display" content="render"/>
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
 		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
@@ -16,7 +16,7 @@
 			</div>
 			
 			<div id="title" role="banner">
-				<h1 class="hideInXcode">PWLocation Protocol Reference</h1>
+				<h1 class="hideInXcode">PWMockLocationManagerConfiguration Class Reference</h1>
 			</div>
 			<ul id="headerButtons" role="toolbar">
 				<li id="toc_button">
@@ -39,13 +39,22 @@
 	
 	<option value="properties">Properties</option>
 	
-	<option value="//api/name/coordinate">&nbsp;&nbsp;&nbsp;&nbsp;coordinate</option>
+	<option value="//api/name/configurationDescription">&nbsp;&nbsp;&nbsp;&nbsp;configurationDescription</option>
 	
-	<option value="//api/name/floorID">&nbsp;&nbsp;&nbsp;&nbsp;floorID</option>
+	<option value="//api/name/defaultUpdateInterval">&nbsp;&nbsp;&nbsp;&nbsp;defaultUpdateInterval</option>
 	
-	<option value="//api/name/horizontalAccuracy">&nbsp;&nbsp;&nbsp;&nbsp;horizontalAccuracy</option>
+	<option value="//api/name/locations">&nbsp;&nbsp;&nbsp;&nbsp;locations</option>
+	
+	<option value="//api/name/name">&nbsp;&nbsp;&nbsp;&nbsp;name</option>
+	
+	<option value="//api/name/repeats">&nbsp;&nbsp;&nbsp;&nbsp;repeats</option>
 	
 	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/unpack:">&nbsp;&nbsp;&nbsp;&nbsp;+ unpack:</option>
 	
 	
 	
@@ -73,15 +82,25 @@
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/coordinate">coordinate</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/configurationDescription">configurationDescription</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/floorID">floorID</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/defaultUpdateInterval">defaultUpdateInterval</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/horizontalAccuracy">horizontalAccuracy</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/locations">locations</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/name">name</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/repeats">repeats</a></span></li>
 	
 </ul></li>
 
 
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/unpack:">unpack:</a></span></li>
+	
+</ul></li>
 
 
 
@@ -90,7 +109,7 @@
 		</nav>
 		<article>
 			<div id="contents" class="isShowingTOC" role="main">
-				<a title="PWLocation Protocol Reference" name="top"></a>
+				<a title="PWMockLocationManagerConfiguration Class Reference" name="top"></a>
 				<div class="main-navigation navigation-top">
 					<ul>
 	<li><a href="../index.html">Index</a></li>
@@ -99,18 +118,18 @@
 				</div>
 				<div id="header">
 					<div class="section-header">
-						<h1 class="title title-header">PWLocation Protocol Reference</h1>
+						<h1 class="title title-header">PWMockLocationManagerConfiguration Class Reference</h1>
 					</div>		
 				</div>
 				<div id="container">	
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
-	<td class="specification-title">Conforms to</td>
+	<td class="specification-title">Inherits from</td>
 	<td class="specification-value">NSObject</td>
 </tr><tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">PWLocationProtocol.h</td>
+	<td class="specification-value">PWMockLocationManagerConfiguration.h</td>
 </tr>
 						</tbody></table></div>
 					
@@ -120,7 +139,22 @@
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
 						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<p>The <code>PWLocation</code> is an abstract protocol that defines an indoor location. This protocol is primarily used for user-requested directions and for displaying the user&rsquo;s location on an indoor map.</p>
+						<p>The JSON format for configurations should be as follows:</p>
+
+<p>{
+     &ldquo;name&rdquo; : &ldquo;Bistro to Elevator&rdquo;,          <!-- Location update interval -->
+     &ldquo;description&rdquo; : &ldquo;Normal route&hellip;&rdquo;,      <!-- Location update interval -->
+     &ldquo;updateInterval&rdquo; : 2.0,                 <!-- Location update interval -->
+     &ldquo;locations&rdquo;: [
+         {
+             &ldquo;latitude&rdquo;: 30.360012,          <!-- Mock latitude -->
+             &ldquo;longitude&rdquo;: -97.74255,         <!-- Mock longitude -->
+             &ldquo;horizontalAccuracy&rdquo;: 5.152377, <!-- Mock accuracy -->
+             &ldquo;floorID&rdquo;: 2,                   <!-- Mock floor ID -->
+             &ldquo;updateInterval&rdquo;: 1.2           <!-- Mock update interval -->
+         },
+     ]
+}</p>
 					</div>
 					
 					
@@ -138,22 +172,40 @@
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
-		<code><a href="#//api/name/coordinate">&nbsp;&nbsp;coordinate</a></code>
+		<code><a href="#//api/name/name">&nbsp;&nbsp;name</a></code>
 	</span>
 	<span class="task-item-suffix">property</span>
-	<span class="task-item-suffix">required method</span>
+	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/horizontalAccuracy">&nbsp;&nbsp;horizontalAccuracy</a></code>
+		<code><a href="#//api/name/configurationDescription">&nbsp;&nbsp;configurationDescription</a></code>
 	</span>
 	<span class="task-item-suffix">property</span>
-	<span class="task-item-suffix">required method</span>
+	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/floorID">&nbsp;&nbsp;floorID</a></code>
+		<code><a href="#//api/name/locations">&nbsp;&nbsp;locations</a></code>
 	</span>
 	<span class="task-item-suffix">property</span>
-	<span class="task-item-suffix">required method</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/defaultUpdateInterval">&nbsp;&nbsp;defaultUpdateInterval</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/repeats">&nbsp;&nbsp;repeats</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/unpack:">+&nbsp;unpack:</a></code>
+	</span>
+	
+	
 </li>
 						</ul>
 						
@@ -168,18 +220,18 @@
 						<h2 class="subtitle subtitle-methods">Properties</h2>
 						
 						<div class="section-method">
-	<a name="//api/name/coordinate" title="coordinate"></a>
-	<h3 class="subsubtitle method-title">coordinate</h3>
+	<a name="//api/name/configurationDescription" title="configurationDescription"></a>
+	<h3 class="subsubtitle method-title">configurationDescription</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>The latitude and longitude coordinates of the indoor location. (read-only)</p>
+		<p>The description of the configuration.</p>
 	</div>		
 	
     
 
-	<div class="method-subsection method-declaration"><code>@property (readonly) CLLocationCoordinate2D coordinate</code></div>
+	<div class="method-subsection method-declaration"><code>@property (readonly) NSString *configurationDescription</code></div>
 
     
 	
@@ -197,25 +249,25 @@
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">PWLocationProtocol.h</code><br />
+		<code class="declared-in-ref">PWMockLocationManagerConfiguration.h</code><br />
 	</div>				
 	
 	
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/floorID" title="floorID"></a>
-	<h3 class="subsubtitle method-title">floorID</h3>
+	<a name="//api/name/defaultUpdateInterval" title="defaultUpdateInterval"></a>
+	<h3 class="subsubtitle method-title">defaultUpdateInterval</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>The floor ID associated with the location.</p>
+		<p>The default location update interval.</p>
 	</div>		
 	
     
 
-	<div class="method-subsection method-declaration"><code>@property (readonly) NSInteger floorID</code></div>
+	<div class="method-subsection method-declaration"><code>@property (readonly) NSTimeInterval defaultUpdateInterval</code></div>
 
     
 	
@@ -224,11 +276,6 @@
 	
 	
 	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>If the location is outdoors this value should be <code>kPWUnknownFloorID</code>. (read-only)</p>
-	</div>
 	
 	
 	
@@ -238,25 +285,25 @@
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">PWLocationProtocol.h</code><br />
+		<code class="declared-in-ref">PWMockLocationManagerConfiguration.h</code><br />
 	</div>				
 	
 	
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/horizontalAccuracy" title="horizontalAccuracy"></a>
-	<h3 class="subsubtitle method-title">horizontalAccuracy</h3>
+	<a name="//api/name/locations" title="locations"></a>
+	<h3 class="subsubtitle method-title">locations</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>The radius of uncertainty for the location, in meters. (read-only)</p>
+		<p>An array of <a href="../Classes/PWMockLocationStep.html"><code>PWMockLocationStep</code></a> objects.</p>
 	</div>		
 	
     
 
-	<div class="method-subsection method-declaration"><code>@property (readonly) CLLocationAccuracy horizontalAccuracy</code></div>
+	<div class="method-subsection method-declaration"><code>@property (readonly) NSArray *locations</code></div>
 
     
 	
@@ -265,11 +312,6 @@
 	
 	
 	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>The location’s latitude and longitude identify the center of the circle, this value would indicate the radius of that circle. A value of -1 indicates that the location’s latitude and longitude are invalid.</p>
-	</div>
 	
 	
 	
@@ -279,7 +321,79 @@
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">PWLocationProtocol.h</code><br />
+		<code class="declared-in-ref">PWMockLocationManagerConfiguration.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/name" title="name"></a>
+	<h3 class="subsubtitle method-title">name</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The name of the configuration</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) NSString *name</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PWMockLocationManagerConfiguration.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/repeats" title="repeats"></a>
+	<h3 class="subsubtitle method-title">repeats</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A <code>BOOL</code> value that determines whether location manager restarts the location updates after all location updates in the scene have played.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) BOOL repeats</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PWMockLocationManagerConfiguration.h</code><br />
 	</div>				
 	
 	
@@ -288,6 +402,58 @@
 					</div>
 					
 					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/unpack:" title="unpack:"></a>
+	<h3 class="subsubtitle method-title">unpack:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This method unpacks a configuration from a dictionary.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (instancetype)unpack:(NSDictionary *)<em>dictionary</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>dictionary</em></dt>
+			<dd><p>The dictionary that containers the configuration information.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PWMockLocationManagerConfiguration.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
 					
 					
 					
