@@ -30,5 +30,10 @@ static const NSInteger kPWUnknownFloorID = NSNotFound;
  @discussion If the location is outdoors this value should be `kPWUnknownFloorID`. (read-only)
  */
 @property (readonly) NSInteger floorID;
-    
+
+/**
+ The time at which the location was reported by a location manager.
+ */
+@property (strong, readonly) NSDate *timestamp;
+
 @end
