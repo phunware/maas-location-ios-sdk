@@ -1,5 +1,10 @@
 #PWLocation Changelog
 
+##0.9.1 (Thursday, October 9th, 2014)
+ * Several bug fixes related to MSE related location updates and registration
+ * Removed distance check for MSELocationManager
+
+
 ##0.9.0 (BETA) (Wednesday, September 17th, 2014)
  * Several bug fixes related to BLE location updates
  * Several bug fixes related to MSE related location updates

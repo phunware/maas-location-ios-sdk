@@ -1,7 +1,7 @@
 PWLocation SDK for iOS (BETA)
 ================
 
-Version 0.9.0
+Version 0.9.1
 
 This is Phunware's iOS SDK for the Location module. Visit http://maas.phunware.com/ for more details and to sign up.
 
@@ -10,9 +10,9 @@ This is Phunware's iOS SDK for the Location module. Visit http://maas.phunware.c
 Requirements
 ------------
 
-- MaaS Core v1.2.7 or greater
+- MaaS Core v1.3.0 or greater
 - iOS 7.1 or greater
-- Xcode 5 or greater
+- Xcode 6 or greater
 
 
 
