@@ -1,5 +1,8 @@
 #PWLocation Changelog
 
+##0.9.2 (Thursday, October 30th, 2014)
+ * Fixed issue where `PWMSELocationManager` was using x/y values instead of latitude/longitude values when returning a location
+
 ##0.9.1 (Thursday, October 9th, 2014)
  * Several bug fixes related to MSE related location updates and registration
  * Removed distance check for MSELocationManager
