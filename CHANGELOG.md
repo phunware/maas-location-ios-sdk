@@ -1,5 +1,10 @@
 #PWLocation Changelog
 
+##0.9.3 (Wednesday, November 12th, 2014)
+ * Deprecating location parameter in `PWSLLocationManager` and `PWMSELocationManager` initializers
+ * Improved BLE background support in `PWSLLocationManager`
+
+
 ##0.9.2 (Thursday, October 30th, 2014)
  * Fixed issue where `PWMSELocationManager` was using x/y values instead of latitude/longitude values when returning a location
 
