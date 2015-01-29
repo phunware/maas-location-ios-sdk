@@ -39,11 +39,11 @@
 	
 	<option value="properties">Properties</option>
 	
+	<option value="//api/name/floorIDMapping">&nbsp;&nbsp;&nbsp;&nbsp;floorIDMapping</option>
+	
 	<option value="//api/name/location">&nbsp;&nbsp;&nbsp;&nbsp;location</option>
 	
 	<option value="//api/name/venueGUID">&nbsp;&nbsp;&nbsp;&nbsp;venueGUID</option>
-	
-	<option value="//api/name/venueLocation">&nbsp;&nbsp;&nbsp;&nbsp;venueLocation</option>
 	
 	
 	
@@ -51,6 +51,10 @@
 	
 	
 	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/init">&nbsp;&nbsp;&nbsp;&nbsp;- init</option>
+	
+	<option value="//api/name/initWithVenueGUID:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithVenueGUID:</option>
 	
 	<option value="//api/name/initWithVenueGUID:location:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithVenueGUID:location:</option>
 	
@@ -86,11 +90,11 @@
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/floorIDMapping">floorIDMapping</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/location">location</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/venueGUID">venueGUID</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/venueLocation">venueLocation</a></span></li>
 	
 </ul></li>
 
@@ -99,6 +103,10 @@
 
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/init">init</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithVenueGUID:">initWithVenueGUID:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithVenueGUID:location:">initWithVenueGUID:location:</a></span></li>
 	
@@ -172,7 +180,7 @@
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/venueLocation">&nbsp;&nbsp;venueLocation</a></code>
+		<code><a href="#//api/name/floorIDMapping">&nbsp;&nbsp;floorIDMapping</a></code>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
@@ -184,7 +192,19 @@
 	
 </li><li>
 	<span class="tooltip">
+		<code><a href="#//api/name/init">&ndash;&nbsp;init</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
 		<code><a href="#//api/name/initWithVenueGUID:location:">&ndash;&nbsp;initWithVenueGUID:location:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithVenueGUID:">&ndash;&nbsp;initWithVenueGUID:</a></code>
 	</span>
 	
 	
@@ -218,6 +238,42 @@
 					<div class="section section-methods">
 						<a title="Properties" name="properties"></a>
 						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/floorIDMapping" title="floorIDMapping"></a>
+	<h3 class="subsubtitle method-title">floorIDMapping</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The floor ID mapping dictionary used to define the mapping between the <a href="#//api/name/location">location</a> provider floor ID and the Phunware floor ID. The dictionary format must adhere to the following format: <code>@{CUSTOMER_FLOORID : PHUNWARE_FLOOR_ID}</code>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSDictionary *floorIDMapping</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PWMSELocationManager.h</code><br />
+	</div>				
+	
+	
+</div>
 						
 						<div class="section-method">
 	<a name="//api/name/location" title="location"></a>
@@ -291,42 +347,6 @@
 	
 </div>
 						
-						<div class="section-method">
-	<a name="//api/name/venueLocation" title="venueLocation"></a>
-	<h3 class="subsubtitle method-title">venueLocation</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>The venue <a href="#//api/name/location">location</a> associated with the <a href="#//api/name/location">location</a> manager. (read-only)</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) CLLocationCoordinate2D venueLocation</code></div>
-
-    
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">PWMSELocationManager.h</code><br />
-	</div>				
-	
-	
-</div>
-						
 					</div>
 					
 					
@@ -336,6 +356,28 @@
 					<div class="section section-methods">
 						<a title="Instance Methods" name="instance_methods"></a>
 						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/init" title="init"></a>
+	<h3 class="subsubtitle method-title">init</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (instancetype)init</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithVenueGUID:" title="initWithVenueGUID:"></a>
+	<h3 class="subsubtitle method-title">initWithVenueGUID:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (instancetype)initWithVenueGUID:(NSString *)<em>venueGUID</em></code></div>
+
+    
+</div>
 						
 						<div class="section-method">
 	<a name="//api/name/initWithVenueGUID:location:" title="initWithVenueGUID:location:"></a>
@@ -542,7 +584,7 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2014 Phunware, Inc.. All rights reserved. (Last updated: 2014-09-17)</span><br />
+						<p><span class="copyright">&copy; 2015 Phunware, Inc.. All rights reserved. (Last updated: 2015-01-19)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 961)</a>.</span></p>
 						

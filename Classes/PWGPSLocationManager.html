@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
-		<title>PWSLLocationManager Class Reference</title>
+		<title>PWGPSLocationManager Class Reference</title>
 		<meta id="xcode-display" name="xcode-display" content="render"/>
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
 		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
@@ -16,7 +16,7 @@
 			</div>
 			
 			<div id="title" role="banner">
-				<h1 class="hideInXcode">PWSLLocationManager Class Reference</h1>
+				<h1 class="hideInXcode">PWGPSLocationManager Class Reference</h1>
 			</div>
 			<ul id="headerButtons" role="toolbar">
 				<li id="toc_button">
@@ -39,13 +39,13 @@
 	
 	<option value="properties">Properties</option>
 	
-	<option value="//api/name/customerID">&nbsp;&nbsp;&nbsp;&nbsp;customerID</option>
+	<option value="//api/name/error">&nbsp;&nbsp;&nbsp;&nbsp;error</option>
 	
 	<option value="//api/name/floorIDMapping">&nbsp;&nbsp;&nbsp;&nbsp;floorIDMapping</option>
 	
-	<option value="//api/name/location">&nbsp;&nbsp;&nbsp;&nbsp;location</option>
+	<option value="//api/name/internalLocationManager">&nbsp;&nbsp;&nbsp;&nbsp;internalLocationManager</option>
 	
-	<option value="//api/name/mapID">&nbsp;&nbsp;&nbsp;&nbsp;mapID</option>
+	<option value="//api/name/location">&nbsp;&nbsp;&nbsp;&nbsp;location</option>
 	
 	
 	
@@ -54,13 +54,15 @@
 	
 	<option value="instance_methods">Instance Methods</option>
 	
+	<option value="//api/name/errorForAuthorizationStatus:">&nbsp;&nbsp;&nbsp;&nbsp;- errorForAuthorizationStatus:</option>
+	
 	<option value="//api/name/init">&nbsp;&nbsp;&nbsp;&nbsp;- init</option>
 	
-	<option value="//api/name/initWithMapIdentifier:customerIdentifier:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithMapIdentifier:customerIdentifier:</option>
-	
-	<option value="//api/name/initWithMapIdentifier:customerIdentifier:location:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithMapIdentifier:customerIdentifier:location:</option>
+	<option value="//api/name/initWithCLLocationManager:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithCLLocationManager:</option>
 	
 	<option value="//api/name/locationServicesAvailable">&nbsp;&nbsp;&nbsp;&nbsp;- locationServicesAvailable</option>
+	
+	<option value="//api/name/phunwareFloorIDForFloor:">&nbsp;&nbsp;&nbsp;&nbsp;- phunwareFloorIDForFloor:</option>
 	
 	<option value="//api/name/startUpdatingLocation">&nbsp;&nbsp;&nbsp;&nbsp;- startUpdatingLocation</option>
 	
@@ -84,6 +86,8 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Determining Availability of Services">Determining Availability of Services</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Extension Methods">Extension Methods</a></span></li>
+	
 </ul></li>
 
 
@@ -92,13 +96,13 @@
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/customerID">customerID</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/error">error</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/floorIDMapping">floorIDMapping</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/location">location</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/internalLocationManager">internalLocationManager</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/mapID">mapID</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/location">location</a></span></li>
 	
 </ul></li>
 
@@ -108,13 +112,15 @@
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/errorForAuthorizationStatus:">errorForAuthorizationStatus:</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/init">init</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithMapIdentifier:customerIdentifier:">initWithMapIdentifier:customerIdentifier:</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithMapIdentifier:customerIdentifier:location:">initWithMapIdentifier:customerIdentifier:location:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithCLLocationManager:">initWithCLLocationManager:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/locationServicesAvailable">locationServicesAvailable</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/phunwareFloorIDForFloor:">phunwareFloorIDForFloor:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/startUpdatingLocation">startUpdatingLocation</a></span></li>
 	
@@ -127,7 +133,7 @@
 		</nav>
 		<article>
 			<div id="contents" class="isShowingTOC" role="main">
-				<a title="PWSLLocationManager Class Reference" name="top"></a>
+				<a title="PWGPSLocationManager Class Reference" name="top"></a>
 				<div class="main-navigation navigation-top">
 					<ul>
 	<li><a href="../index.html">Index</a></li>
@@ -136,7 +142,7 @@
 				</div>
 				<div id="header">
 					<div class="section-header">
-						<h1 class="title title-header">PWSLLocationManager Class Reference</h1>
+						<h1 class="title title-header">PWGPSLocationManager Class Reference</h1>
 					</div>		
 				</div>
 				<div id="container">	
@@ -150,7 +156,7 @@
 	<td class="specification-value"><a href="../Protocols/PWLocationManager.html">PWLocationManager</a></td>
 </tr><tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">PWSLLocationManager.h</td>
+	<td class="specification-value">PWGPSLocationManager.h</td>
 </tr>
 						</tbody></table></div>
 					
@@ -160,7 +166,7 @@
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
 						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<p>The <code>PWSLLocationManager</code> class defines the interface for configuring the delivery of BLE location-related events to your application. You use an instance of this class to establish the parameters that determine when <a href="#//api/name/location">location</a> events should be delivered and to start and stop the actual delivery of those events. This class conforms to the <a href="../Protocols/PWLocationManager.html"><code>PWLocationManager</code></a> protocol.</p>
+						<p>The <code>PWGPSLocationManager</code> class defines the interface for configuring the delivery of GPS location-related events to your application. You use an instance of this class to establish the parameters that determine when <a href="#//api/name/location">location</a> events should be delivered and to start and stop the actual delivery of those events. This class conforms to the <a href="../Protocols/PWLocationManager.html"><code>PWLocationManager</code></a> protocol.</p><p>You are still responsible for requesting permission to use <a href="#//api/name/location">location</a> services. In addition the <code>CLLocationManager</code> associated with this class is exposed so that it can be configured as desired.</p>
 					</div>
 					
 					
@@ -173,12 +179,12 @@
 						
 						
 						<a title="Determining Availability of Services" name="task_Determining Availability of Services"></a>
-						
-<h3 class="subsubtitle task-title">Determining Availability of Services</h3>
+						<h3 class="subsubtitle task-title">Determining Availability of Services</h3>
+
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
-		<code><a href="#//api/name/location">&nbsp;&nbsp;location</a></code>
+		<code><a href="#//api/name/internalLocationManager">&nbsp;&nbsp;internalLocationManager</a></code>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
@@ -190,31 +196,19 @@
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/mapID">&nbsp;&nbsp;mapID</a></code>
+		<code><a href="#//api/name/location">&nbsp;&nbsp;location</a></code>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/customerID">&nbsp;&nbsp;customerID</a></code>
+		<code><a href="#//api/name/initWithCLLocationManager:">&ndash;&nbsp;initWithCLLocationManager:</a></code>
 	</span>
-	<span class="task-item-suffix">property</span>
+	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/init">&ndash;&nbsp;init</a></code>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/initWithMapIdentifier:customerIdentifier:location:">&ndash;&nbsp;initWithMapIdentifier:customerIdentifier:location:</a></code>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/initWithMapIdentifier:customerIdentifier:">&ndash;&nbsp;initWithMapIdentifier:customerIdentifier:</a></code>
 	</span>
 	
 	
@@ -239,6 +233,32 @@
 </li>
 						</ul>
 						
+						
+						<a title="Extension Methods" name="task_Extension Methods"></a>
+						<h3 class="subsubtitle task-title">Extension Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/error">&nbsp;&nbsp;error</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/errorForAuthorizationStatus:">&ndash;&nbsp;errorForAuthorizationStatus:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/phunwareFloorIDForFloor:">&ndash;&nbsp;phunwareFloorIDForFloor:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
 					</div>
 					
 					
@@ -250,39 +270,14 @@
 						<h2 class="subtitle subtitle-methods">Properties</h2>
 						
 						<div class="section-method">
-	<a name="//api/name/customerID" title="customerID"></a>
-	<h3 class="subsubtitle method-title">customerID</h3>
+	<a name="//api/name/error" title="error"></a>
+	<h3 class="subsubtitle method-title">error</h3>
 	
 	
-	
-	<div class="method-subsection brief-description">
-		<p>The customer identifier obtained from Phunware (read-only)</p>
-	</div>		
-	
-    
 
-	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSString *customerID</code></div>
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSError *error</code></div>
 
     
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">PWSLLocationManager.h</code><br />
-	</div>				
-	
-	
 </div>
 						
 						<div class="section-method">
@@ -315,7 +310,48 @@
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">PWSLLocationManager.h</code><br />
+		<code class="declared-in-ref">PWGPSLocationManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/internalLocationManager" title="internalLocationManager"></a>
+	<h3 class="subsubtitle method-title">internalLocationManager</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The <code>CLLocationManager</code> used to deliver indoor GPS <a href="#//api/name/location">location</a> updates.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) CLLocationManager *internalLocationManager</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>You are still responsible for requesting permission to use <a href="#//api/name/location">location</a> services. The <code>CLLocationManagerDelegate</code> of this instance is owned by the <code>PWGPSLocationManager</code> instance.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PWGPSLocationManager.h</code><br />
 	</div>				
 	
 	
@@ -328,7 +364,7 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>The last indoor location received.</p>
+		<p>The latest indoor location received from the Phunware location service.</p>
 	</div>		
 	
     
@@ -351,43 +387,7 @@
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">PWSLLocationManager.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/mapID" title="mapID"></a>
-	<h3 class="subsubtitle method-title">mapID</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>The map identifier obtained from Phunware. (read-only)</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSString *mapID</code></div>
-
-    
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">PWSLLocationManager.h</code><br />
+		<code class="declared-in-ref">PWGPSLocationManager.h</code><br />
 	</div>				
 	
 	
@@ -404,6 +404,17 @@
 						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
 						
 						<div class="section-method">
+	<a name="//api/name/errorForAuthorizationStatus:" title="errorForAuthorizationStatus:"></a>
+	<h3 class="subsubtitle method-title">errorForAuthorizationStatus:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (NSError *)errorForAuthorizationStatus:(CLAuthorizationStatus)<em>status</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/init" title="init"></a>
 	<h3 class="subsubtitle method-title">init</h3>
 	
@@ -415,18 +426,18 @@
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/initWithMapIdentifier:customerIdentifier:" title="initWithMapIdentifier:customerIdentifier:"></a>
-	<h3 class="subsubtitle method-title">initWithMapIdentifier:customerIdentifier:</h3>
+	<a name="//api/name/initWithCLLocationManager:" title="initWithCLLocationManager:"></a>
+	<h3 class="subsubtitle method-title">initWithCLLocationManager:</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Initializes the <a href="#//api/name/location">location</a> manager with the specified venue GUID..</p>
+		<p>Initializes the <a href="#//api/name/location">location</a> manager with the specified <code>CLLocationManager</code> instance.</p>
 	</div>		
 	
     
 
-	<div class="method-subsection method-declaration"><code>- (instancetype)initWithMapIdentifier:(NSString *)<em>mapID</em> customerIdentifier:(NSString *)<em>customerID</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (instancetype)initWithCLLocationManager:(CLLocationManager *)<em>locationManager</em></code></div>
 
     
 	
@@ -434,19 +445,8 @@
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
 		
 		<dl class="argument-def parameter-def">
-			<dt><em>mapID</em></dt>
-			<dd><ul>
-<li>Obtained from Phunware.</li>
-</ul>
-</dd>
-		</dl>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>customerID</em></dt>
-			<dd><ul>
-<li>Obtained from Phunware.</li>
-</ul>
-</dd>
+			<dt><em>locationManager</em></dt>
+			<dd><p>The <a href="#//api/name/location">location</a> manager to use for GPS positioning. There parameter cannot be <code>nil</code>.</p></dd>
 		</dl>
 		
 	</div>
@@ -455,17 +455,12 @@
 	
 	<div class="method-subsection return">
 		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>The <a href="#//api/name/location">location</a> manager object.</p>
+		<p>A <code>PWGPSLocationManager</code> instance.</p>
 	</div>
 	
 	
 	
 	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>If the device is not within 5 kilometers of the venue <a href="#//api/name/location">location</a>, <a href="#//api/name/location">location</a> updates will fail.</p>
-	</div>
 	
 	
 	
@@ -475,82 +470,7 @@
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">PWSLLocationManager.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/initWithMapIdentifier:customerIdentifier:location:" title="initWithMapIdentifier:customerIdentifier:location:"></a>
-	<h3 class="subsubtitle method-title">initWithMapIdentifier:customerIdentifier:location:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Initializes the <a href="#//api/name/location">location</a> manager with the specified venue GUID and the venue <a href="#//api/name/location">location</a>.</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>- (instancetype)initWithMapIdentifier:(NSString *)<em>mapID</em> customerIdentifier:(NSString *)<em>customerID</em> location:(CLLocationCoordinate2D)<em>venueLocation</em></code></div>
-
-    
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>mapID</em></dt>
-			<dd><ul>
-<li>Obtained from Phunware.</li>
-</ul>
-</dd>
-		</dl>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>customerID</em></dt>
-			<dd><ul>
-<li>Obtained from Phunware.</li>
-</ul>
-</dd>
-		</dl>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>venueLocation</em></dt>
-			<dd><ul>
-<li>The <a href="#//api/name/location">location</a> of the venue.</li>
-</ul>
-</dd>
-		</dl>
-		
-	</div>
-	
-	
-	
-	<div class="method-subsection return">
-		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>The <a href="#//api/name/location">location</a> manager object.</p>
-	</div>
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>If the device is not within 5 kilometers of the venue <a href="#//api/name/location">location</a>, <a href="#//api/name/location">location</a> updates will fail.</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">PWSLLocationManager.h</code><br />
+		<code class="declared-in-ref">PWGPSLocationManager.h</code><br />
 	</div>				
 	
 	
@@ -595,6 +515,17 @@
 	</div>				
 	
 	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/phunwareFloorIDForFloor:" title="phunwareFloorIDForFloor:"></a>
+	<h3 class="subsubtitle method-title">phunwareFloorIDForFloor:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (NSUInteger)phunwareFloorIDForFloor:(CLFloor *)<em>floor</em></code></div>
+
+    
 </div>
 						
 						<div class="section-method">
