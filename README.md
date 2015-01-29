@@ -1,4 +1,4 @@
-PWLocation SDK for iOS (BETA)
+PWLocation SDK for iOS
 ================
 
 Version 1.0.0
