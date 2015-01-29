@@ -1,5 +1,9 @@
 #PWLocation Changelog
 
+##1.0.0 (Thursday, January 29th, 2015)
+* Initial 1.0.0 GA release
+* Added `PWGPSLocationManager` which is a convenient wrapper around `CLLocationManager`
+
 ##0.9.3 (Wednesday, November 12th, 2014)
  * Deprecating location parameter in `PWSLLocationManager` and `PWMSELocationManager` initializers
  * Improved BLE background support in `PWSLLocationManager`
