@@ -1,5 +1,8 @@
 #PWLocation Changelog
 
+##1.0.1 (Monday, February 23rd, 2015)
+* Fixed issue where `PWGPSLocationManager` could cause a crash on iOS 7 devices when trying to access non-existant `floor` property
+
 ##1.0.0 (Thursday, January 29th, 2015)
 * Initial 1.0.0 GA release
 * Added `PWGPSLocationManager` which is a convenient wrapper around `CLLocationManager`
