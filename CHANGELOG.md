@@ -1,5 +1,8 @@
 #PWLocation Changelog
 
+##1.0.2 (Thursday, June 4th, 2015)
+* Fixed an issue where `PWGPSLocationManager` would erroneously call failure callback when location authorization change callback was valid.
+
 ##1.0.1 (Monday, February 23rd, 2015)
 * Fixed issue where `PWGPSLocationManager` could cause a crash on iOS 7 devices when trying to access non-existant `floor` property
 
