@@ -39,9 +39,13 @@
 	
 	<option value="properties">Properties</option>
 	
+	<option value="//api/name/defaultHorizontalAccuracy">&nbsp;&nbsp;&nbsp;&nbsp;defaultHorizontalAccuracy</option>
+	
 	<option value="//api/name/floorIDMapping">&nbsp;&nbsp;&nbsp;&nbsp;floorIDMapping</option>
 	
 	<option value="//api/name/location">&nbsp;&nbsp;&nbsp;&nbsp;location</option>
+	
+	<option value="//api/name/updateInterval">&nbsp;&nbsp;&nbsp;&nbsp;updateInterval</option>
 	
 	<option value="//api/name/venueGUID">&nbsp;&nbsp;&nbsp;&nbsp;venueGUID</option>
 	
@@ -51,8 +55,6 @@
 	
 	
 	<option value="instance_methods">Instance Methods</option>
-	
-	<option value="//api/name/init">&nbsp;&nbsp;&nbsp;&nbsp;- init</option>
 	
 	<option value="//api/name/initWithVenueGUID:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithVenueGUID:</option>
 	
@@ -90,9 +92,13 @@
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/defaultHorizontalAccuracy">defaultHorizontalAccuracy</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/floorIDMapping">floorIDMapping</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/location">location</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/updateInterval">updateInterval</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/venueGUID">venueGUID</a></span></li>
 	
@@ -103,8 +109,6 @@
 
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/init">init</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithVenueGUID:">initWithVenueGUID:</a></span></li>
 	
@@ -186,15 +190,21 @@
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/location">&nbsp;&nbsp;location</a></code>
+		<code><a href="#//api/name/updateInterval">&nbsp;&nbsp;updateInterval</a></code>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/init">&ndash;&nbsp;init</a></code>
+		<code><a href="#//api/name/defaultHorizontalAccuracy">&nbsp;&nbsp;defaultHorizontalAccuracy</a></code>
 	</span>
+	<span class="task-item-suffix">property</span>
 	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/location">&nbsp;&nbsp;location</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
@@ -238,6 +248,47 @@
 					<div class="section section-methods">
 						<a title="Properties" name="properties"></a>
 						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/defaultHorizontalAccuracy" title="defaultHorizontalAccuracy"></a>
+	<h3 class="subsubtitle method-title">defaultHorizontalAccuracy</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The default horizontal accuracy radius to be used if none is present.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) CLLocationDistance defaultHorizontalAccuracy</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The radius of uncertainty for the <a href="#//api/name/location">location</a>, in meters.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PWMSELocationManager.h</code><br />
+	</div>				
+	
+	
+</div>
 						
 						<div class="section-method">
 	<a name="//api/name/floorIDMapping" title="floorIDMapping"></a>
@@ -312,6 +363,47 @@
 </div>
 						
 						<div class="section-method">
+	<a name="//api/name/updateInterval" title="updateInterval"></a>
+	<h3 class="subsubtitle method-title">updateInterval</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The interval seconds between <a href="#//api/name/location">location</a> update retrieval.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) NSTimeInterval updateInterval</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The default value of this property is 2 seconds.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PWMSELocationManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/venueGUID" title="venueGUID"></a>
 	<h3 class="subsubtitle method-title">venueGUID</h3>
 	
@@ -358,25 +450,62 @@
 						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
 						
 						<div class="section-method">
-	<a name="//api/name/init" title="init"></a>
-	<h3 class="subsubtitle method-title">init</h3>
-	
-	
-
-	<div class="method-subsection method-declaration"><code>- (instancetype)init</code></div>
-
-    
-</div>
-						
-						<div class="section-method">
 	<a name="//api/name/initWithVenueGUID:" title="initWithVenueGUID:"></a>
 	<h3 class="subsubtitle method-title">initWithVenueGUID:</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p>Initializes the <a href="#//api/name/location">location</a> manager with the specified venue GUID.</p>
+	</div>		
+	
+    
 
 	<div class="method-subsection method-declaration"><code>- (instancetype)initWithVenueGUID:(NSString *)<em>venueGUID</em></code></div>
 
     
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>venueGUID</em></dt>
+			<dd><ul>
+<li>The venue GUID is the specific venue identifier for a given indoor <a href="#//api/name/location">location</a>.</li>
+</ul>
+</dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The <a href="#//api/name/location">location</a> manager object.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The venue GUID will come from Phunware and is available in the <code>PWBuilding</code> object.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PWMSELocationManager.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 						<div class="section-method">
@@ -584,7 +713,7 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2015 Phunware, Inc.. All rights reserved. (Last updated: 2015-01-19)</span><br />
+						<p><span class="copyright">&copy; 2015 Phunware, Inc.. All rights reserved. (Last updated: 2015-08-31)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 961)</a>.</span></p>
 						

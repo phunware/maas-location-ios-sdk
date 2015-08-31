@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/PWMockLocationManager.html">
+	<File path="Classes/PWLocation.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/PWMockLocationManager</TokenIdentifier>
-			<Abstract type="html">The PWMockLocationManager class allows you to implement a mock location provider for testing and validation. This is extremely useful for location testing outside of a venue with a proper location provider.</Abstract>
-			<DeclaredIn>PWMockLocationManager.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/PWLocation</TokenIdentifier>
+			<Abstract type="html">PWLocation is a location provider SDK. This SDK encompasses a variety of indoor location providers and can be used in conjunction with PWMapKit to delivery and display indoor location location updates.</Abstract>
+			<DeclaredIn>PWLocation.h</DeclaredIn>
             
 			
 			<NodeRef refid="6"/>
@@ -13,67 +13,14 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWMockLocationManager/setLocation:</TokenIdentifier>
-			<Abstract type="html">The latest indoor location received from the location service.</Abstract>
-			<DeclaredIn>PWMockLocationManager.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/clm/PWLocation/serviceName</TokenIdentifier>
+			<Abstract type="html">Returns the name of the SDK, PWLocation.</Abstract>
+			<DeclaredIn>PWLocation.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) PWIndoorLocation *location</Declaration>
-			
-			
-			<Anchor>//api/name/location</Anchor>
-            <NodeRef refid="6"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWMockLocationManager/location</TokenIdentifier>
-			<Abstract type="html">The latest indoor location received from the location service.</Abstract>
-			<DeclaredIn>PWMockLocationManager.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) PWIndoorLocation *location</Declaration>
+			<Declaration>+ (NSString *)serviceName</Declaration>
 			
 			
-			<Anchor>//api/name/location</Anchor>
-            <NodeRef refid="6"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWMockLocationManager/location</TokenIdentifier>
-			<Abstract type="html">The latest indoor location received from the location service.</Abstract>
-			<DeclaredIn>PWMockLocationManager.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) PWIndoorLocation *location</Declaration>
-			
-			
-			<Anchor>//api/name/location</Anchor>
-            <NodeRef refid="6"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWMockLocationManager/init</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>PWMockLocationManager.h</DeclaredIn>
-			
-			<Declaration>- (instancetype)init</Declaration>
-			
-			
-			<Anchor>//api/name/init</Anchor>
-            <NodeRef refid="6"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWMockLocationManager/initWithMockLocationManagerWithConfiguration:</TokenIdentifier>
-			<Abstract type="html">Initializes a mock location manager with the specified PWMockLocationManagerConfiguration.</Abstract>
-			<DeclaredIn>PWMockLocationManager.h</DeclaredIn>
-			
-			<Declaration>- (instancetype)initWithMockLocationManagerWithConfiguration:(PWMockLocationManagerConfiguration *)configuration</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>configuration</Name>
-					<Abstract type="html">The PWMockLocationManagerConfiguration object to initialize the manager with.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">Returns a PWMockLocationManager object.</Abstract></ReturnValue>
-			<Anchor>//api/name/initWithMockLocationManagerWithConfiguration:</Anchor>
+			<Anchor>//api/name/serviceName</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		

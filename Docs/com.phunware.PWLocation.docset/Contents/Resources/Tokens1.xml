@@ -13,6 +13,45 @@
 		
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWFusedLocationManager/setZoneConfigurations:</TokenIdentifier>
+			<Abstract type="html">An array of PWFusedLocationManagerZoneConfiguration objects associated with the fused location manager.
+  </Abstract>
+			<DeclaredIn>PWFusedLocationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *zoneConfigurations</Declaration>
+			
+			
+			<Anchor>//api/name/zoneConfigurations</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWFusedLocationManager/zoneConfigurations</TokenIdentifier>
+			<Abstract type="html">An array of PWFusedLocationManagerZoneConfiguration objects associated with the fused location manager.
+  </Abstract>
+			<DeclaredIn>PWFusedLocationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *zoneConfigurations</Declaration>
+			
+			
+			<Anchor>//api/name/zoneConfigurations</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWFusedLocationManager/zoneConfigurations</TokenIdentifier>
+			<Abstract type="html">An array of PWFusedLocationManagerZoneConfiguration objects associated with the fused location manager.
+  </Abstract>
+			<DeclaredIn>PWFusedLocationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *zoneConfigurations</Declaration>
+			
+			
+			<Anchor>//api/name/zoneConfigurations</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/PWFusedLocationManager/setFloorIDMapping:</TokenIdentifier>
 			<Abstract type="html">  The floorIDMapping normally provides a mapping from between indoor floor identifiers and Phunware floor identifiers. This mapping is not used in the PWFusedLocationManager implementation. You should ensure this property is populated on the PWLocationManager that is passed in during initialization.</Abstract>
 			<DeclaredIn>PWFusedLocationManager.h</DeclaredIn>
@@ -85,19 +124,36 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWFusedLocationManager/initWithIndoorLocationManager:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/PWFusedLocationManager/initWithDefaultLocationManager:</TokenIdentifier>
 			<Abstract type="html">Initializes the fused location manager with the specified PWLocationManager.</Abstract>
 			<DeclaredIn>PWFusedLocationManager.h</DeclaredIn>
 			
-			<Declaration>- (instancetype)initWithIndoorLocationManager:(id&lt;PWLocationManager&gt;)locationManager</Declaration>
+			<Declaration>- (instancetype)initWithDefaultLocationManager:(id&lt;PWLocationManager&gt;)locationManager</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>locationManager</Name>
 					<Abstract type="html">- Obtained from Phunware.</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">The PWFusedLocationManager object.</Abstract></ReturnValue>
-			<Anchor>//api/name/initWithIndoorLocationManager:</Anchor>
+			
+			<Anchor>//api/name/initWithDefaultLocationManager:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWFusedLocationManager/addLocationManagerZoneConfiguration:</TokenIdentifier>
+			<Abstract type="html">Adds a configuration object that will define a new location manager and the set of zones where that location manager should be used.</Abstract>
+			<DeclaredIn>PWFusedLocationManager.h</DeclaredIn>
+			
+			<Declaration>- (void)addLocationManagerZoneConfiguration:(PWFusedLocationManagerZoneConfiguration *)zoneConfiguration</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>zoneConfiguration</Name>
+					<Abstract type="html">The zone configuration for a new location manager</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addLocationManagerZoneConfiguration:</Anchor>
             <NodeRef refid="1"/>
 		</Token>
 		
@@ -127,13 +183,33 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/PWFusedLocationManager/stopUpdatingLocation</TokenIdentifier>
-			<Abstract type="html">Stops the generation of location updates.</Abstract>
+			<Abstract type="html">Stops updating user’s current location.</Abstract>
 			<DeclaredIn>PWFusedLocationManager.h</DeclaredIn>
 			
 			<Declaration>- (void)stopUpdatingLocation</Declaration>
 			
 			
 			<Anchor>//api/name/stopUpdatingLocation</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWFusedLocationManager/coordinate:isInsidePolygon:</TokenIdentifier>
+			<Abstract type="html">Check if the specified coordinate is inside of polygon area.</Abstract>
+			<DeclaredIn>PWFusedLocationManager.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)coordinate:(CLLocationCoordinate2D)coordinate isInsidePolygon:(MKPolygon *)polygon</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>coordinate</Name>
+					<Abstract type="html">The coordinate to be tested.</Abstract>
+				</Parameter><Parameter>
+					<Name>polygon</Name>
+					<Abstract type="html">The polygon to test the coordinate against.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES if it is, or else NO.</Abstract></ReturnValue>
+			<Anchor>//api/name/coordinate:isInsidePolygon:</Anchor>
             <NodeRef refid="1"/>
 		</Token>
 		

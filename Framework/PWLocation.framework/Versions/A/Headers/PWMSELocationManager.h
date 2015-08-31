@@ -8,6 +8,8 @@
 #import <PWLocation/PWIndoorLocation.h>
 #import <PWLocation/PWLocationManager.h>
 
+extern NSTimeInterval const PWMSELocationManagerDefaultUpdateInterval;
+
 @protocol PWMSELocationManagerDelegate;
 
 /**
@@ -27,11 +29,21 @@
 @property (nonatomic, strong) NSDictionary *floorIDMapping;
 
 /**
+ The interval seconds between location update retrieval.
+ @discussion The default value of this property is 2 seconds.
+ */
+@property (nonatomic, assign) NSTimeInterval updateInterval;
+
+/**
+ The default horizontal accuracy radius to be used if none is present.
+ @discussion The radius of uncertainty for the location, in meters.
+ */
+@property (nonatomic, assign) CLLocationDistance defaultHorizontalAccuracy;
+
+/**
  The latest indoor location received from the Phunware location service.
  */
 @property (nonatomic, readonly) PWIndoorLocation *location;
-
-- (instancetype)init NS_UNAVAILABLE;
 
 /**
  Initializes the location manager with the specified venue GUID and venue location.
@@ -41,6 +53,13 @@
  @return The location manager object.
  */
 - (instancetype)initWithVenueGUID:(NSString *)venueGUID location:(CLLocationCoordinate2D)venueLocation __attribute__((deprecated));
+
+/**
+ Initializes the location manager with the specified venue GUID.
+ @param venueGUID - The venue GUID is the specific venue identifier for a given indoor location.
+ @discussion The venue GUID will come from Phunware and is available in the `PWBuilding` object.
+ @return The location manager object.
+ */
 - (instancetype)initWithVenueGUID:(NSString *)venueGUID NS_DESIGNATED_INITIALIZER;
 
 - (BOOL)locationServicesAvailable;

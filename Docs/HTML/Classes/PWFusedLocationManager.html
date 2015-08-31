@@ -43,6 +43,8 @@
 	
 	<option value="//api/name/location">&nbsp;&nbsp;&nbsp;&nbsp;location</option>
 	
+	<option value="//api/name/zoneConfigurations">&nbsp;&nbsp;&nbsp;&nbsp;zoneConfigurations</option>
+	
 	
 	
 	
@@ -50,7 +52,11 @@
 	
 	<option value="instance_methods">Instance Methods</option>
 	
-	<option value="//api/name/initWithIndoorLocationManager:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithIndoorLocationManager:</option>
+	<option value="//api/name/addLocationManagerZoneConfiguration:">&nbsp;&nbsp;&nbsp;&nbsp;- addLocationManagerZoneConfiguration:</option>
+	
+	<option value="//api/name/coordinate:isInsidePolygon:">&nbsp;&nbsp;&nbsp;&nbsp;- coordinate:isInsidePolygon:</option>
+	
+	<option value="//api/name/initWithDefaultLocationManager:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithDefaultLocationManager:</option>
 	
 	<option value="//api/name/locationServicesAvailable">&nbsp;&nbsp;&nbsp;&nbsp;- locationServicesAvailable</option>
 	
@@ -74,8 +80,6 @@
 
 <li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Initiating Location Updates">Initiating Location Updates</a></span></li>
-	
 </ul></li>
 
 
@@ -88,6 +92,8 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/location">location</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/zoneConfigurations">zoneConfigurations</a></span></li>
+	
 </ul></li>
 
 
@@ -96,7 +102,11 @@
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithIndoorLocationManager:">initWithIndoorLocationManager:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addLocationManagerZoneConfiguration:">addLocationManagerZoneConfiguration:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/coordinate:isInsidePolygon:">coordinate:isInsidePolygon:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithDefaultLocationManager:">initWithDefaultLocationManager:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/locationServicesAvailable">locationServicesAvailable</a></span></li>
 	
@@ -156,11 +166,17 @@
 						<h2 class="subtitle subtitle-tasks">Tasks</h2>
 						
 						
-						<a title="Initiating Location Updates" name="task_Initiating Location Updates"></a>
 						
-<h3 class="subsubtitle task-title">Initiating Location Updates</h3>
+						
+
 						<ul class="task-list">
 							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/zoneConfigurations">&nbsp;&nbsp;zoneConfigurations</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/floorIDMapping">&nbsp;&nbsp;floorIDMapping</a></code>
 	</span>
@@ -174,7 +190,13 @@
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/initWithIndoorLocationManager:">&ndash;&nbsp;initWithIndoorLocationManager:</a></code>
+		<code><a href="#//api/name/initWithDefaultLocationManager:">&ndash;&nbsp;initWithDefaultLocationManager:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addLocationManagerZoneConfiguration:">&ndash;&nbsp;addLocationManagerZoneConfiguration:</a></code>
 	</span>
 	
 	
@@ -193,6 +215,12 @@
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/stopUpdatingLocation">&ndash;&nbsp;stopUpdatingLocation</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/coordinate:isInsidePolygon:">&ndash;&nbsp;coordinate:isInsidePolygon:</a></code>
 	</span>
 	
 	
@@ -286,6 +314,42 @@
 	
 </div>
 						
+						<div class="section-method">
+	<a name="//api/name/zoneConfigurations" title="zoneConfigurations"></a>
+	<h3 class="subsubtitle method-title">zoneConfigurations</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>An array of <a href="../Classes/PWFusedLocationManagerZoneConfiguration.html"><code>PWFusedLocationManagerZoneConfiguration</code></a> objects associated with the fused <a href="#//api/name/location">location</a> manager.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSArray *zoneConfigurations</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PWFusedLocationManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
 					</div>
 					
 					
@@ -297,8 +361,110 @@
 						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
 						
 						<div class="section-method">
-	<a name="//api/name/initWithIndoorLocationManager:" title="initWithIndoorLocationManager:"></a>
-	<h3 class="subsubtitle method-title">initWithIndoorLocationManager:</h3>
+	<a name="//api/name/addLocationManagerZoneConfiguration:" title="addLocationManagerZoneConfiguration:"></a>
+	<h3 class="subsubtitle method-title">addLocationManagerZoneConfiguration:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Adds a configuration object that will define a new <a href="#//api/name/location">location</a> manager and the set of zones where that <a href="#//api/name/location">location</a> manager should be used.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)addLocationManagerZoneConfiguration:(PWFusedLocationManagerZoneConfiguration *)<em>zoneConfiguration</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>zoneConfiguration</em></dt>
+			<dd><p>The zone configuration for a new <a href="#//api/name/location">location</a> manager</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PWFusedLocationManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/coordinate:isInsidePolygon:" title="coordinate:isInsidePolygon:"></a>
+	<h3 class="subsubtitle method-title">coordinate:isInsidePolygon:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Check if the specified coordinate is inside of polygon area.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)coordinate:(CLLocationCoordinate2D)<em>coordinate</em> isInsidePolygon:(MKPolygon *)<em>polygon</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>coordinate</em></dt>
+			<dd><p>The coordinate to be tested.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>polygon</em></dt>
+			<dd><p>The polygon to test the coordinate against.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>YES if it is, or else NO.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PWFusedLocationManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithDefaultLocationManager:" title="initWithDefaultLocationManager:"></a>
+	<h3 class="subsubtitle method-title">initWithDefaultLocationManager:</h3>
 	
 	
 	
@@ -308,7 +474,7 @@
 	
     
 
-	<div class="method-subsection method-declaration"><code>- (instancetype)initWithIndoorLocationManager:(id&lt;PWLocationManager&gt;)<em>locationManager</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (instancetype)initWithDefaultLocationManager:(id&lt;PWLocationManager&gt;)<em>locationManager</em></code></div>
 
     
 	
@@ -326,11 +492,6 @@
 	</div>
 	
 	
-	
-	<div class="method-subsection return">
-		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>The <code>PWFusedLocationManager</code> object.</p>
-	</div>
 	
 	
 	
@@ -439,7 +600,7 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Stops the generation of <a href="../Protocols/PWLocationManager.html#//api/name/location">location</a> updates.</p>
+		<p>Stops updating user’s current <a href="#//api/name/location">location</a>.</p>
 	</div>		
 	
     
@@ -456,7 +617,7 @@
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>Call this method whenever your code no longer needs to receive location-related events. Disabling event delivery gives the receiver the option of disabling the appropriate hardware (and thereby saving power) when no clients need <a href="../Protocols/PWLocationManager.html#//api/name/location">location</a> data. You can always restart the generation of <a href="../Protocols/PWLocationManager.html#//api/name/location">location</a> updates by calling the <a href="../Protocols/PWLocationManager.html#//api/name/startUpdatingLocation"><code>startUpdatingLocation</code></a> method again.</p>
+		<p>All the internal <a href="#//api/name/location">location</a> managers are stopped after this method is involked.</p>
 	</div>
 	
 	
@@ -467,7 +628,7 @@
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">PWLocationManager.h</code><br />
+		<code class="declared-in-ref">PWFusedLocationManager.h</code><br />
 	</div>				
 	
 	
@@ -488,7 +649,7 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2015 Phunware, Inc.. All rights reserved. (Last updated: 2015-01-19)</span><br />
+						<p><span class="copyright">&copy; 2015 Phunware, Inc.. All rights reserved. (Last updated: 2015-08-31)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 961)</a>.</span></p>
 						

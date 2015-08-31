@@ -11,7 +11,6 @@
 #import <PWLocation/PWIndoorLocation.h>
 
 #import <PWLocation/PWMockLocationManagerConfiguration.h>
-#import <PWLocation/PWMockLocationStep.h>
 
 @protocol PWMockLocationManagerDelegate;
 
@@ -29,8 +28,6 @@
  The latest indoor location received from the location service.
  */
 @property (nonatomic, readonly) PWIndoorLocation *location;
-
-- (instancetype)init NS_UNAVAILABLE;
 
 /**
  Initializes a mock location manager with the specified `PWMockLocationManagerConfiguration`.
