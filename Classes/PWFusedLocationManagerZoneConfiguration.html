@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
-		<title>PWMSELocationManagerDelegate Protocol Reference</title>
+		<title>PWFusedLocationManagerZoneConfiguration Class Reference</title>
 		<meta id="xcode-display" name="xcode-display" content="render"/>
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
 		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
@@ -16,7 +16,7 @@
 			</div>
 			
 			<div id="title" role="banner">
-				<h1 class="hideInXcode">PWMSELocationManagerDelegate Protocol Reference</h1>
+				<h1 class="hideInXcode">PWFusedLocationManagerZoneConfiguration Class Reference</h1>
 			</div>
 			<ul id="headerButtons" role="toolbar">
 				<li id="toc_button">
@@ -37,15 +37,20 @@
 	
 	
 	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/locationManager">&nbsp;&nbsp;&nbsp;&nbsp;locationManager</option>
+	
+	<option value="//api/name/zones">&nbsp;&nbsp;&nbsp;&nbsp;zones</option>
+	
+	
 	
 	
 	
 	
 	<option value="instance_methods">Instance Methods</option>
 	
-	<option value="//api/name/locationManager:didUpdateToLocation:">&nbsp;&nbsp;&nbsp;&nbsp;- locationManager:didUpdateToLocation:</option>
-	
-	<option value="//api/name/locationManager:failedWithError:">&nbsp;&nbsp;&nbsp;&nbsp;- locationManager:failedWithError:</option>
+	<option value="//api/name/initWithLocationManager:zones:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithLocationManager:zones:</option>
 	
 	
 	
@@ -69,15 +74,21 @@
 
 
 
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/locationManager">locationManager</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/zones">zones</a></span></li>
+	
+</ul></li>
+
 
 
 
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/locationManager:didUpdateToLocation:">locationManager:didUpdateToLocation:</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/locationManager:failedWithError:">locationManager:failedWithError:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithLocationManager:zones:">initWithLocationManager:zones:</a></span></li>
 	
 </ul></li>
 
@@ -86,7 +97,7 @@
 		</nav>
 		<article>
 			<div id="contents" class="isShowingTOC" role="main">
-				<a title="PWMSELocationManagerDelegate Protocol Reference" name="top"></a>
+				<a title="PWFusedLocationManagerZoneConfiguration Class Reference" name="top"></a>
 				<div class="main-navigation navigation-top">
 					<ul>
 	<li><a href="../index.html">Index</a></li>
@@ -95,18 +106,18 @@
 				</div>
 				<div id="header">
 					<div class="section-header">
-						<h1 class="title title-header">PWMSELocationManagerDelegate Protocol Reference</h1>
+						<h1 class="title title-header">PWFusedLocationManagerZoneConfiguration Class Reference</h1>
 					</div>		
 				</div>
 				<div id="container">	
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
-	<td class="specification-title">Conforms to</td>
-	<td class="specification-value"><a href="../Protocols/PWLocationManagerDelegate.html">PWLocationManagerDelegate</a></td>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
 </tr><tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">PWMSELocationManager.h</td>
+	<td class="specification-value">PWFusedLocationManagerZoneConfiguration.h</td>
 </tr>
 						</tbody></table></div>
 					
@@ -116,9 +127,7 @@
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
 						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<p>The <code>PWMSELocationManagerDelegate</code> protocol defines the methods used to receive location updates from a <a href="../Classes/PWMSELocationManager.html"><code>PWMSELocationManager</code></a> object. This class conforms to the <a href="../Protocols/PWLocationManagerDelegate.html"><code>PWLocationManagerDelegate</code></a> protocol.</p>
-
-<p>The methods of your delegate object are called from the main application thread.</p>
+						<p>The &lsquo;PWFusedLocationManagerZoneConfiguration&rsquo; class relates a location manager to the <a href="#//api/name/zones">zones</a> where the location manager should be used.</p>
 					</div>
 					
 					
@@ -136,16 +145,22 @@
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
-		<code><a href="#//api/name/locationManager:didUpdateToLocation:">&ndash;&nbsp;locationManager:didUpdateToLocation:</a></code>
+		<code><a href="#//api/name/locationManager">&nbsp;&nbsp;locationManager</a></code>
 	</span>
+	<span class="task-item-suffix">property</span>
 	
-	<span class="task-item-suffix">required method</span>
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/locationManager:failedWithError:">&ndash;&nbsp;locationManager:failedWithError:</a></code>
+		<code><a href="#//api/name/zones">&nbsp;&nbsp;zones</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithLocationManager:zones:">&ndash;&nbsp;initWithLocationManager:zones:</a></code>
 	</span>
 	
-	<span class="task-item-suffix">required method</span>
+	
 </li>
 						</ul>
 						
@@ -154,6 +169,84 @@
 					
 					
 					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/locationManager" title="locationManager"></a>
+	<h3 class="subsubtitle method-title">locationManager</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The location manager object</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) id&lt;PWLocationManager&gt; locationManager</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PWFusedLocationManagerZoneConfiguration.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/zones" title="zones"></a>
+	<h3 class="subsubtitle method-title">zones</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>An array of zones where the location manager should be used</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) NSArray *zones</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PWFusedLocationManagerZoneConfiguration.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
 					
 					
 					
@@ -164,18 +257,18 @@
 						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
 						
 						<div class="section-method">
-	<a name="//api/name/locationManager:didUpdateToLocation:" title="locationManager:didUpdateToLocation:"></a>
-	<h3 class="subsubtitle method-title">locationManager:didUpdateToLocation:</h3>
+	<a name="//api/name/initWithLocationManager:zones:" title="initWithLocationManager:zones:"></a>
+	<h3 class="subsubtitle method-title">initWithLocationManager:zones:</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Tells the delegate that a new location update is available.</p>
+		<p>Initializes a &lsquo;PWFusedLocationManagerZoneConfiguration&rsquo; object with a location manager along with the <a href="#//api/name/zones">zones</a> where the location manager will be valid</p>
 	</div>		
 	
     
 
-	<div class="method-subsection method-declaration"><code>- (void)locationManager:(id&lt;PWLocationManager&gt;)<em>manager</em> didUpdateToLocation:(id&lt;PWLocation&gt;)<em>location</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (instancetype)initWithLocationManager:(id&lt;PWLocationManager&gt;)<em>locationManager</em> zones:(NSArray *)<em>zones</em></code></div>
 
     
 	
@@ -183,27 +276,27 @@
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
 		
 		<dl class="argument-def parameter-def">
-			<dt><em>manager</em></dt>
-			<dd><p>The location manager object that generated the update event.</p></dd>
+			<dt><em>locationManager</em></dt>
+			<dd><p>A location manager object</p></dd>
 		</dl>
 		
 		<dl class="argument-def parameter-def">
-			<dt><em>location</em></dt>
-			<dd><p>A location object with the updated location information. This object conforms to the <a href="../Classes/PWLocation.html"><code>PWLocation</code></a> protocol.</p></dd>
+			<dt><em>zones</em></dt>
+			<dd><p>The <a href="#//api/name/zones">zones</a> where the location manager will be valid</p></dd>
 		</dl>
 		
 	</div>
 	
 	
 	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Implementation of this method is optional but recommended.</p>
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An initialized &lsquo;PWFusedLocationManagerZoneConfiguration&rsquo; object.</p>
 	</div>
+	
+	
+	
+	
 	
 	
 	
@@ -213,65 +306,7 @@
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">PWMSELocationManager.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/locationManager:failedWithError:" title="locationManager:failedWithError:"></a>
-	<h3 class="subsubtitle method-title">locationManager:failedWithError:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Tells the delegate that the location manager was unable to retrieve a location value.</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>- (void)locationManager:(PWMSELocationManager *)<em>manager</em> failedWithError:(NSError *)<em>error</em></code></div>
-
-    
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>manager</em></dt>
-			<dd><p>The location manager object that was unable to retrieve the location.</p></dd>
-		</dl>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>error</em></dt>
-			<dd><p>The error object containing the reason the location could not be retrieved.</p></dd>
-		</dl>
-		
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Implementation of this method is optional but recommended.</p>
-
-<p>The location manager calls this method when it encounters an error trying to get the location data. If an error is encountered, the location manager will keep attempting to update until <code>stopUpdatingLocation</code> is called.</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">PWMSELocationManager.h</code><br />
+		<code class="declared-in-ref">PWFusedLocationManagerZoneConfiguration.h</code><br />
 	</div>				
 	
 	
