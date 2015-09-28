@@ -1,5 +1,11 @@
 # PWLocation CHANGELOG
 
+## v1.2.0 (Wednesday, September 30th, 2015)
+
+* Integrated with new PWCore v2.0.0 SDK
+
+* Updated `PWSLIndoorLocationManager` dependencies
+
 ## v1.1.0 (Monday, August 31st, 2015)
 * Updated `PWSLLocationManager` internals to provide more accurate and battery efficent location updates.
 	- **IMPORTANT**: This update changes the map identifier value used to initialize `PWSLLocationManager`. Please contact Phunware for your new map identifier values. These new values apply only to PWLocation v1.1.0 and beyond.

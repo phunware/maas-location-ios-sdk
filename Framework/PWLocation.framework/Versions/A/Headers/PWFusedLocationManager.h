@@ -20,9 +20,6 @@ extern NSString *const PWFusedLocationManagerDidChangeNotification;
  */
 @interface PWFusedLocationManager : NSObject <PWLocationManager>
 
-/**
- An array of `PWFusedLocationManagerZoneConfiguration` objects associated with the fused location manager.
-  */
 @property (nonatomic, readonly) NSArray *zoneConfigurations;
 
 /**
@@ -68,8 +65,6 @@ extern NSString *const PWFusedLocationManagerDidChangeNotification;
 
 /**
  Check if the specified coordinate is inside of polygon area.
- @param coordinate The coordinate to be tested.
- @param polygon The polygon to test the coordinate against.
  @return YES if it is, or else NO.
  */
 - (BOOL)coordinate:(CLLocationCoordinate2D)coordinate isInsidePolygon:(MKPolygon*)polygon;

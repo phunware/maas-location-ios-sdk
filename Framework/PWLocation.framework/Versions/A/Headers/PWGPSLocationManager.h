@@ -43,7 +43,9 @@
  @param locationManager The location manager to use for GPS positioning. There parameter cannot be `nil`.
  @return A `PWGPSLocationManager` instance.
  */
+
 - (instancetype)initWithCLLocationManager:(CLLocationManager *)locationManager NS_DESIGNATED_INITIALIZER;
+- (instancetype)init NS_UNAVAILABLE;
 
 - (BOOL)locationServicesAvailable;
 - (void)startUpdatingLocation;
