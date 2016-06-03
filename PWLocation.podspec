@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "PWLocation"
-  s.version      = "1.2.0"
+  s.version      = "1.2.5"
   s.summary      = "PWLocation SDK for iOS"
   s.homepage     = "http://phunware.github.io/maas-location-ios-sdk/"
   s.author       = { 'Phunware, Inc.' => 'http://www.phunware.com' }
