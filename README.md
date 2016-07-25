@@ -1,19 +1,23 @@
 PWLocation SDK for iOS
 ================
 
+<<<<<<< HEAD
+Version 3.0.0
+=======
 Version 1.2.0
+>>>>>>> upstream/master
 
 This is Phunware's iOS SDK for the Location module. Visit http://maas.phunware.com/ for more details and to sign up.
-
 
 Requirements
 ------------
 
+<<<<<<< HEAD
+=======
 - PWCore v2.0.0 or greater
+>>>>>>> upstream/master
 - iOS 7.1 or greater
 - Xcode 6 or greater
-
-
 
 Getting Started
 ---------------
@@ -27,9 +31,13 @@ Getting Started
 Installation
 ------------
 
-The easiest way to use PWLocation is via CocoaPods. Simply add `pod PWLocation` to your `Podfile`. 
-#### Alternate Installation Steps
+The easiest way to use PWLocation is via CocoaPods. Simply add 
 
+<<<<<<< HEAD
+`pod PWLocation` 
+
+to your `Podfile`, then the `PWCore` would be automatically included. 
+=======
 The following Phunware frameworks are required:
 ````
 PWCore.framework
@@ -38,8 +46,10 @@ PWCore.framework
 PWLocation has a dependency on PWCore.framework, which is available here: https://github.com/phunware/maas-core-ios-sdk
 
 It's recommended that you add the MaaS frameworks to the 'Vendor/Phunware' directory. This directory should contain PWCore.framework and PWLocation.framework, as well as any other MaaS frameworks that you are using.
+>>>>>>> upstream/master
 
 The following frameworks are required:
+
 ````
 CoreMotion.framework
 CoreBluetooth.framework

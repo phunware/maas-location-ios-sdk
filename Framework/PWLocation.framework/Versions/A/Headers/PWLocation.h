@@ -15,7 +15,10 @@
 #import <PWLocation/PWSLLocationManager.h>
 #import <PWLocation/PWGPSLocationManager.h>
 #import <PWLocation/PWMockLocationManager.h>
+#import <PWLocation/PWMockLocationManagerConfiguration.h>
 #import <PWLocation/PWMockLocationStep.h>
+#import <PWLocation/PWBeaconProximityManager.h>
+#import <PWLocation/PWBeaconProximityRegion.h>
 #import <PWLocation/PWFusedLocationManager.h>
 #import <PWLocation/PWFusedLocationManagerZone.h>
 #import <PWLocation/PWFusedLocationManagerZoneConfiguration.h>

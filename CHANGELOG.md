@@ -1,5 +1,16 @@
 # PWLocation CHANGELOG
 
+<<<<<<< HEAD
+##3.0.0 (Monday, July 25th, 2016)
+* Upgrade SenionLab SDK from v4.1.2 to v4.5.4.
+* Be able to auto re-bind for MSE location manager.
+
+##1.1.0 (Monday, Aug 31th, 2015)
+* Add fused location provider.
+* Upgrade SenionLab SDK from v3.0.12 to v4.1.2.
+
+##1.0.2 (Thursday, June 4th, 2015)
+=======
 ## v1.2.0 (Wednesday, September 30th, 2015)
 
 * Integrated with new PWCore v2.0.0 SDK
@@ -18,6 +29,7 @@
 
 
 ## v1.0.2 (Thursday, June 4th, 2015)
+>>>>>>> upstream/master
 * Fixed an issue where `PWGPSLocationManager` would erroneously call failure callback when location authorization change callback was valid.
 
 

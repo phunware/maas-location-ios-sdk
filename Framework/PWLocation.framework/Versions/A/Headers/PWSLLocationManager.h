@@ -41,8 +41,6 @@ The map identifier obtained from Phunware. (read-only)
 
 @property (nonatomic, readonly) NSString *customerID;
 
-- (instancetype)init NS_UNAVAILABLE;
-
 /**
  Initializes the location manager with the specified venue GUID and the venue location.
  @param mapID - Obtained from Phunware.
@@ -53,9 +51,8 @@ The map identifier obtained from Phunware. (read-only)
  */
 - (instancetype)initWithMapIdentifier:(NSString *)mapID customerIdentifier:(NSString *)customerID location:(CLLocationCoordinate2D)venueLocation __attribute__((deprecated));
 
-
 /**
- Initializes the location manager with the specified venue GUID..
+ Initializes the location manager with the specified map identifier and customer identifier.
  @param mapID - Obtained from Phunware.
  @param customerID - Obtained from Phunware.
  @discussion If the device is not within 5 kilometers of the venue location, location updates will fail.
@@ -63,6 +60,7 @@ The map identifier obtained from Phunware. (read-only)
  */
 - (instancetype)initWithMapIdentifier:(NSString *)mapID customerIdentifier:(NSString *)customerID NS_DESIGNATED_INITIALIZER;
 
+- (instancetype)init NS_UNAVAILABLE;
 - (BOOL)locationServicesAvailable;
 - (void)startUpdatingLocation;
 - (void)stopUpdatingLocation;

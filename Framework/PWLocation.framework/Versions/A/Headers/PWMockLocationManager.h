@@ -29,8 +29,6 @@
  */
 @property (nonatomic, readonly) PWIndoorLocation *location;
 
-- (instancetype)init NS_UNAVAILABLE;
-
 /**
  Initializes a mock location manager with the specified `PWMockLocationManagerConfiguration`.
  @param configuration The `PWMockLocationManagerConfiguration` object to initialize the manager with.
