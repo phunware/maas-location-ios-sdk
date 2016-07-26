@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.dependency 'PWCore'
 
   s.xcconfig      = { 'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/PWLocation/**"'}
-  s.ios.frameworks = 'Security', 'QuartzCore', 'SystemConfiguration', 'MobileCoreServices', 'CoreTelephony', 'CoreBluetooth', 'CoreMotion', 'CoreLocation'
+  s.ios.frameworks = 'Security', 'QuartzCore', 'SystemConfiguration', 'MobileCoreServices', 'CoreTelephony', 'CoreBluetooth', 'CoreMotion', 'CoreLocation', 'MapKit'
   s.library = 'sqlite3', 'z', 'xml2.2'
   s.requires_arc = true
 end
