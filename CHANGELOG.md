@@ -1,5 +1,9 @@
 # PWLocation CHANGELOG
 
+## v1.2.1 (Thursday, Auguest 25th, 2015)
+
+* Re-build v1.2.0 based on XCode 7.0
+
 ## v1.2.0 (Wednesday, September 30th, 2015)
 
 * Integrated with new PWCore v2.0.0 SDK
