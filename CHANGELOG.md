@@ -1,5 +1,8 @@
 # PWLocation CHANGELOG
 
+##3.0.1 (Monday, October 24th, 2016)
+* Upgrade SenionLab SDK from v4.5.4 to v4.8.0.
+
 ##3.0.0 (Monday, July 25th, 2016)
 * Upgrade SenionLab SDK from v4.1.2 to v4.5.4.
 * Be able to auto re-bind for MSE location manager.
