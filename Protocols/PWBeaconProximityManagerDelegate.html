@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
-		<title>PWLocationManagerDelegate Protocol Reference</title>
+		<title>PWBeaconProximityManagerDelegate Protocol Reference</title>
 		<meta id="xcode-display" name="xcode-display" content="render"/>
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
 		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
@@ -16,7 +16,7 @@
 			</div>
 			
 			<div id="title" role="banner">
-				<h1 class="hideInXcode">PWLocationManagerDelegate Protocol Reference</h1>
+				<h1 class="hideInXcode">PWBeaconProximityManagerDelegate Protocol Reference</h1>
 			</div>
 			<ul id="headerButtons" role="toolbar">
 				<li id="toc_button">
@@ -25,8 +25,6 @@
 				<li id="jumpto_button" role="navigation">
 					<select id="jumpTo">
 	<option value="top">Jump To&#133;</option>
-	
-	<option value="overview">Overview</option>
 	
 	
 	
@@ -56,8 +54,6 @@
 		<nav id="tocContainer" class="isShowingTOC">
 			<ul id="toc" role="tree">
 				
-<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
-
 
 
 
@@ -86,7 +82,7 @@
 		</nav>
 		<article>
 			<div id="contents" class="isShowingTOC" role="main">
-				<a title="PWLocationManagerDelegate Protocol Reference" name="top"></a>
+				<a title="PWBeaconProximityManagerDelegate Protocol Reference" name="top"></a>
 				<div class="main-navigation navigation-top">
 					<ul>
 	<li><a href="../index.html">Index</a></li>
@@ -95,7 +91,7 @@
 				</div>
 				<div id="header">
 					<div class="section-header">
-						<h1 class="title title-header">PWLocationManagerDelegate Protocol Reference</h1>
+						<h1 class="title title-header">PWBeaconProximityManagerDelegate Protocol Reference</h1>
 					</div>		
 				</div>
 				<div id="container">	
@@ -103,25 +99,15 @@
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
 	<td class="specification-title">Conforms to</td>
-	<td class="specification-value">NSObject</td>
+	<td class="specification-value"><a href="../Protocols/PWLocationManagerDelegate.html">PWLocationManagerDelegate</a></td>
 </tr><tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">PWLocationManager.h</td>
+	<td class="specification-value">PWBeaconProximityManager.h</td>
 </tr>
 						</tbody></table></div>
 					
                     
                     
-					
-					<div class="section section-overview">
-						<a title="Overview" name="overview"></a>
-						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<p>The <code>PWLocationManagerDelegate</code> protocol defines the methods used to receive location updates from a <a href="../Protocols/PWLocationManager.html"><code>PWLocationManager</code></a> object.</p>
-
-<p>The methods of your delegate object are called from the main application thread.</p>
-					</div>
-					
-					
 					
 					
 					
@@ -139,13 +125,13 @@
 		<code><a href="#//api/name/locationManager:didUpdateToLocation:">&ndash;&nbsp;locationManager:didUpdateToLocation:</a></code>
 	</span>
 	
-	
+	<span class="task-item-suffix">required method</span>
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/locationManager:failedWithError:">&ndash;&nbsp;locationManager:failedWithError:</a></code>
 	</span>
 	
-	
+	<span class="task-item-suffix">required method</span>
 </li>
 						</ul>
 						
@@ -175,7 +161,7 @@
 	
     
 
-	<div class="method-subsection method-declaration"><code>- (void)locationManager:(id&lt;PWLocationManager&gt;)<em>manager</em> didUpdateToLocation:(id&lt;PWLocation&gt;)<em>location</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (void)locationManager:(PWBeaconProximityManager *)<em>manager</em> didUpdateToLocation:(PWIndoorLocation *)<em>location</em></code></div>
 
     
 	
@@ -231,7 +217,7 @@
 	
     
 
-	<div class="method-subsection method-declaration"><code>- (void)locationManager:(id&lt;PWLocationManager&gt;)<em>manager</em> failedWithError:(NSError *)<em>error</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (void)locationManager:(PWBeaconProximityManager *)<em>manager</em> failedWithError:(NSError *)<em>error</em></code></div>
 
     
 	

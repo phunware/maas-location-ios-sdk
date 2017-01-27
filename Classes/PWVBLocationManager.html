@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
-		<title>PWLocationManagerError Constants Reference</title>
+		<title>PWVBLocationManager Class Reference</title>
 		<meta id="xcode-display" name="xcode-display" content="render"/>
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
 		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
@@ -16,7 +16,7 @@
 			</div>
 			
 			<div id="title" role="banner">
-				<h1 class="hideInXcode">PWLocationManagerError Constants Reference</h1>
+				<h1 class="hideInXcode">PWVBLocationManager Class Reference</h1>
 			</div>
 			<ul id="headerButtons" role="toolbar">
 				<li id="toc_button">
@@ -27,6 +27,28 @@
 	<option value="top">Jump To&#133;</option>
 	
 	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/location">&nbsp;&nbsp;&nbsp;&nbsp;location</option>
+	
+	<option value="//api/name/sdkToken">&nbsp;&nbsp;&nbsp;&nbsp;sdkToken</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/init">&nbsp;&nbsp;&nbsp;&nbsp;- init</option>
 	
 	
 	
@@ -40,12 +62,38 @@
 
 
 
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/location">location</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sdkToken">sdkToken</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/init">init</a></span></li>
+	
+</ul></li>
+
 
 			</ul>
 		</nav>
 		<article>
 			<div id="contents" class="isShowingTOC" role="main">
-				<a title="PWLocationManagerError Constants Reference" name="top"></a>
+				<a title="PWVBLocationManager Class Reference" name="top"></a>
 				<div class="main-navigation navigation-top">
 					<ul>
 	<li><a href="../index.html">Index</a></li>
@@ -54,15 +102,21 @@
 				</div>
 				<div id="header">
 					<div class="section-header">
-						<h1 class="title title-header">PWLocationManagerError Constants Reference</h1>
+						<h1 class="title title-header">PWVBLocationManager Class Reference</h1>
 					</div>		
 				</div>
 				<div id="container">	
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value"><a href="../Protocols/PWLocationManager.html">PWLocationManager</a></td>
+</tr><tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">PWLocationManager.h</td>
+	<td class="specification-value">PWVBLocationManager.h</td>
 </tr>
 						</tbody></table></div>
 					
@@ -71,179 +125,142 @@
 					
 					
 					
-					
-                    
-                    
-                    <h3 class="subsubtitle method-title">PWLocationManagerError</h3>
-                    
-					
-					<div class="section section-overview">
-                        <p><code>PWLocationManagerError</code> specifies the location manager&rsquo;s failed error codes.</p>
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/location">&nbsp;&nbsp;location</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sdkToken">&nbsp;&nbsp;sdkToken</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/init">&ndash;&nbsp;init</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
 					</div>
 					
 					
-                    <div class="section">
-                        <!-- display enum values -->
-                        
-                        <h4 class="method-subtitle">Definition</h4>
-                        <code>typedef NS_ENUM(NSUInteger, PWLocationManagerError ) {<br/>
-                            
-                            &nbsp;&nbsp; <a href="">PWLocationManagerErrorUnknown</a> = -1,<br/>
-                            
-                            &nbsp;&nbsp; <a href="">PWLocationManagerErrorBadRequest</a> = 400,<br/>
-                            
-                            &nbsp;&nbsp; <a href="">PWLocationManagerErrorUnauthorized</a> = 401,<br/>
-                            
-                            &nbsp;&nbsp; <a href="">PWLocationManagerErrorRequestTimeout</a> = 408,<br/>
-                            
-                            &nbsp;&nbsp; <a href="">PWLocationManagerErrorServiceUnavailable</a> = 503,<br/>
-                            
-                            &nbsp;&nbsp; <a href="">PWLocationManagerErrorMockDataInvalid</a> = 1000,<br/>
-                            
-                            &nbsp;&nbsp; <a href="">PWLocationManagerErrorUnconfirmLocation</a> = 1001,<br/>
-                            
-                            };</code>
-                    
-                    </div>
-                    
-                    <div class="section section-methods">
-                        <h4 class="method-subtitle">Constants</h4>
-                        <dl class="termdef">
-                            
-                            <dt><a name="" title="PWLocationManagerErrorUnknown"></a><code>PWLocationManagerErrorUnknown</code></dt>
-<dd>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/location" title="location"></a>
+	<h3 class="subsubtitle method-title">location</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The last indoor location received.</p>
+	</div>		
+	
+    
 
-
-<p>The error is unknown.</p>
-
-
-
-
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) PWIndoorLocation *location</code></div>
 
     
-	<p>
-		Declared In <code class="declared-in-ref">PWLocationManager.h</code>.
-	</p>
 	
-</dd>
-                            
-                            <dt><a name="" title="PWLocationManagerErrorBadRequest"></a><code>PWLocationManagerErrorBadRequest</code></dt>
-<dd>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PWVBLocationManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sdkToken" title="sdkToken"></a>
+	<h3 class="subsubtitle method-title">sdkToken</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The MIST SDK token, starts with D, S, or P.</p>
+	</div>		
+	
+    
 
-
-<p>A bad location request error.</p>
-
-
-
-
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSString *sdkToken</code></div>
 
     
-	<p>
-		Declared In <code class="declared-in-ref">PWLocationManager.h</code>.
-	</p>
 	
-</dd>
-                            
-                            <dt><a name="" title="PWLocationManagerErrorUnauthorized"></a><code>PWLocationManagerErrorUnauthorized</code></dt>
-<dd>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PWVBLocationManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/init" title="init"></a>
+	<h3 class="subsubtitle method-title">init</h3>
+	
+	
 
-
-<p>Not authorized to fetch location information.</p>
-
-
-
-
+	<div class="method-subsection method-declaration"><code>- (instancetype)init</code></div>
 
     
-	<p>
-		Declared In <code class="declared-in-ref">PWLocationManager.h</code>.
-	</p>
-	
-</dd>
-                            
-                            <dt><a name="" title="PWLocationManagerErrorRequestTimeout"></a><code>PWLocationManagerErrorRequestTimeout</code></dt>
-<dd>
-
-
-<p>The location request timed out.</p>
-
-
-
-
-
-    
-	<p>
-		Declared In <code class="declared-in-ref">PWLocationManager.h</code>.
-	</p>
-	
-</dd>
-                            
-                            <dt><a name="" title="PWLocationManagerErrorServiceUnavailable"></a><code>PWLocationManagerErrorServiceUnavailable</code></dt>
-<dd>
-
-
-<p>Location services are unavailable.</p>
-
-
-
-
-
-    
-	<p>
-		Declared In <code class="declared-in-ref">PWLocationManager.h</code>.
-	</p>
-	
-</dd>
-                            
-                            <dt><a name="" title="PWLocationManagerErrorMockDataInvalid"></a><code>PWLocationManagerErrorMockDataInvalid</code></dt>
-<dd>
-
-
-<p>Mock location data is invalid.</p>
-
-
-
-
-
-    
-	<p>
-		Declared In <code class="declared-in-ref">PWLocationManager.h</code>.
-	</p>
-	
-</dd>
-                            
-                            <dt><a name="" title="PWLocationManagerErrorUnconfirmLocation"></a><code>PWLocationManagerErrorUnconfirmLocation</code></dt>
-<dd>
-
-
-<p>Mock location data is invalid.</p>
-
-
-
-
-
-    
-	<p>
-		Declared In <code class="declared-in-ref">PWLocationManager.h</code>.
-	</p>
-	
-</dd>
-                            
-                        </dl>
-                    </div>
-                    
-                    
-                    
-                    
-
-                    
-                    
-                    
-                    <div class="method-subsection declared-in-section">
-                        <h4 class="method-subtitle">Declared In</h4>
-                        <code class="declared-in-ref">PWLocationManager.h</code><br />
-                    </div>				
-                    
+</div>
+						
+					</div>
+					
+					
                     
                     
                     
