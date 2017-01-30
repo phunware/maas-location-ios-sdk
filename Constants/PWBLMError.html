@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
-		<title>PWLocationManagerError Constants Reference</title>
+		<title>PWBLMError Constants Reference</title>
 		<meta id="xcode-display" name="xcode-display" content="render"/>
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
 		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
@@ -16,7 +16,7 @@
 			</div>
 			
 			<div id="title" role="banner">
-				<h1 class="hideInXcode">PWLocationManagerError Constants Reference</h1>
+				<h1 class="hideInXcode">PWBLMError Constants Reference</h1>
 			</div>
 			<ul id="headerButtons" role="toolbar">
 				<li id="toc_button">
@@ -45,7 +45,7 @@
 		</nav>
 		<article>
 			<div id="contents" class="isShowingTOC" role="main">
-				<a title="PWLocationManagerError Constants Reference" name="top"></a>
+				<a title="PWBLMError Constants Reference" name="top"></a>
 				<div class="main-navigation navigation-top">
 					<ul>
 	<li><a href="../index.html">Index</a></li>
@@ -54,7 +54,7 @@
 				</div>
 				<div id="header">
 					<div class="section-header">
-						<h1 class="title title-header">PWLocationManagerError Constants Reference</h1>
+						<h1 class="title title-header">PWBLMError Constants Reference</h1>
 					</div>		
 				</div>
 				<div id="container">	
@@ -62,7 +62,7 @@
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">PWLocationManager.h</td>
+	<td class="specification-value">PWBeaconProximityManager.h</td>
 </tr>
 						</tbody></table></div>
 					
@@ -74,33 +74,19 @@
 					
                     
                     
-                    <h3 class="subsubtitle method-title">PWLocationManagerError</h3>
+                    <h3 class="subsubtitle method-title">PWBLMError</h3>
                     
-					
-					<div class="section section-overview">
-                        <p><code>PWLocationManagerError</code> specifies the location manager&rsquo;s failed error codes.</p>
-					</div>
-					
-					
                     <div class="section">
                         <!-- display enum values -->
                         
                         <h4 class="method-subtitle">Definition</h4>
-                        <code>typedef NS_ENUM(NSUInteger, PWLocationManagerError ) {<br/>
+                        <code>typedef NS_ENUM(NSUInteger, PWBLMError ) {<br/>
                             
-                            &nbsp;&nbsp; <a href="">PWLocationManagerErrorUnknown</a> = -1,<br/>
+                            &nbsp;&nbsp; <a href="">PWBLMErrorRangingUnavailable</a>,<br/>
                             
-                            &nbsp;&nbsp; <a href="">PWLocationManagerErrorBadRequest</a> = 400,<br/>
+                            &nbsp;&nbsp; <a href="">PWBLMErrorRangingFailure</a>,<br/>
                             
-                            &nbsp;&nbsp; <a href="">PWLocationManagerErrorUnauthorized</a> = 401,<br/>
-                            
-                            &nbsp;&nbsp; <a href="">PWLocationManagerErrorRequestTimeout</a> = 408,<br/>
-                            
-                            &nbsp;&nbsp; <a href="">PWLocationManagerErrorServiceUnavailable</a> = 503,<br/>
-                            
-                            &nbsp;&nbsp; <a href="">PWLocationManagerErrorMockDataInvalid</a> = 1000,<br/>
-                            
-                            &nbsp;&nbsp; <a href="">PWLocationManagerErrorUnconfirmLocation</a> = 1001,<br/>
+                            &nbsp;&nbsp; <a href="">PWBLMErrorDenied</a>,<br/>
                             
                             };</code>
                     
@@ -110,121 +96,32 @@
                         <h4 class="method-subtitle">Constants</h4>
                         <dl class="termdef">
                             
-                            <dt><a name="" title="PWLocationManagerErrorUnknown"></a><code>PWLocationManagerErrorUnknown</code></dt>
+                            <dt><a name="" title="PWBLMErrorRangingUnavailable"></a><code>PWBLMErrorRangingUnavailable</code></dt>
 <dd>
-
-
-<p>The error is unknown.</p>
-
-
-
-
 
     
 	<p>
-		Declared In <code class="declared-in-ref">PWLocationManager.h</code>.
+		Declared In <code class="declared-in-ref">PWBeaconProximityManager.h</code>.
 	</p>
 	
 </dd>
                             
-                            <dt><a name="" title="PWLocationManagerErrorBadRequest"></a><code>PWLocationManagerErrorBadRequest</code></dt>
+                            <dt><a name="" title="PWBLMErrorRangingFailure"></a><code>PWBLMErrorRangingFailure</code></dt>
 <dd>
-
-
-<p>A bad location request error.</p>
-
-
-
-
 
     
 	<p>
-		Declared In <code class="declared-in-ref">PWLocationManager.h</code>.
+		Declared In <code class="declared-in-ref">PWBeaconProximityManager.h</code>.
 	</p>
 	
 </dd>
                             
-                            <dt><a name="" title="PWLocationManagerErrorUnauthorized"></a><code>PWLocationManagerErrorUnauthorized</code></dt>
+                            <dt><a name="" title="PWBLMErrorDenied"></a><code>PWBLMErrorDenied</code></dt>
 <dd>
-
-
-<p>Not authorized to fetch location information.</p>
-
-
-
-
 
     
 	<p>
-		Declared In <code class="declared-in-ref">PWLocationManager.h</code>.
-	</p>
-	
-</dd>
-                            
-                            <dt><a name="" title="PWLocationManagerErrorRequestTimeout"></a><code>PWLocationManagerErrorRequestTimeout</code></dt>
-<dd>
-
-
-<p>The location request timed out.</p>
-
-
-
-
-
-    
-	<p>
-		Declared In <code class="declared-in-ref">PWLocationManager.h</code>.
-	</p>
-	
-</dd>
-                            
-                            <dt><a name="" title="PWLocationManagerErrorServiceUnavailable"></a><code>PWLocationManagerErrorServiceUnavailable</code></dt>
-<dd>
-
-
-<p>Location services are unavailable.</p>
-
-
-
-
-
-    
-	<p>
-		Declared In <code class="declared-in-ref">PWLocationManager.h</code>.
-	</p>
-	
-</dd>
-                            
-                            <dt><a name="" title="PWLocationManagerErrorMockDataInvalid"></a><code>PWLocationManagerErrorMockDataInvalid</code></dt>
-<dd>
-
-
-<p>Mock location data is invalid.</p>
-
-
-
-
-
-    
-	<p>
-		Declared In <code class="declared-in-ref">PWLocationManager.h</code>.
-	</p>
-	
-</dd>
-                            
-                            <dt><a name="" title="PWLocationManagerErrorUnconfirmLocation"></a><code>PWLocationManagerErrorUnconfirmLocation</code></dt>
-<dd>
-
-
-<p>Mock location data is invalid.</p>
-
-
-
-
-
-    
-	<p>
-		Declared In <code class="declared-in-ref">PWLocationManager.h</code>.
+		Declared In <code class="declared-in-ref">PWBeaconProximityManager.h</code>.
 	</p>
 	
 </dd>
@@ -232,17 +129,6 @@
                         </dl>
                     </div>
                     
-                    
-                    
-                    
-
-                    
-                    
-                    
-                    <div class="method-subsection declared-in-section">
-                        <h4 class="method-subtitle">Declared In</h4>
-                        <code class="declared-in-ref">PWLocationManager.h</code><br />
-                    </div>				
                     
                     
                     
