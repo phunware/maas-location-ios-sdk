@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/PWFusedLocationManagerZoneConfiguration.html">
+	<File path="Classes/PWBeaconProximityRegion.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/PWFusedLocationManagerZoneConfiguration</TokenIdentifier>
-			<Abstract type="html">The &apos;PWFusedLocationManagerZoneConfiguration&apos; class relates a location manager to the zones where the location manager should be used.</Abstract>
-			<DeclaredIn>PWFusedLocationManagerZoneConfiguration.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/PWBeaconProximityRegion</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PWBeaconProximityRegion.h</DeclaredIn>
             
 			
 			<NodeRef refid="3"/>
@@ -13,97 +13,126 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWFusedLocationManagerZoneConfiguration/setLocationManager:</TokenIdentifier>
-			<Abstract type="html">The location manager object</Abstract>
-			<DeclaredIn>PWFusedLocationManagerZoneConfiguration+Private.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWBeaconProximityRegion/setRegion:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PWBeaconProximityRegion.h</DeclaredIn>
 			
-			<Declaration>@property (readonly) id&lt;PWLocationManager&gt; locationManager</Declaration>
+			<Declaration>@property (nonatomic, readonly) CLBeaconRegion *region</Declaration>
 			
 			
-			<Anchor>//api/name/locationManager</Anchor>
+			<Anchor>//api/name/region</Anchor>
             <NodeRef refid="3"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWFusedLocationManagerZoneConfiguration/locationManager</TokenIdentifier>
-			<Abstract type="html">The location manager object</Abstract>
-			<DeclaredIn>PWFusedLocationManagerZoneConfiguration+Private.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWBeaconProximityRegion/region</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PWBeaconProximityRegion.h</DeclaredIn>
 			
-			<Declaration>@property (readonly) id&lt;PWLocationManager&gt; locationManager</Declaration>
+			<Declaration>@property (nonatomic, readonly) CLBeaconRegion *region</Declaration>
 			
 			
-			<Anchor>//api/name/locationManager</Anchor>
+			<Anchor>//api/name/region</Anchor>
             <NodeRef refid="3"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWFusedLocationManagerZoneConfiguration/locationManager</TokenIdentifier>
-			<Abstract type="html">The location manager object</Abstract>
-			<DeclaredIn>PWFusedLocationManagerZoneConfiguration+Private.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/PWBeaconProximityRegion/region</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PWBeaconProximityRegion.h</DeclaredIn>
 			
-			<Declaration>@property (readonly) id&lt;PWLocationManager&gt; locationManager</Declaration>
+			<Declaration>@property (nonatomic, readonly) CLBeaconRegion *region</Declaration>
 			
 			
-			<Anchor>//api/name/locationManager</Anchor>
+			<Anchor>//api/name/region</Anchor>
             <NodeRef refid="3"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWFusedLocationManagerZoneConfiguration/setZones:</TokenIdentifier>
-			<Abstract type="html">An array of zones where the location manager should be used</Abstract>
-			<DeclaredIn>PWFusedLocationManagerZoneConfiguration+Private.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWBeaconProximityRegion/setCoordinate:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PWBeaconProximityRegion.h</DeclaredIn>
 			
-			<Declaration>@property (readonly) NSArray *zones</Declaration>
+			<Declaration>@property (nonatomic, readonly) CLLocationCoordinate2D coordinate</Declaration>
 			
 			
-			<Anchor>//api/name/zones</Anchor>
+			<Anchor>//api/name/coordinate</Anchor>
             <NodeRef refid="3"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWFusedLocationManagerZoneConfiguration/zones</TokenIdentifier>
-			<Abstract type="html">An array of zones where the location manager should be used</Abstract>
-			<DeclaredIn>PWFusedLocationManagerZoneConfiguration+Private.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWBeaconProximityRegion/coordinate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PWBeaconProximityRegion.h</DeclaredIn>
 			
-			<Declaration>@property (readonly) NSArray *zones</Declaration>
+			<Declaration>@property (nonatomic, readonly) CLLocationCoordinate2D coordinate</Declaration>
 			
 			
-			<Anchor>//api/name/zones</Anchor>
+			<Anchor>//api/name/coordinate</Anchor>
             <NodeRef refid="3"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWFusedLocationManagerZoneConfiguration/zones</TokenIdentifier>
-			<Abstract type="html">An array of zones where the location manager should be used</Abstract>
-			<DeclaredIn>PWFusedLocationManagerZoneConfiguration+Private.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/PWBeaconProximityRegion/coordinate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PWBeaconProximityRegion.h</DeclaredIn>
 			
-			<Declaration>@property (readonly) NSArray *zones</Declaration>
+			<Declaration>@property (nonatomic, readonly) CLLocationCoordinate2D coordinate</Declaration>
 			
 			
-			<Anchor>//api/name/zones</Anchor>
+			<Anchor>//api/name/coordinate</Anchor>
             <NodeRef refid="3"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWFusedLocationManagerZoneConfiguration/initWithLocationManager:zones:</TokenIdentifier>
-			<Abstract type="html">Initializes a &apos;PWFusedLocationManagerZoneConfiguration&apos; object with a location manager along with the zones where the location manager will be valid</Abstract>
-			<DeclaredIn>PWFusedLocationManagerZoneConfiguration.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWBeaconProximityRegion/setFloorIdentifier:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PWBeaconProximityRegion.h</DeclaredIn>
 			
-			<Declaration>- (instancetype)initWithLocationManager:(id&lt;PWLocationManager&gt;)locationManager zones:(NSArray *)zones</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>locationManager</Name>
-					<Abstract type="html">A location manager object</Abstract>
-				</Parameter><Parameter>
-					<Name>zones</Name>
-					<Abstract type="html">The zones where the location manager will be valid</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">An initialized &apos;PWFusedLocationManagerZoneConfiguration&apos; object.</Abstract></ReturnValue>
-			<Anchor>//api/name/initWithLocationManager:zones:</Anchor>
+			<Declaration>@property (nonatomic, readonly) NSUInteger floorIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/floorIdentifier</Anchor>
             <NodeRef refid="3"/>
 		</Token>
 		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWBeaconProximityRegion/floorIdentifier</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PWBeaconProximityRegion.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger floorIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/floorIdentifier</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWBeaconProximityRegion/floorIdentifier</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PWBeaconProximityRegion.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger floorIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/floorIdentifier</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWBeaconProximityRegion/initWithBeaconRegion:coordinate:floorIdentifier:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PWBeaconProximityRegion.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithBeaconRegion:(CLBeaconRegion *)region coordinate:(CLLocationCoordinate2D)coordinate floorIdentifier:(NSUInteger)floorIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/initWithBeaconRegion:coordinate:floorIdentifier:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+        
         
 	</File>
 </Tokens>

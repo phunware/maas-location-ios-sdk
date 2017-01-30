@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/PWMockLocationStep.html">
+	<File path="Classes/PWMSELocationManager.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/PWMockLocationStep</TokenIdentifier>
-			<Abstract type="html">A PWMockLocationStep object represents a discrete mock location step, which includes the PWIndoorLocation and an updateInterval property. Typically, this class isn&apos;t initialize directly.</Abstract>
-			<DeclaredIn>PWMockLocationStep.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/PWMSELocationManager</TokenIdentifier>
+			<Abstract type="html">The PWMSELocationManager class defines the interface for configuring the delivery of Cisco Mobility Services Engine (MSE) location-related events to your application. You use an instance of this class to establish the parameters that determine when location events should be delivered and to start and stop the actual delivery of those events. This class conforms to the PWLocationManager protocol.</Abstract>
+			<DeclaredIn>PWMSELocationManager.h</DeclaredIn>
             
 			
 			<NodeRef refid="10"/>
@@ -13,47 +13,83 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWMockLocationStep/setLocation:</TokenIdentifier>
-			<Abstract type="html">A location object with the updated location information. This object conforms to the PWLocation protocol.</Abstract>
-			<DeclaredIn>PWMockLocationStep.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWMSELocationManager/setVenueGUID:</TokenIdentifier>
+			<Abstract type="html">The venue GUID associated with the location manager. (read-only)</Abstract>
+			<DeclaredIn>PWMSELocationManager.h</DeclaredIn>
 			
-			<Declaration>@property (readonly) PWIndoorLocation *location</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *venueGUID</Declaration>
 			
 			
-			<Anchor>//api/name/location</Anchor>
+			<Anchor>//api/name/venueGUID</Anchor>
             <NodeRef refid="10"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWMockLocationStep/location</TokenIdentifier>
-			<Abstract type="html">A location object with the updated location information. This object conforms to the PWLocation protocol.</Abstract>
-			<DeclaredIn>PWMockLocationStep.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWMSELocationManager/venueGUID</TokenIdentifier>
+			<Abstract type="html">The venue GUID associated with the location manager. (read-only)</Abstract>
+			<DeclaredIn>PWMSELocationManager.h</DeclaredIn>
 			
-			<Declaration>@property (readonly) PWIndoorLocation *location</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *venueGUID</Declaration>
 			
 			
-			<Anchor>//api/name/location</Anchor>
+			<Anchor>//api/name/venueGUID</Anchor>
             <NodeRef refid="10"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWMockLocationStep/location</TokenIdentifier>
-			<Abstract type="html">A location object with the updated location information. This object conforms to the PWLocation protocol.</Abstract>
-			<DeclaredIn>PWMockLocationStep.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/PWMSELocationManager/venueGUID</TokenIdentifier>
+			<Abstract type="html">The venue GUID associated with the location manager. (read-only)</Abstract>
+			<DeclaredIn>PWMSELocationManager.h</DeclaredIn>
 			
-			<Declaration>@property (readonly) PWIndoorLocation *location</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *venueGUID</Declaration>
 			
 			
-			<Anchor>//api/name/location</Anchor>
+			<Anchor>//api/name/venueGUID</Anchor>
             <NodeRef refid="10"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWMockLocationStep/setUpdateInterval:</TokenIdentifier>
-			<Abstract type="html">The update interval for the mock location step.</Abstract>
-			<DeclaredIn>PWMockLocationStep.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWMSELocationManager/setFloorIDMapping:</TokenIdentifier>
+			<Abstract type="html">The floor ID mapping dictionary used to define the mapping between the location provider floor ID and the Phunware floor ID. The dictionary format must adhere to the following format: @{CUSTOMERFLOORID : PHUNWAREFLOOR_ID}.</Abstract>
+			<DeclaredIn>PWMSELocationManager.h</DeclaredIn>
 			
-			<Declaration>@property (readonly) NSTimeInterval updateInterval</Declaration>
+			<Declaration>@property (nonatomic, strong) NSDictionary *floorIDMapping</Declaration>
+			
+			
+			<Anchor>//api/name/floorIDMapping</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWMSELocationManager/floorIDMapping</TokenIdentifier>
+			<Abstract type="html">The floor ID mapping dictionary used to define the mapping between the location provider floor ID and the Phunware floor ID. The dictionary format must adhere to the following format: @{CUSTOMERFLOORID : PHUNWAREFLOOR_ID}.</Abstract>
+			<DeclaredIn>PWMSELocationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary *floorIDMapping</Declaration>
+			
+			
+			<Anchor>//api/name/floorIDMapping</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWMSELocationManager/floorIDMapping</TokenIdentifier>
+			<Abstract type="html">The floor ID mapping dictionary used to define the mapping between the location provider floor ID and the Phunware floor ID. The dictionary format must adhere to the following format: @{CUSTOMERFLOORID : PHUNWAREFLOOR_ID}.</Abstract>
+			<DeclaredIn>PWMSELocationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary *floorIDMapping</Declaration>
+			
+			
+			<Anchor>//api/name/floorIDMapping</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWMSELocationManager/setUpdateInterval:</TokenIdentifier>
+			<Abstract type="html">The interval seconds between location update retrieval.</Abstract>
+			<DeclaredIn>PWMSELocationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSTimeInterval updateInterval</Declaration>
 			
 			
 			<Anchor>//api/name/updateInterval</Anchor>
@@ -61,23 +97,11 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWMockLocationStep/updateInterval</TokenIdentifier>
-			<Abstract type="html">The update interval for the mock location step.</Abstract>
-			<DeclaredIn>PWMockLocationStep.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWMSELocationManager/updateInterval</TokenIdentifier>
+			<Abstract type="html">The interval seconds between location update retrieval.</Abstract>
+			<DeclaredIn>PWMSELocationManager.h</DeclaredIn>
 			
-			<Declaration>@property (readonly) NSTimeInterval updateInterval</Declaration>
-			
-			
-			<Anchor>//api/name/updateInterval</Anchor>
-            <NodeRef refid="10"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWMockLocationStep/updateInterval</TokenIdentifier>
-			<Abstract type="html">The update interval for the mock location step.</Abstract>
-			<DeclaredIn>PWMockLocationStep.h</DeclaredIn>
-			
-			<Declaration>@property (readonly) NSTimeInterval updateInterval</Declaration>
+			<Declaration>@property (nonatomic, assign) NSTimeInterval updateInterval</Declaration>
 			
 			
 			<Anchor>//api/name/updateInterval</Anchor>
@@ -85,22 +109,163 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/PWMockLocationStep/unpack:</TokenIdentifier>
-			<Abstract type="html">Initializes a PWMockLocation step object with the specified dictionary.</Abstract>
-			<DeclaredIn>PWMockLocationStep.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/PWMSELocationManager/updateInterval</TokenIdentifier>
+			<Abstract type="html">The interval seconds between location update retrieval.</Abstract>
+			<DeclaredIn>PWMSELocationManager.h</DeclaredIn>
 			
-			<Declaration>+ (PWMockLocationStep *)unpack:(NSDictionary *)dictionary</Declaration>
+			<Declaration>@property (nonatomic, assign) NSTimeInterval updateInterval</Declaration>
+			
+			
+			<Anchor>//api/name/updateInterval</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWMSELocationManager/setDefaultHorizontalAccuracy:</TokenIdentifier>
+			<Abstract type="html">The default horizontal accuracy radius to be used if none is present.</Abstract>
+			<DeclaredIn>PWMSELocationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CLLocationDistance defaultHorizontalAccuracy</Declaration>
+			
+			
+			<Anchor>//api/name/defaultHorizontalAccuracy</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWMSELocationManager/defaultHorizontalAccuracy</TokenIdentifier>
+			<Abstract type="html">The default horizontal accuracy radius to be used if none is present.</Abstract>
+			<DeclaredIn>PWMSELocationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CLLocationDistance defaultHorizontalAccuracy</Declaration>
+			
+			
+			<Anchor>//api/name/defaultHorizontalAccuracy</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWMSELocationManager/defaultHorizontalAccuracy</TokenIdentifier>
+			<Abstract type="html">The default horizontal accuracy radius to be used if none is present.</Abstract>
+			<DeclaredIn>PWMSELocationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CLLocationDistance defaultHorizontalAccuracy</Declaration>
+			
+			
+			<Anchor>//api/name/defaultHorizontalAccuracy</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWMSELocationManager/setLocation:</TokenIdentifier>
+			<Abstract type="html">The latest indoor location received from the Phunware location service.</Abstract>
+			<DeclaredIn>PWMSELocationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) PWIndoorLocation *location</Declaration>
+			
+			
+			<Anchor>//api/name/location</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWMSELocationManager/location</TokenIdentifier>
+			<Abstract type="html">The latest indoor location received from the Phunware location service.</Abstract>
+			<DeclaredIn>PWMSELocationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) PWIndoorLocation *location</Declaration>
+			
+			
+			<Anchor>//api/name/location</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWMSELocationManager/location</TokenIdentifier>
+			<Abstract type="html">The latest indoor location received from the Phunware location service.</Abstract>
+			<DeclaredIn>PWMSELocationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) PWIndoorLocation *location</Declaration>
+			
+			
+			<Anchor>//api/name/location</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWMSELocationManager/initWithVenueGUID:location:</TokenIdentifier>
+			<Abstract type="html">Initializes the location manager with the specified venue GUID and venue location.</Abstract>
+			<DeclaredIn>PWMSELocationManager.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithVenueGUID:(NSString *)venueGUID location:(CLLocationCoordinate2D)venueLocation</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>dictionary</Name>
-					<Abstract type="html">The dictionary which contains the PWLocationStep information.</Abstract>
+					<Name>venueGUID</Name>
+					<Abstract type="html">- The venue GUID is the specific venue identifier for a given indoor location.</Abstract>
+				</Parameter><Parameter>
+					<Name>venueLocation</Name>
+					<Abstract type="html">- The location of the venue.</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">Returns a PWLocationStep object.</Abstract></ReturnValue>
-			<Anchor>//api/name/unpack:</Anchor>
+			<ReturnValue><Abstract type="html">The location manager object.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithVenueGUID:location:</Anchor>
             <NodeRef refid="10"/>
 		</Token>
 		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWMSELocationManager/initWithVenueGUID:</TokenIdentifier>
+			<Abstract type="html">Initializes the location manager with the specified venue GUID.</Abstract>
+			<DeclaredIn>PWMSELocationManager.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithVenueGUID:(NSString *)venueGUID</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>venueGUID</Name>
+					<Abstract type="html">- The venue GUID is the specific venue identifier for a given indoor location.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The location manager object.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithVenueGUID:</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWMSELocationManager/locationServicesAvailable</TokenIdentifier>
+			<Abstract type="html">Returns a Boolean value indicating whether location services are enabled on the device.</Abstract>
+			<DeclaredIn>PWMSELocationManager.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)locationServicesAvailable</Declaration>
+			
+			
+			<Anchor>//api/name/locationServicesAvailable</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWMSELocationManager/startUpdatingLocation</TokenIdentifier>
+			<Abstract type="html">Starts the generation of updates that report the user’s current location.</Abstract>
+			<DeclaredIn>PWMSELocationManager.h</DeclaredIn>
+			
+			<Declaration>- (void)startUpdatingLocation</Declaration>
+			
+			
+			<Anchor>//api/name/startUpdatingLocation</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWMSELocationManager/stopUpdatingLocation</TokenIdentifier>
+			<Abstract type="html">Stops the generation of location updates.</Abstract>
+			<DeclaredIn>PWMSELocationManager.h</DeclaredIn>
+			
+			<Declaration>- (void)stopUpdatingLocation</Declaration>
+			
+			
+			<Anchor>//api/name/stopUpdatingLocation</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+        
         
 	</File>
 </Tokens>

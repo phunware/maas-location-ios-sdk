@@ -26,7 +26,6 @@
 /**
  The floor ID mapping dictionary used to define the mapping between the location provider floor ID and the Phunware floor ID. The dictionary format must adhere to the following format: `@{CUSTOMER_FLOORID : PHUNWARE_FLOOR_ID}`.
  */
-
 @property (nonatomic, strong) NSDictionary *floorIDMapping;
 
 /**

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Protocols/PWGPSLocationManagerDelegate.html">
+	<File path="Classes/PWManagedLocationManager.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intf/PWGPSLocationManagerDelegate</TokenIdentifier>
-			<Abstract type="html">The PWMSELocationManagerDelegate protocol defines the methods used to receive location updates from a PWMSELocationManager object. This class conforms to the PWLocationManagerDelegate protocol.</Abstract>
-			<DeclaredIn>PWGPSLocationManager.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/PWManagedLocationManager</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PWManagedLocationManager.h</DeclaredIn>
             
 			
 			<NodeRef refid="12"/>
@@ -13,45 +13,299 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/PWGPSLocationManagerDelegate/locationManager:didUpdateToLocation:</TokenIdentifier>
-			<Abstract type="html">Tells the delegate that a new location update is available.</Abstract>
-			<DeclaredIn>PWGPSLocationManager.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWManagedLocationManager/setBuildingId:</TokenIdentifier>
+			<Abstract type="html">The building identifier.</Abstract>
+			<DeclaredIn>PWManagedLocationManager.h</DeclaredIn>
 			
-			<Declaration>- (void)locationManager:(PWGPSLocationManager *)manager didUpdateToLocation:(id&lt;PWLocation&gt;)location</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>manager</Name>
-					<Abstract type="html">The location manager object that generated the update event.</Abstract>
-				</Parameter><Parameter>
-					<Name>location</Name>
-					<Abstract type="html">A location object with the updated location information. This object conforms to the PWLocation protocol.</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>@property (nonatomic, readonly) NSInteger buildingId</Declaration>
 			
-			<Anchor>//api/name/locationManager:didUpdateToLocation:</Anchor>
+			
+			<Anchor>//api/name/buildingId</Anchor>
             <NodeRef refid="12"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/PWGPSLocationManagerDelegate/locationManager:failedWithError:</TokenIdentifier>
-			<Abstract type="html">Tells the delegate that the location manager was unable to retrieve a location value.</Abstract>
-			<DeclaredIn>PWGPSLocationManager.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWManagedLocationManager/buildingId</TokenIdentifier>
+			<Abstract type="html">The building identifier.</Abstract>
+			<DeclaredIn>PWManagedLocationManager.h</DeclaredIn>
 			
-			<Declaration>- (void)locationManager:(PWGPSLocationManager *)manager failedWithError:(NSError *)error</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>manager</Name>
-					<Abstract type="html">The location manager object that was unable to retrieve the location.</Abstract>
-				</Parameter><Parameter>
-					<Name>error</Name>
-					<Abstract type="html">The error object containing the reason the location could not be retrieved.</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>@property (nonatomic, readonly) NSInteger buildingId</Declaration>
 			
-			<Anchor>//api/name/locationManager:failedWithError:</Anchor>
+			
+			<Anchor>//api/name/buildingId</Anchor>
             <NodeRef refid="12"/>
 		</Token>
 		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWManagedLocationManager/buildingId</TokenIdentifier>
+			<Abstract type="html">The building identifier.</Abstract>
+			<DeclaredIn>PWManagedLocationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger buildingId</Declaration>
+			
+			
+			<Anchor>//api/name/buildingId</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWManagedLocationManager/setSenionCustomerID:</TokenIdentifier>
+			<Abstract type="html">The customer identifier for SenionLab</Abstract>
+			<DeclaredIn>PWManagedLocationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *senionCustomerID</Declaration>
+			
+			
+			<Anchor>//api/name/senionCustomerID</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWManagedLocationManager/senionCustomerID</TokenIdentifier>
+			<Abstract type="html">The customer identifier for SenionLab</Abstract>
+			<DeclaredIn>PWManagedLocationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *senionCustomerID</Declaration>
+			
+			
+			<Anchor>//api/name/senionCustomerID</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWManagedLocationManager/senionCustomerID</TokenIdentifier>
+			<Abstract type="html">The customer identifier for SenionLab</Abstract>
+			<DeclaredIn>PWManagedLocationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *senionCustomerID</Declaration>
+			
+			
+			<Anchor>//api/name/senionCustomerID</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWManagedLocationManager/setSenionMapID:</TokenIdentifier>
+			<Abstract type="html">The map identifier for SenionLab</Abstract>
+			<DeclaredIn>PWManagedLocationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *senionMapID</Declaration>
+			
+			
+			<Anchor>//api/name/senionMapID</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWManagedLocationManager/senionMapID</TokenIdentifier>
+			<Abstract type="html">The map identifier for SenionLab</Abstract>
+			<DeclaredIn>PWManagedLocationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *senionMapID</Declaration>
+			
+			
+			<Anchor>//api/name/senionMapID</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWManagedLocationManager/senionMapID</TokenIdentifier>
+			<Abstract type="html">The map identifier for SenionLab</Abstract>
+			<DeclaredIn>PWManagedLocationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *senionMapID</Declaration>
+			
+			
+			<Anchor>//api/name/senionMapID</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWManagedLocationManager/setVirtualBeaconToken:</TokenIdentifier>
+			<Abstract type="html">The SDK token for virtual beacon of Cisco/Mist</Abstract>
+			<DeclaredIn>PWManagedLocationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *virtualBeaconToken</Declaration>
+			
+			
+			<Anchor>//api/name/virtualBeaconToken</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWManagedLocationManager/virtualBeaconToken</TokenIdentifier>
+			<Abstract type="html">The SDK token for virtual beacon of Cisco/Mist</Abstract>
+			<DeclaredIn>PWManagedLocationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *virtualBeaconToken</Declaration>
+			
+			
+			<Anchor>//api/name/virtualBeaconToken</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWManagedLocationManager/virtualBeaconToken</TokenIdentifier>
+			<Abstract type="html">The SDK token for virtual beacon of Cisco/Mist</Abstract>
+			<DeclaredIn>PWManagedLocationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *virtualBeaconToken</Declaration>
+			
+			
+			<Anchor>//api/name/virtualBeaconToken</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWManagedLocationManager/setCmxVenueGUID:</TokenIdentifier>
+			<Abstract type="html">The venue GUID for CMX</Abstract>
+			<DeclaredIn>PWManagedLocationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readonly) NSString *cmxVenueGUID</Declaration>
+			
+			
+			<Anchor>//api/name/cmxVenueGUID</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWManagedLocationManager/cmxVenueGUID</TokenIdentifier>
+			<Abstract type="html">The venue GUID for CMX</Abstract>
+			<DeclaredIn>PWManagedLocationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readonly) NSString *cmxVenueGUID</Declaration>
+			
+			
+			<Anchor>//api/name/cmxVenueGUID</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWManagedLocationManager/cmxVenueGUID</TokenIdentifier>
+			<Abstract type="html">The venue GUID for CMX</Abstract>
+			<DeclaredIn>PWManagedLocationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readonly) NSString *cmxVenueGUID</Declaration>
+			
+			
+			<Anchor>//api/name/cmxVenueGUID</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWManagedLocationManager/setLocation:</TokenIdentifier>
+			<Abstract type="html">The last indoor location received.</Abstract>
+			<DeclaredIn>PWManagedLocationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) PWIndoorLocation *location</Declaration>
+			
+			
+			<Anchor>//api/name/location</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWManagedLocationManager/location</TokenIdentifier>
+			<Abstract type="html">The last indoor location received.</Abstract>
+			<DeclaredIn>PWManagedLocationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) PWIndoorLocation *location</Declaration>
+			
+			
+			<Anchor>//api/name/location</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWManagedLocationManager/location</TokenIdentifier>
+			<Abstract type="html">The last indoor location received.</Abstract>
+			<DeclaredIn>PWManagedLocationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) PWIndoorLocation *location</Declaration>
+			
+			
+			<Anchor>//api/name/location</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWManagedLocationManager/setFloorIDMapping:</TokenIdentifier>
+			<Abstract type="html">The floor ID mapping dictionary used to define the mapping between the location provider floor ID and the Phunware floor ID. The dictionary format must adhere to the following format: @{CUSTOMERFLOORID : PHUNWAREFLOOR_ID}.</Abstract>
+			<DeclaredIn>PWManagedLocationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary *floorIDMapping</Declaration>
+			
+			
+			<Anchor>//api/name/floorIDMapping</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWManagedLocationManager/floorIDMapping</TokenIdentifier>
+			<Abstract type="html">The floor ID mapping dictionary used to define the mapping between the location provider floor ID and the Phunware floor ID. The dictionary format must adhere to the following format: @{CUSTOMERFLOORID : PHUNWAREFLOOR_ID}.</Abstract>
+			<DeclaredIn>PWManagedLocationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary *floorIDMapping</Declaration>
+			
+			
+			<Anchor>//api/name/floorIDMapping</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWManagedLocationManager/floorIDMapping</TokenIdentifier>
+			<Abstract type="html">The floor ID mapping dictionary used to define the mapping between the location provider floor ID and the Phunware floor ID. The dictionary format must adhere to the following format: @{CUSTOMERFLOORID : PHUNWAREFLOOR_ID}.</Abstract>
+			<DeclaredIn>PWManagedLocationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary *floorIDMapping</Declaration>
+			
+			
+			<Anchor>//api/name/floorIDMapping</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWManagedLocationManager/initWithBuildingId:</TokenIdentifier>
+			<Abstract type="html">Initialize with a building identifier.</Abstract>
+			<DeclaredIn>PWManagedLocationManager.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithBuildingId:(NSInteger)buildingId</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>buildingId</Name>
+					<Abstract type="html">The building identifier.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/initWithBuildingId:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWManagedLocationManager/init</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PWManagedLocationManager.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)init</Declaration>
+			
+			
+			<Anchor>//api/name/init</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PWManagedLocationManager/createWithBundleURL:completion:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PWManagedLocationManager.h</DeclaredIn>
+			
+			<Declaration>+ (void)createWithBundleURL:(NSURL *)bundleURL completion:(void ( ^ ) ( PWManagedLocationManager *managedLocationManager , NSError *error ))completion</Declaration>
+			
+			
+			<Anchor>//api/name/createWithBundleURL:completion:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+        
         
 	</File>
 </Tokens>

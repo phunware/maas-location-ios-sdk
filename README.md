@@ -1,24 +1,19 @@
 PWLocation SDK for iOS
 ================
 
->Version 3.0.1
+>Version 3.1.0
 
 This is Phunware's iOS SDK for the Location module. Visit http://maas.phunware.com/ for more details and to sign up.
 
 Requirements
 ------------
 
+- PWCore v3.0.3 or greater
+- PW_Mist which is in Phunware private repo (Please contact Phunware customer support to get access)
 - iOS 8.0 or greater
 - Xcode 7 or greater
 
-Getting Started
----------------
-
-- [Download PWLocation](https://github.com/phunware/maas-location-ios-sdk/archive/master.zip) and run the included sample app.
-- Continue reading below for installation and integration instructions.
-- Be sure to read the [documentation](http://phunware.github.io/maas-location-ios-sdk/) for additional details.
-
-
+NOTE: You need to add the `source 'ssh://git@bitbucket.phunware.com:7999/misc/cocoapods-sdk-ios.git'` to your `Podfile` once you get access Phunware private repo.
 
 Installation
 ------------

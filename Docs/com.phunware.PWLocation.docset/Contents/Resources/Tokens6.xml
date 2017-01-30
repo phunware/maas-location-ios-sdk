@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/PWLocation.html">
+	<File path="Classes/PWFusedLocationManagerZoneConfiguration.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/PWLocation</TokenIdentifier>
-			<Abstract type="html">PWLocation is a location provider SDK. This SDK encompasses a variety of indoor location providers and can be used in conjunction with PWMapKit to delivery and display indoor location location updates.</Abstract>
-			<DeclaredIn>PWLocation.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/PWFusedLocationManagerZoneConfiguration</TokenIdentifier>
+			<Abstract type="html">The &apos;PWFusedLocationManagerZoneConfiguration&apos; class relates a location manager to the zones where the location manager should be used.</Abstract>
+			<DeclaredIn>PWFusedLocationManagerZoneConfiguration.h</DeclaredIn>
             
 			
 			<NodeRef refid="6"/>
@@ -13,17 +13,98 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/PWLocation/serviceName</TokenIdentifier>
-			<Abstract type="html">Returns the name of the SDK, PWLocation.</Abstract>
-			<DeclaredIn>PWLocation.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWFusedLocationManagerZoneConfiguration/setLocationManager:</TokenIdentifier>
+			<Abstract type="html">The location manager object</Abstract>
+			<DeclaredIn>PWFusedLocationManagerZoneConfiguration.h</DeclaredIn>
 			
-			<Declaration>+ (NSString *)serviceName</Declaration>
+			<Declaration>@property (readonly) id&lt;PWLocationManager&gt; locationManager</Declaration>
 			
 			
-			<Anchor>//api/name/serviceName</Anchor>
+			<Anchor>//api/name/locationManager</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWFusedLocationManagerZoneConfiguration/locationManager</TokenIdentifier>
+			<Abstract type="html">The location manager object</Abstract>
+			<DeclaredIn>PWFusedLocationManagerZoneConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) id&lt;PWLocationManager&gt; locationManager</Declaration>
+			
+			
+			<Anchor>//api/name/locationManager</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWFusedLocationManagerZoneConfiguration/locationManager</TokenIdentifier>
+			<Abstract type="html">The location manager object</Abstract>
+			<DeclaredIn>PWFusedLocationManagerZoneConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) id&lt;PWLocationManager&gt; locationManager</Declaration>
+			
+			
+			<Anchor>//api/name/locationManager</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWFusedLocationManagerZoneConfiguration/setZones:</TokenIdentifier>
+			<Abstract type="html">An array of zones where the location manager should be used</Abstract>
+			<DeclaredIn>PWFusedLocationManagerZoneConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) NSArray *zones</Declaration>
+			
+			
+			<Anchor>//api/name/zones</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWFusedLocationManagerZoneConfiguration/zones</TokenIdentifier>
+			<Abstract type="html">An array of zones where the location manager should be used</Abstract>
+			<DeclaredIn>PWFusedLocationManagerZoneConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) NSArray *zones</Declaration>
+			
+			
+			<Anchor>//api/name/zones</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWFusedLocationManagerZoneConfiguration/zones</TokenIdentifier>
+			<Abstract type="html">An array of zones where the location manager should be used</Abstract>
+			<DeclaredIn>PWFusedLocationManagerZoneConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) NSArray *zones</Declaration>
+			
+			
+			<Anchor>//api/name/zones</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWFusedLocationManagerZoneConfiguration/initWithLocationManager:zones:</TokenIdentifier>
+			<Abstract type="html">Initializes a &apos;PWFusedLocationManagerZoneConfiguration&apos; object with a location manager along with the zones where the location manager will be valid</Abstract>
+			<DeclaredIn>PWFusedLocationManagerZoneConfiguration.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithLocationManager:(id&lt;PWLocationManager&gt;)locationManager zones:(NSArray *)zones</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>locationManager</Name>
+					<Abstract type="html">A location manager object</Abstract>
+				</Parameter><Parameter>
+					<Name>zones</Name>
+					<Abstract type="html">The zones where the location manager will be valid</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An initialized &apos;PWFusedLocationManagerZoneConfiguration&apos; object.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithLocationManager:zones:</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+        
         
 	</File>
 </Tokens>

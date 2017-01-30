@@ -13,6 +13,8 @@
 #import <PWLocation/PWLocationManager.h>
 #import <PWLocation/PWMSELocationManager.h>
 #import <PWLocation/PWSLLocationManager.h>
+#import <PWLocation/PWVBLocationManager.h>
+#import <PWLocation/PWManagedLocationManager.h>
 #import <PWLocation/PWGPSLocationManager.h>
 #import <PWLocation/PWMockLocationManager.h>
 #import <PWLocation/PWMockLocationManagerConfiguration.h>

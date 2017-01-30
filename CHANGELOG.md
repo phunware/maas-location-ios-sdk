@@ -1,5 +1,9 @@
 # PWLocation CHANGELOG
 
+##3.1.0 (Friday, Jan 27th, 2017)
+* Initial release of Managed Provider.
+* Upgrade SenionLab SDK from v4.8.0 to v4.9.0.
+
 ##3.0.1 (Monday, October 24th, 2016)
 * Upgrade SenionLab SDK from v4.5.4 to v4.8.0.
 
