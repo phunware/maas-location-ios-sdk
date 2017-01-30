@@ -14,6 +14,7 @@ Pod::Spec.new do |s|
   s.dependency 'PWCore'
   s.dependency 'PW_Mist'
 
+  s.ios.library = 'c++'
   s.ios.frameworks = 'Security', 'QuartzCore', 'SystemConfiguration', 'MobileCoreServices', 'CoreTelephony', 'CoreBluetooth', 'CoreMotion', 'CoreLocation', 'MapKit'
   s.library = 'sqlite3', 'z', 'xml2.2'
   s.requires_arc = true

@@ -9,9 +9,11 @@ Requirements
 ------------
 
 - PWCore v3.0.3 or greater
-- PW_Mist which is in Phunware private repo (Please contact Phunware customer to get access)
+- PW_Mist which is in Phunware private repo (Please contact Phunware customer support to get access)
 - iOS 8.0 or greater
 - Xcode 7 or greater
+
+NOTE: You need to add the `source 'ssh://git@bitbucket.phunware.com:7999/misc/cocoapods-sdk-ios.git'` to your `Podfile` once you get access Phunware private repo.
 
 Installation
 ------------
