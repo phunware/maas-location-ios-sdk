@@ -12,8 +12,6 @@ Requirements
 - iOS 8.0 or greater
 - Xcode 7 or greater
 
-NOTE: You need to add the `source 'ssh://git@bitbucket.phunware.com:7999/misc/cocoapods-sdk-ios.git'` to your `Podfile` once you get access Phunware private repo.
-
 Installation
 ------------
 
