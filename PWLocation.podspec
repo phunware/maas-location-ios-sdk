@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
   s.social_media_url = 'https://twitter.com/Phunware'
 
   s.platform     = :ios, '8.0'
-  s.source       = { :git => "https://github.com/xwang-phunware/maas-location-ios-sdk.git", :tag => "v3.1.0" }
+  s.source       = { :git => "https://github.com/phunware/maas-location-ios-sdk.git", :tag => "v3.1.0" }
   s.license      = { :type => 'Copyright', :text => 'Copyright 2014 by Phunware Inc. All rights reserved.' }
 
   s.ios.vendored_frameworks = 'Framework/PWLocation.framework'
