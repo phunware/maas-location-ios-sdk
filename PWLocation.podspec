@@ -10,8 +10,9 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/xwang-phunware/maas-location-ios-sdk.git", :tag => "v3.1.0" }
   s.license      = { :type => 'Copyright', :text => 'Copyright 2014 by Phunware Inc. All rights reserved.' }
 
-  s.ios.vendored_frameworks = 'Framework/PWLocation.framework', 'Framework/Vendor/MistSDK.framework'
+  s.ios.vendored_frameworks = 'Framework/PWLocation.framework'
   s.dependency 'PWCore'
+  s.dependency 'MistSDK'
 
   s.ios.library = 'c++'
   s.ios.frameworks = 'Security', 'QuartzCore', 'SystemConfiguration', 'MobileCoreServices', 'CoreTelephony', 'CoreBluetooth', 'CoreMotion', 'CoreLocation', 'MapKit'

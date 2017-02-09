@@ -9,7 +9,6 @@ Requirements
 ------------
 
 - PWCore v3.0.3 or greater
-- PW_Mist which is in Phunware private repo (Please contact Phunware customer support to get access)
 - iOS 8.0 or greater
 - Xcode 7 or greater
 
@@ -47,6 +46,17 @@ Integration
 -----------
 
 `PWLocation` is meant to be used in conjunction with PWMapKit but can be used as a standalone SDK.
+
+## PWCore Setup
+
+Some PWCore configuration is required to use any provider in PWLocation. In the MaaS portal, retrieve your application identifier, signature key, access key, and encryption key (if you have one). In your application's AppDelegate, add the following:
+
+````objective-c
+[PWCore setApplicationID:@"YOUR_APPLICATION_IDENTIFIER"
+               accessKey:@"YOUR_ACCESS_KEY"
+            signatureKey:@"YOUR_SIGNATURE_KEY"
+           encryptionKey:@"YOUR_ENCRYPTION_KEY"]; // If you do not have an encryption key, just pass an empty string here i.e. @""
+````
 
 ## PWMSELocationManager
 
@@ -92,8 +102,6 @@ manager.senionCustomerID = @"YOUR_SENION_CUSTOMER_ID";
 manager.senionMapID = @"YOUR_SENION_MAP_ID";
 // If using virtual beacon
 manager.virtualBeaconToken = @"YOUR_VIRTUAL_BEACON_SDK_TOKEN";
-// If using CMX
-manager.cmxVenueGUID = @"YOUR_CMX_VENUE_GUID";
 
 // Start fetching location updates:
 [manager startUpdatingLocation];
