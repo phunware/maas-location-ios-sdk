@@ -55,4 +55,9 @@
 
 + (void)createWithBundleURL:(NSURL *)bundleURL completion:(void(^)(PWManagedLocationManager *managedLocationManager, NSError *error))completion;
 
+/**
+ Returns an array of PWManagedProviderInfo objects. Each provider will have its own PWManagedProviderInfo object. This will return nothing if the bundle has not already been loaded by a completed startUpdatingLocation call.
+ */
+- (NSArray *)internalProviderInformation;
+
 @end

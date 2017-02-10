@@ -12,6 +12,7 @@ Pod::Spec.new do |s|
 
   s.ios.vendored_frameworks = 'Framework/PWLocation.framework'
   s.dependency 'PWCore'
+  s.dependency 'MistSDK'
 
   s.ios.library = 'c++'
   s.ios.frameworks = 'Security', 'QuartzCore', 'SystemConfiguration', 'MobileCoreServices', 'CoreTelephony', 'CoreBluetooth', 'CoreMotion', 'CoreLocation', 'MapKit'
