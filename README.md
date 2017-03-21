@@ -105,7 +105,7 @@ manager.virtualBeaconToken = @"YOUR_VIRTUAL_BEACON_SDK_TOKEN";
 [manager startUpdatingLocation];
 ````
 
-NOTE: If using a virtual beacon provider such as Mist or Beacon Point, the "Uses Bluetooth LE accessories" background mode must be enabled in the "Capabilities" tab of your project's settings.
+NOTE: If using a virtual beacon provider such as Mist or Beacon Point with PWManagedLocationManager, the "Uses Bluetooth LE accessories" background mode must be enabled in the "Capabilities" tab of your project's settings.
 
 ## PWVBLocationManager
 
