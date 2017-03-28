@@ -1,8 +1,9 @@
 # PWLocation CHANGELOG
 
 ##3.1.1 (Tuesday, Mar 28th, 2017)
-* Improve Azul algorithm.
-
+* Improve algorithm for managed location provider.
+* Add Mist location provider.
+* Remove `VB token/Senion credential/CMX GUID` properties from PWManagedLocationManager, which can be read from bundle.
 
 ##3.1.0 (Friday, Jan 27th, 2017)
 * Initial release of Managed Provider.
