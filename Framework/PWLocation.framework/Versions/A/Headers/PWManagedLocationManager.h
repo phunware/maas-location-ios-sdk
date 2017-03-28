@@ -16,26 +16,6 @@
 @property (nonatomic, readonly) NSInteger buildingId;
 
 /**
- The customer identifier for SenionLab
- */
-@property (nonatomic, strong) NSString *senionCustomerID;
-
-/**
- The map identifier for SenionLab
- */
-@property (nonatomic, strong) NSString *senionMapID;
-
-/**
- The SDK token for virtual beacon of Cisco/Mist
- */
-@property (nonatomic, strong) NSString *virtualBeaconToken;
-
-/**
- The venue GUID for CMX
- */
-@property (nonatomic, strong, readonly) NSString *cmxVenueGUID;
-
-/**
  The last indoor location received.
  */
 @property (nonatomic, readonly) PWIndoorLocation *location;
