@@ -54,6 +54,7 @@ extern NSString * const kFloorLongitudeKey;
          "latitude" : 30.359737
      }
  }
+ @param completion Block called when PWBPLocationManager has been initialized. Gives the manager object or error if there was one.
  */
 + (void)createBPWithSDKToken:(NSString *)sdkToken floorConfigurations:(NSArray *)floorConfigurations onComplete:(void(^)(PWBPLocationManager *manager, NSError *error))completion;
 
@@ -77,6 +78,7 @@ extern NSString * const kFloorLongitudeKey;
          "latitude" : 30.359737
      }
  }
+ @param completion Block called when PWMSLocationManager has been initialized. Gives the manager object or error if there was one.
  */
 + (void)createMSWithSDKToken:(NSString *)sdkToken floorConfigurations:(NSArray *)floorConfigurations onComplete:(void(^)(PWMSLocationManager *manager, NSError *error))completion;
 
