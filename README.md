@@ -105,6 +105,8 @@ manager.virtualBeaconToken = @"YOUR_VIRTUAL_BEACON_SDK_TOKEN";
 [manager startUpdatingLocation];
 ````
 
+NOTE: If using a virtual beacon provider such as Mist or Beacon Point with PWManagedLocationManager, the "Uses Bluetooth LE accessories" background mode must be enabled in the "Capabilities" tab of your project's settings.
+
 ## PWVBLocationManager
 
 The `PWVBLocationManager` class is the parent class to both flavors of virtual beacon location managers: `PWBPLocationManager` (Beacon Point) and `PWMSLocationManager` (Mist). They are both created with similar functions which require an virtual beacon SDK Token, a floor configuration array, and a completion block.
@@ -147,6 +149,8 @@ The floor configurations array contains a configuration dictionary for each floo
     }
 }];
 ````
+
+NOTE: If using a virtual beacon provider such as Mist or Beacon Point, the "Uses Bluetooth LE accessories" background mode must be enabled in the "Capabilities" tab of your project's settings.
 
 ## PWMockLocationManager
 
