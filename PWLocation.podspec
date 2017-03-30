@@ -7,13 +7,12 @@ Pod::Spec.new do |s|
   s.social_media_url = 'https://twitter.com/Phunware'
 
   s.platform     = :ios, '9.0'
-  s.source       = { :http => "http://lbs-prod.s3.amazonaws.com/sdk/ios/PWLocation/3.1.1/PWLocation.3.1.1.zip" }
+  s.source       = { :git => "https://github.com/phunware/maas-location-ios-sdk.git", :tag => "v3.1.1" }
   s.license      = { :type => 'Copyright', :text => 'Copyright 2014 by Phunware Inc. All rights reserved.' }
 
   s.ios.vendored_frameworks = 'Framework/PWLocation.framework'
   s.dependency 'PWCore'
   s.dependency 'MistSDK'
-  s.dependency 'TMCache'
 
   s.ios.library = 'c++'
   s.ios.frameworks = 'Security', 'QuartzCore', 'SystemConfiguration', 'MobileCoreServices', 'CoreTelephony', 'CoreBluetooth', 'CoreMotion', 'CoreLocation', 'MapKit'
