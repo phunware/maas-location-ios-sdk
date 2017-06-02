@@ -111,7 +111,7 @@ NOTE: If using a virtual beacon provider such as Mist or Beacon Point with PWMan
 
 The `PWVBLocationManager` class is the parent class to both flavors of virtual beacon location managers: `PWBPLocationManager` (Beacon Point) and `PWMSLocationManager` (Mist). They are both created with similar functions which require an virtual beacon SDK Token, a floor configuration array, and a completion block.
 
-The floor configurations array contains a configuration dictionary for each floor. The dictionaries contain a virtual beacon floor name `(NSString *)`, a matching MaaS floor identifier `(NSNumber *)`, an upper left coordinate dictionary, and a lower right coordinate dictionary. The top left, top right, and bottom left coordinate dictionaries contain latitude/longitude coordinates that match to the top left, the top right, and the bottom left of the virtual beacon map, respectively. Example floor configuration dictionary:
+The floor configurations array contains a configuration dictionary for each floor. The dictionaries contain a virtual beacon floor name `(NSString *)`, a matching MaaS floor identifier `(NSNumber *)`, a top left coordinate dictionary, a top right coordinate dictionary, and a bottom left coordinate dictionary. The top left, top right, and bottom left coordinate dictionaries contain latitude/longitude coordinates that match to the top left, the top right, and the bottom left of the virtual beacon map, respectively. Example floor configuration dictionary:
 ````
 {
     "id" : @"MIST_FLOOR_NAME",
