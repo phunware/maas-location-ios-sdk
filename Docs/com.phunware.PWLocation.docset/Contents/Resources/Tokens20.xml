@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Protocols/PWLocation.html">
+	<File path="Protocols/PWGPSLocationManagerDelegate.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intf/PWLocation</TokenIdentifier>
-			<Abstract type="html">The PWLocation is an abstract protocol that defines an indoor location. This protocol is primarily used for user-requested directions and for displaying the user&apos;s location on an indoor map.</Abstract>
-			<DeclaredIn>PWLocationProtocol.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intf/PWGPSLocationManagerDelegate</TokenIdentifier>
+			<Abstract type="html">The PWMSELocationManagerDelegate protocol defines the methods used to receive location updates from a PWMSELocationManager object. This class conforms to the PWLocationManagerDelegate protocol.</Abstract>
+			<DeclaredIn>PWGPSLocationManager.h</DeclaredIn>
             
 			
 			<NodeRef refid="20"/>
@@ -13,146 +13,42 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/PWLocation/setCoordinate:</TokenIdentifier>
-			<Abstract type="html">The latitude and longitude coordinates of the indoor location. (read-only)</Abstract>
-			<DeclaredIn>PWLocationProtocol.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intfm/PWGPSLocationManagerDelegate/locationManager:didUpdateToLocation:</TokenIdentifier>
+			<Abstract type="html">Tells the delegate that a new location update is available.</Abstract>
+			<DeclaredIn>PWGPSLocationManager.h</DeclaredIn>
 			
-			<Declaration>@property (readonly) CLLocationCoordinate2D coordinate</Declaration>
+			<Declaration>- (void)locationManager:(PWGPSLocationManager *)manager didUpdateToLocation:(id&lt;PWLocation&gt;)location</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>manager</Name>
+					<Abstract type="html">The location manager object that generated the update event.</Abstract>
+				</Parameter><Parameter>
+					<Name>location</Name>
+					<Abstract type="html">A location object with the updated location information. This object conforms to the PWLocation protocol.</Abstract>
+				</Parameter>
+			</Parameters>
 			
-			
-			<Anchor>//api/name/coordinate</Anchor>
+			<Anchor>//api/name/locationManager:didUpdateToLocation:</Anchor>
             <NodeRef refid="20"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/PWLocation/coordinate</TokenIdentifier>
-			<Abstract type="html">The latitude and longitude coordinates of the indoor location. (read-only)</Abstract>
-			<DeclaredIn>PWLocationProtocol.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intfm/PWGPSLocationManagerDelegate/locationManager:failedWithError:</TokenIdentifier>
+			<Abstract type="html">Tells the delegate that the location manager was unable to retrieve a location value.</Abstract>
+			<DeclaredIn>PWGPSLocationManager.h</DeclaredIn>
 			
-			<Declaration>@property (readonly) CLLocationCoordinate2D coordinate</Declaration>
+			<Declaration>- (void)locationManager:(PWGPSLocationManager *)manager failedWithError:(NSError *)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>manager</Name>
+					<Abstract type="html">The location manager object that was unable to retrieve the location.</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">The error object containing the reason the location could not be retrieved.</Abstract>
+				</Parameter>
+			</Parameters>
 			
-			
-			<Anchor>//api/name/coordinate</Anchor>
-            <NodeRef refid="20"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfp/PWLocation/coordinate</TokenIdentifier>
-			<Abstract type="html">The latitude and longitude coordinates of the indoor location. (read-only)</Abstract>
-			<DeclaredIn>PWLocationProtocol.h</DeclaredIn>
-			
-			<Declaration>@property (readonly) CLLocationCoordinate2D coordinate</Declaration>
-			
-			
-			<Anchor>//api/name/coordinate</Anchor>
-            <NodeRef refid="20"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/PWLocation/setHorizontalAccuracy:</TokenIdentifier>
-			<Abstract type="html">The radius of uncertainty for the location, in meters. (read-only)</Abstract>
-			<DeclaredIn>PWLocationProtocol.h</DeclaredIn>
-			
-			<Declaration>@property (readonly) CLLocationAccuracy horizontalAccuracy</Declaration>
-			
-			
-			<Anchor>//api/name/horizontalAccuracy</Anchor>
-            <NodeRef refid="20"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/PWLocation/horizontalAccuracy</TokenIdentifier>
-			<Abstract type="html">The radius of uncertainty for the location, in meters. (read-only)</Abstract>
-			<DeclaredIn>PWLocationProtocol.h</DeclaredIn>
-			
-			<Declaration>@property (readonly) CLLocationAccuracy horizontalAccuracy</Declaration>
-			
-			
-			<Anchor>//api/name/horizontalAccuracy</Anchor>
-            <NodeRef refid="20"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfp/PWLocation/horizontalAccuracy</TokenIdentifier>
-			<Abstract type="html">The radius of uncertainty for the location, in meters. (read-only)</Abstract>
-			<DeclaredIn>PWLocationProtocol.h</DeclaredIn>
-			
-			<Declaration>@property (readonly) CLLocationAccuracy horizontalAccuracy</Declaration>
-			
-			
-			<Anchor>//api/name/horizontalAccuracy</Anchor>
-            <NodeRef refid="20"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/PWLocation/setFloorID:</TokenIdentifier>
-			<Abstract type="html">The floor ID associated with the location.</Abstract>
-			<DeclaredIn>PWLocationProtocol.h</DeclaredIn>
-			
-			<Declaration>@property (readonly) NSInteger floorID</Declaration>
-			
-			
-			<Anchor>//api/name/floorID</Anchor>
-            <NodeRef refid="20"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/PWLocation/floorID</TokenIdentifier>
-			<Abstract type="html">The floor ID associated with the location.</Abstract>
-			<DeclaredIn>PWLocationProtocol.h</DeclaredIn>
-			
-			<Declaration>@property (readonly) NSInteger floorID</Declaration>
-			
-			
-			<Anchor>//api/name/floorID</Anchor>
-            <NodeRef refid="20"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfp/PWLocation/floorID</TokenIdentifier>
-			<Abstract type="html">The floor ID associated with the location.</Abstract>
-			<DeclaredIn>PWLocationProtocol.h</DeclaredIn>
-			
-			<Declaration>@property (readonly) NSInteger floorID</Declaration>
-			
-			
-			<Anchor>//api/name/floorID</Anchor>
-            <NodeRef refid="20"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/PWLocation/setTimestamp:</TokenIdentifier>
-			<Abstract type="html">The time at which the location was reported by a location manager.</Abstract>
-			<DeclaredIn>PWLocationProtocol.h</DeclaredIn>
-			
-			<Declaration>@property (strong, readonly) NSDate *timestamp</Declaration>
-			
-			
-			<Anchor>//api/name/timestamp</Anchor>
-            <NodeRef refid="20"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/PWLocation/timestamp</TokenIdentifier>
-			<Abstract type="html">The time at which the location was reported by a location manager.</Abstract>
-			<DeclaredIn>PWLocationProtocol.h</DeclaredIn>
-			
-			<Declaration>@property (strong, readonly) NSDate *timestamp</Declaration>
-			
-			
-			<Anchor>//api/name/timestamp</Anchor>
-            <NodeRef refid="20"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfp/PWLocation/timestamp</TokenIdentifier>
-			<Abstract type="html">The time at which the location was reported by a location manager.</Abstract>
-			<DeclaredIn>PWLocationProtocol.h</DeclaredIn>
-			
-			<Declaration>@property (strong, readonly) NSDate *timestamp</Declaration>
-			
-			
-			<Anchor>//api/name/timestamp</Anchor>
+			<Anchor>//api/name/locationManager:failedWithError:</Anchor>
             <NodeRef refid="20"/>
 		</Token>
 		

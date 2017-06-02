@@ -1,5 +1,8 @@
 # PWLocation CHANGELOG
 
+##3.1.2 (Friday, Jun 2nd, 2017)
+* Improve Mist conversion algorithm
+
 ##3.1.1 (Tuesday, Mar 28th, 2017)
 * Improve algorithm for managed location provider.
 * Add Mist location provider.
