@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PWMockLocationManagerConfiguration.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PWMockLocationManagerConfiguration</TokenIdentifier>
+			<Abstract type="html">The JSON format for configurations should be as follows:</Abstract>
+			<DeclaredIn>PWMockLocationManagerConfiguration.h</DeclaredIn>
+            
+			
+			<NodeRef refid="15"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWMockLocationManagerConfiguration/setName:</TokenIdentifier>
+			<Abstract type="html">The name of the configuration</Abstract>
+			<DeclaredIn>PWMockLocationManagerConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWMockLocationManagerConfiguration/name</TokenIdentifier>
+			<Abstract type="html">The name of the configuration</Abstract>
+			<DeclaredIn>PWMockLocationManagerConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWMockLocationManagerConfiguration/name</TokenIdentifier>
+			<Abstract type="html">The name of the configuration</Abstract>
+			<DeclaredIn>PWMockLocationManagerConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWMockLocationManagerConfiguration/setConfigurationDescription:</TokenIdentifier>
+			<Abstract type="html">The description of the configuration.</Abstract>
+			<DeclaredIn>PWMockLocationManagerConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) NSString *configurationDescription</Declaration>
+			
+			
+			<Anchor>//api/name/configurationDescription</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWMockLocationManagerConfiguration/configurationDescription</TokenIdentifier>
+			<Abstract type="html">The description of the configuration.</Abstract>
+			<DeclaredIn>PWMockLocationManagerConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) NSString *configurationDescription</Declaration>
+			
+			
+			<Anchor>//api/name/configurationDescription</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWMockLocationManagerConfiguration/configurationDescription</TokenIdentifier>
+			<Abstract type="html">The description of the configuration.</Abstract>
+			<DeclaredIn>PWMockLocationManagerConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) NSString *configurationDescription</Declaration>
+			
+			
+			<Anchor>//api/name/configurationDescription</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWMockLocationManagerConfiguration/setLocations:</TokenIdentifier>
+			<Abstract type="html">An array of PWMockLocationStep objects.</Abstract>
+			<DeclaredIn>PWMockLocationManagerConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) NSArray *locations</Declaration>
+			
+			
+			<Anchor>//api/name/locations</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWMockLocationManagerConfiguration/locations</TokenIdentifier>
+			<Abstract type="html">An array of PWMockLocationStep objects.</Abstract>
+			<DeclaredIn>PWMockLocationManagerConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) NSArray *locations</Declaration>
+			
+			
+			<Anchor>//api/name/locations</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWMockLocationManagerConfiguration/locations</TokenIdentifier>
+			<Abstract type="html">An array of PWMockLocationStep objects.</Abstract>
+			<DeclaredIn>PWMockLocationManagerConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) NSArray *locations</Declaration>
+			
+			
+			<Anchor>//api/name/locations</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWMockLocationManagerConfiguration/setDefaultUpdateInterval:</TokenIdentifier>
+			<Abstract type="html">The default location update interval.</Abstract>
+			<DeclaredIn>PWMockLocationManagerConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) NSTimeInterval defaultUpdateInterval</Declaration>
+			
+			
+			<Anchor>//api/name/defaultUpdateInterval</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWMockLocationManagerConfiguration/defaultUpdateInterval</TokenIdentifier>
+			<Abstract type="html">The default location update interval.</Abstract>
+			<DeclaredIn>PWMockLocationManagerConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) NSTimeInterval defaultUpdateInterval</Declaration>
+			
+			
+			<Anchor>//api/name/defaultUpdateInterval</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWMockLocationManagerConfiguration/defaultUpdateInterval</TokenIdentifier>
+			<Abstract type="html">The default location update interval.</Abstract>
+			<DeclaredIn>PWMockLocationManagerConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) NSTimeInterval defaultUpdateInterval</Declaration>
+			
+			
+			<Anchor>//api/name/defaultUpdateInterval</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWMockLocationManagerConfiguration/setRepeats:</TokenIdentifier>
+			<Abstract type="html">A BOOL value that determines whether location manager restarts the location updates after all location updates in the scene have played.</Abstract>
+			<DeclaredIn>PWMockLocationManagerConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) BOOL repeats</Declaration>
+			
+			
+			<Anchor>//api/name/repeats</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWMockLocationManagerConfiguration/repeats</TokenIdentifier>
+			<Abstract type="html">A BOOL value that determines whether location manager restarts the location updates after all location updates in the scene have played.</Abstract>
+			<DeclaredIn>PWMockLocationManagerConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) BOOL repeats</Declaration>
+			
+			
+			<Anchor>//api/name/repeats</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWMockLocationManagerConfiguration/repeats</TokenIdentifier>
+			<Abstract type="html">A BOOL value that determines whether location manager restarts the location updates after all location updates in the scene have played.</Abstract>
+			<DeclaredIn>PWMockLocationManagerConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) BOOL repeats</Declaration>
+			
+			
+			<Anchor>//api/name/repeats</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PWMockLocationManagerConfiguration/unpack:</TokenIdentifier>
+			<Abstract type="html">This method unpacks a configuration from a dictionary.</Abstract>
+			<DeclaredIn>PWMockLocationManagerConfiguration.h</DeclaredIn>
+			
+			<Declaration>+ (instancetype)unpack:(NSDictionary *)dictionary</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>dictionary</Name>
+					<Abstract type="html">The dictionary that containers the configuration information.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/unpack:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>
