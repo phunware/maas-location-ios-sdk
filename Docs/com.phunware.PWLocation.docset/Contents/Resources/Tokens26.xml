@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/PWLocationManagerError.html">
+	<File path="Constants/PWBLMError.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/PWLocationManagerError</TokenIdentifier>
-			<Abstract type="html">PWLocationManagerError specifies the location manager&apos;s failed error codes.</Abstract>
-			<DeclaredIn>PWLocationManager.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/c/tdef/PWBLMError</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PWBeaconProximityManager.h</DeclaredIn>
             
 			
 			<NodeRef refid="26"/>
@@ -14,71 +14,31 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/PWLocationManagerErrorUnknown</TokenIdentifier>
-            <Abstract type="html">The error is unknown.</Abstract>
-            <Declaration>PWLocationManagerErrorUnknown</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/PWBLMErrorRangingUnavailable</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>PWBLMErrorRangingUnavailable</Declaration>
             
-            <DeclaredIn>PWLocationManager.h</DeclaredIn>
-            
-            <NodeRef refid="26"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/PWLocationManagerErrorBadRequest</TokenIdentifier>
-            <Abstract type="html">A bad location request error.</Abstract>
-            <Declaration>PWLocationManagerErrorBadRequest</Declaration>
-            
-            <DeclaredIn>PWLocationManager.h</DeclaredIn>
+            <DeclaredIn>PWBeaconProximityManager.h</DeclaredIn>
             
             <NodeRef refid="26"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/PWLocationManagerErrorUnauthorized</TokenIdentifier>
-            <Abstract type="html">Not authorized to fetch location information.</Abstract>
-            <Declaration>PWLocationManagerErrorUnauthorized</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/PWBLMErrorRangingFailure</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>PWBLMErrorRangingFailure</Declaration>
             
-            <DeclaredIn>PWLocationManager.h</DeclaredIn>
-            
-            <NodeRef refid="26"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/PWLocationManagerErrorRequestTimeout</TokenIdentifier>
-            <Abstract type="html">The location request timed out.</Abstract>
-            <Declaration>PWLocationManagerErrorRequestTimeout</Declaration>
-            
-            <DeclaredIn>PWLocationManager.h</DeclaredIn>
+            <DeclaredIn>PWBeaconProximityManager.h</DeclaredIn>
             
             <NodeRef refid="26"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/PWLocationManagerErrorServiceUnavailable</TokenIdentifier>
-            <Abstract type="html">Location services are unavailable.</Abstract>
-            <Declaration>PWLocationManagerErrorServiceUnavailable</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/PWBLMErrorDenied</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>PWBLMErrorDenied</Declaration>
             
-            <DeclaredIn>PWLocationManager.h</DeclaredIn>
-            
-            <NodeRef refid="26"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/PWLocationManagerErrorMockDataInvalid</TokenIdentifier>
-            <Abstract type="html">Mock location data is invalid.</Abstract>
-            <Declaration>PWLocationManagerErrorMockDataInvalid</Declaration>
-            
-            <DeclaredIn>PWLocationManager.h</DeclaredIn>
-            
-            <NodeRef refid="26"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/PWLocationManagerErrorUnconfirmLocation</TokenIdentifier>
-            <Abstract type="html">Mock location data is invalid.</Abstract>
-            <Declaration>PWLocationManagerErrorUnconfirmLocation</Declaration>
-            
-            <DeclaredIn>PWLocationManager.h</DeclaredIn>
+            <DeclaredIn>PWBeaconProximityManager.h</DeclaredIn>
             
             <NodeRef refid="26"/>
         </Token>

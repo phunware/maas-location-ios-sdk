@@ -28,6 +28,7 @@
 						<NodeRef refid="15"/>
 						<NodeRef refid="16"/>
 						<NodeRef refid="17"/>
+						<NodeRef refid="18"/>
 						
 					</Subnodes>
 				</Node>
@@ -38,13 +39,13 @@
 					<Name>Protocols</Name>
 					<Path>index.html</Path>
 					<Subnodes>
-						<NodeRef refid="18"/>
 						<NodeRef refid="19"/>
 						<NodeRef refid="20"/>
 						<NodeRef refid="21"/>
 						<NodeRef refid="22"/>
 						<NodeRef refid="23"/>
 						<NodeRef refid="24"/>
+						<NodeRef refid="25"/>
 						
 					</Subnodes>
 				</Node>
@@ -54,8 +55,9 @@
 					<Name>Constants</Name>
 					<Path>index.html</Path>
 					<Subnodes>
-						<NodeRef refid="25"/>
 						<NodeRef refid="26"/>
+						<NodeRef refid="27"/>
+						<NodeRef refid="28"/>
 						
 					</Subnodes>
 				</Node>
@@ -445,6 +447,39 @@
             
         </Node>
 		<Node id="13" type="file" documentType="reference">
+            <Name>PWManagedProviderInfo</Name>
+            <Path>Classes/PWManagedProviderInfo.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/PWManagedProviderInfo.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/PWManagedProviderInfo.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/PWManagedProviderInfo.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/PWManagedProviderInfo.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="14" type="file" documentType="reference">
             <Name>PWMockLocationManager</Name>
             <Path>Classes/PWMockLocationManager.html</Path>
             
@@ -477,7 +512,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="14" type="file" documentType="reference">
+		<Node id="15" type="file" documentType="reference">
             <Name>PWMockLocationManagerConfiguration</Name>
             <Path>Classes/PWMockLocationManagerConfiguration.html</Path>
             
@@ -510,7 +545,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="15" type="file" documentType="reference">
+		<Node id="16" type="file" documentType="reference">
             <Name>PWMockLocationStep</Name>
             <Path>Classes/PWMockLocationStep.html</Path>
             
@@ -543,7 +578,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="16" type="file" documentType="reference">
+		<Node id="17" type="file" documentType="reference">
             <Name>PWSLLocationManager</Name>
             <Path>Classes/PWSLLocationManager.html</Path>
             
@@ -576,7 +611,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="17" type="file" documentType="reference">
+		<Node id="18" type="file" documentType="reference">
             <Name>PWVBLocationManager</Name>
             <Path>Classes/PWVBLocationManager.html</Path>
             
@@ -611,7 +646,7 @@
         </Node>
 		
 		
-        <Node id="18" type="file" documentType="reference">
+        <Node id="19" type="file" documentType="reference">
             <Name>PWBeaconProximityManagerDelegate</Name>
             <Path>Protocols/PWBeaconProximityManagerDelegate.html</Path>
             
@@ -638,7 +673,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="19" type="file" documentType="reference">
+		<Node id="20" type="file" documentType="reference">
             <Name>PWGPSLocationManagerDelegate</Name>
             <Path>Protocols/PWGPSLocationManagerDelegate.html</Path>
             
@@ -665,7 +700,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="20" type="file" documentType="reference">
+		<Node id="21" type="file" documentType="reference">
             <Name>PWLocation</Name>
             <Path>Protocols/PWLocation.html</Path>
             
@@ -692,7 +727,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="21" type="file" documentType="reference">
+		<Node id="22" type="file" documentType="reference">
             <Name>PWLocationManager</Name>
             <Path>Protocols/PWLocationManager.html</Path>
             
@@ -725,7 +760,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="22" type="file" documentType="reference">
+		<Node id="23" type="file" documentType="reference">
             <Name>PWLocationManagerDelegate</Name>
             <Path>Protocols/PWLocationManagerDelegate.html</Path>
             
@@ -752,7 +787,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="23" type="file" documentType="reference">
+		<Node id="24" type="file" documentType="reference">
             <Name>PWMSELocationManagerDelegate</Name>
             <Path>Protocols/PWMSELocationManagerDelegate.html</Path>
             
@@ -779,7 +814,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="24" type="file" documentType="reference">
+		<Node id="25" type="file" documentType="reference">
             <Name>PWSLLocationManagerDelegate</Name>
             <Path>Protocols/PWSLLocationManagerDelegate.html</Path>
             
@@ -807,14 +842,19 @@
             
         </Node>
 		
-        <Node id="25" type="file" documentType="reference">
+        <Node id="26" type="file" documentType="reference">
             <Name>PWBLMError</Name>
             <Path>Constants/PWBLMError.html</Path>
             
         </Node>
-		<Node id="26" type="file" documentType="reference">
+		<Node id="27" type="file" documentType="reference">
             <Name>PWLocationManagerError</Name>
             <Path>Constants/PWLocationManagerError.html</Path>
+            
+        </Node>
+		<Node id="28" type="file" documentType="reference">
+            <Name>PWManagedProviderType</Name>
+            <Path>Constants/PWManagedProviderType.html</Path>
             
         </Node>
 		

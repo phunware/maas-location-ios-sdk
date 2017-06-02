@@ -1,7 +1,7 @@
 PWLocation SDK for iOS
 ================
 
->Version 3.1.1
+>Version 3.1.2
 
 This is Phunware's iOS SDK for the Location module. Visit http://maas.phunware.com/ for more details and to sign up.
 
@@ -15,11 +15,11 @@ Requirements
 Installation
 ------------
 
-The easiest way to use PWLocation is via CocoaPods. Simply add 
+The easiest way to use PWLocation is via CocoaPods. Simply add
 
-`pod PWLocation` 
+`pod PWLocation`
 
-to your `Podfile`, then the `PWCore` would be automatically included. 
+to your `Podfile`, then the `PWCore` would be automatically included.
 
 
 The following frameworks are required:
@@ -91,7 +91,7 @@ This manager relies on a building bundle that is created by the MaaS server. The
 To create a `PWManagedLocationManager`, call its `initWithBuildingId:` function and pass it the desired building identifier. Next, set any private keys necessary for the chosen provider(s). Finally, call `startUpdatingLocation` on the `PWManagedLocationManager` object. The manager will fetch and parse the required server bundles and begin giving location updates as soon as possible.
 
 ````objective-c
-// Initialize the manager:	
+// Initialize the manager:
 PWManagedLocationManager *manager = [[PWManagedLocationManager alloc] initWithBuildingId:<YOUR_BUILDING_IDENTIFIER>];
 
 // Configure the internal provider(s):
@@ -111,17 +111,21 @@ NOTE: If using a virtual beacon provider such as Mist or Beacon Point with PWMan
 
 The `PWVBLocationManager` class is the parent class to both flavors of virtual beacon location managers: `PWBPLocationManager` (Beacon Point) and `PWMSLocationManager` (Mist). They are both created with similar functions which require an virtual beacon SDK Token, a floor configuration array, and a completion block.
 
-The floor configurations array contains a configuration dictionary for each floor. The dictionaries contain a virtual beacon floor name `(NSString *)`, a matching MaaS floor identifier `(NSNumber *)`, an upper left coordinate dictionary, and a lower right coordinate dictionary. The upper left and lower right coordinate dictionaries contain latitude/longitude coordinates that match to the origin (0,0) of the virtual beacon map and the maximum (x,y) position of the virtual beacon map, respectively. Upper left matches to (0,0), and lower right matches to (max(x),max(y)). Example floor configuration dictionary:
+The floor configurations array contains a configuration dictionary for each floor. The dictionaries contain a virtual beacon floor name `(NSString *)`, a matching MaaS floor identifier `(NSNumber *)`, a top left coordinate dictionary, a top right coordinate dictionary, and a bottom left coordinate dictionary. The top left, top right, and bottom left coordinate dictionaries contain latitude/longitude coordinates that match to the top left, the top right, and the bottom left of the virtual beacon map, respectively. Example floor configuration dictionary:
 ````
 {
     "id" : @"MIST_FLOOR_NAME",
     "maasId" : 195842,
 
-    "upperLeft" : {
+    "topLeft" : {
         "longitude" : -97.742525,
         "latitude" : 30.360108
     },
-    "lowerRight" : {
+    "topRight" : {
+        "longitude" : -97.742525,
+        "latitude" : 30.360108
+    },
+    "bottomLeft" : {
         "longitude" : -97.741753,
         "latitude" : 30.359737
     }
@@ -130,7 +134,7 @@ The floor configurations array contains a configuration dictionary for each floo
 
 ````objective-c
 // PWBPLocationManager - Beacon Point
-// Initialize the manager:	
+// Initialize the manager:
 [PWBPLocationManager createBPWithSDKToken:@"YOUR_VIRTUAL_BEACON_SDK_TOKEN" floorConfigurations:<YOUR_VIRTUAL_BEACON_FLOOR_CONFIGURATIONS> onComplete:^(PWBPLocationManager *manager, NSError *error) {
     if (error != nil) {
 	    // Error handling here
@@ -140,7 +144,7 @@ The floor configurations array contains a configuration dictionary for each floo
 }];
 
 // PWMSLocationManager - Mist
-// Initialize the manager:	
+// Initialize the manager:
 [PWBPLocationManager createMSWithSDKToken:@"YOUR_MIST_SDK_TOKEN" floorConfigurations:<YOUR_MIST_FLOOR_CONFIGURATIONS> onComplete:^(PWMSLocationManager *manager, NSError *error) {
     if (error != nil) {
 	    // Error handling here
@@ -159,7 +163,7 @@ The `PWMockLocationManager` class allows you to implement a mock provider for te
 It's important to note that the `floorIDMapping` property does not need to be specified for the `PWMockLocationManager`. The location floor IDs in the JSON should be equivalent to the building floor IDs.
 
 ````objective-c
-// Initialize the configuration:	
+// Initialize the configuration:
 NSURL *configurationURL = [NSURL URLWithString:@"YOUR_FILE_URL"];
 NSData *data = [NSData dataWithContentsOfURL:configurationURL];
 NSDictionary *configurationData = [NSJSONSerialization JSONObjectWithData:data options:0 error:NULL];

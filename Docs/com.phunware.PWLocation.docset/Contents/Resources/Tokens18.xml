@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Protocols/PWBeaconProximityManagerDelegate.html">
+	<File path="Classes/PWVBLocationManager.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intf/PWBeaconProximityManagerDelegate</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cl/PWVBLocationManager</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>PWBeaconProximityManager.h</DeclaredIn>
+			<DeclaredIn>PWVBLocationManager.h</DeclaredIn>
             
 			
 			<NodeRef refid="18"/>
@@ -13,42 +13,86 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/PWBeaconProximityManagerDelegate/locationManager:didUpdateToLocation:</TokenIdentifier>
-			<Abstract type="html">Tells the delegate that a new location update is available.</Abstract>
-			<DeclaredIn>PWBeaconProximityManager.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWVBLocationManager/setLocation:</TokenIdentifier>
+			<Abstract type="html">The last indoor location received.</Abstract>
+			<DeclaredIn>PWVBLocationManager.h</DeclaredIn>
 			
-			<Declaration>- (void)locationManager:(PWBeaconProximityManager *)manager didUpdateToLocation:(PWIndoorLocation *)location</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>manager</Name>
-					<Abstract type="html">The location manager object that generated the update event.</Abstract>
-				</Parameter><Parameter>
-					<Name>location</Name>
-					<Abstract type="html">A location object with the updated location information. This object conforms to the PWLocation protocol.</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>@property (nonatomic, readonly) PWIndoorLocation *location</Declaration>
 			
-			<Anchor>//api/name/locationManager:didUpdateToLocation:</Anchor>
+			
+			<Anchor>//api/name/location</Anchor>
             <NodeRef refid="18"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/PWBeaconProximityManagerDelegate/locationManager:failedWithError:</TokenIdentifier>
-			<Abstract type="html">Tells the delegate that the location manager was unable to retrieve a location value.</Abstract>
-			<DeclaredIn>PWBeaconProximityManager.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWVBLocationManager/location</TokenIdentifier>
+			<Abstract type="html">The last indoor location received.</Abstract>
+			<DeclaredIn>PWVBLocationManager.h</DeclaredIn>
 			
-			<Declaration>- (void)locationManager:(PWBeaconProximityManager *)manager failedWithError:(NSError *)error</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>manager</Name>
-					<Abstract type="html">The location manager object that was unable to retrieve the location.</Abstract>
-				</Parameter><Parameter>
-					<Name>error</Name>
-					<Abstract type="html">The error object containing the reason the location could not be retrieved.</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>@property (nonatomic, readonly) PWIndoorLocation *location</Declaration>
 			
-			<Anchor>//api/name/locationManager:failedWithError:</Anchor>
+			
+			<Anchor>//api/name/location</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWVBLocationManager/location</TokenIdentifier>
+			<Abstract type="html">The last indoor location received.</Abstract>
+			<DeclaredIn>PWVBLocationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) PWIndoorLocation *location</Declaration>
+			
+			
+			<Anchor>//api/name/location</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWVBLocationManager/setSdkToken:</TokenIdentifier>
+			<Abstract type="html">The MIST SDK token, starts with D, S, or P.</Abstract>
+			<DeclaredIn>PWVBLocationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *sdkToken</Declaration>
+			
+			
+			<Anchor>//api/name/sdkToken</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWVBLocationManager/sdkToken</TokenIdentifier>
+			<Abstract type="html">The MIST SDK token, starts with D, S, or P.</Abstract>
+			<DeclaredIn>PWVBLocationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *sdkToken</Declaration>
+			
+			
+			<Anchor>//api/name/sdkToken</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWVBLocationManager/sdkToken</TokenIdentifier>
+			<Abstract type="html">The MIST SDK token, starts with D, S, or P.</Abstract>
+			<DeclaredIn>PWVBLocationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *sdkToken</Declaration>
+			
+			
+			<Anchor>//api/name/sdkToken</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWVBLocationManager/init</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PWVBLocationManager.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)init</Declaration>
+			
+			
+			<Anchor>//api/name/init</Anchor>
             <NodeRef refid="18"/>
 		</Token>
 		

@@ -18,7 +18,7 @@ static const CLLocationDistance kMinimumVenueProximity = 5000;
  */
 typedef NS_ENUM(NSUInteger, PWLocationManagerError) {
     /** The error is unknown. */
-    PWLocationManagerErrorUnknown= -1,
+    PWLocationManagerErrorUnknown= 0,
     /** A bad location request error. */
     PWLocationManagerErrorBadRequest = 400,
     /** Not authorized to fetch location information. */

@@ -29,15 +29,22 @@
      &quot;id&quot; : @&quot;MISTFLOORNAME&quot;,
      &quot;maasId&quot; : 195842,
 
-     &quot;upperLeft&quot; : {
+     &quot;topLeft&quot; : {
          &quot;longitude&quot; : -97.742525,
          &quot;latitude&quot; : 30.360108
      },
-     &quot;lowerRight&quot; : {
+     &quot;topRight&quot; : {
+         &quot;longitude&quot; : -97.741753,
+         &quot;latitude&quot; : 30.359737
+     }
+     &quot;bottomLeft&quot; : {
          &quot;longitude&quot; : -97.741753,
          &quot;latitude&quot; : 30.359737
      }
 }</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">Block called when PWMSLocationManager has been initialized. Gives the manager object or error if there was one.</Abstract>
 				</Parameter>
 			</Parameters>
 			

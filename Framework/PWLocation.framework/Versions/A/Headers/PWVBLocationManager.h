@@ -13,8 +13,10 @@
 
 extern NSString * const kMistFloorIdentifierKey;
 extern NSString * const kMaasFloorIdentifierKey;
-extern NSString * const kFloorUpperLeftKey;
-extern NSString * const kFloorLowerRightKey;
+extern NSString * const kFloorTopLeftKey;
+extern NSString * const kFloorTopRightKey;
+extern NSString * const kFloorBottomLeftKey;
+extern NSString * const kFloorBottomRightKey;
 extern NSString * const kFloorLatitudeKey;
 extern NSString * const kFloorLongitudeKey;
 
@@ -45,11 +47,15 @@ extern NSString * const kFloorLongitudeKey;
      "id" : @"BEACON_POINT_FLOOR_NAME",
      "maasId" : 195842,
  
-     "upperLeft" : {
+     "topLeft" : {
          "longitude" : -97.742525,
          "latitude" : 30.360108
      },
-     "lowerRight" : {
+     "topRight" : {
+         "longitude" : -97.741753,
+         "latitude" : 30.359737
+     }
+     "bottomLeft" : {
          "longitude" : -97.741753,
          "latitude" : 30.359737
      }
@@ -69,11 +75,15 @@ extern NSString * const kFloorLongitudeKey;
      "id" : @"MIST_FLOOR_NAME",
      "maasId" : 195842,
  
-     "upperLeft" : {
+     "topLeft" : {
          "longitude" : -97.742525,
          "latitude" : 30.360108
      },
-     "lowerRight" : {
+     "topRight" : {
+         "longitude" : -97.741753,
+         "latitude" : 30.359737
+     }
+     "bottomLeft" : {
          "longitude" : -97.741753,
          "latitude" : 30.359737
      }

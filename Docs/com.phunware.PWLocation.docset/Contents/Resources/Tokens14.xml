@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/PWMockLocationManagerConfiguration.html">
+	<File path="Classes/PWMockLocationManager.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/PWMockLocationManagerConfiguration</TokenIdentifier>
-			<Abstract type="html">The JSON format for configurations should be as follows:</Abstract>
-			<DeclaredIn>PWMockLocationManagerConfiguration.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/PWMockLocationManager</TokenIdentifier>
+			<Abstract type="html">The PWMockLocationManager class allows you to implement a mock location provider for testing and validation. This is extremely useful for location testing outside of a venue with a proper location provider.</Abstract>
+			<DeclaredIn>PWMockLocationManager.h</DeclaredIn>
             
 			
 			<NodeRef refid="14"/>
@@ -13,199 +13,55 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWMockLocationManagerConfiguration/setName:</TokenIdentifier>
-			<Abstract type="html">The name of the configuration</Abstract>
-			<DeclaredIn>PWMockLocationManagerConfiguration.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWMockLocationManager/setLocation:</TokenIdentifier>
+			<Abstract type="html">The latest indoor location received from the location service.</Abstract>
+			<DeclaredIn>PWMockLocationManager.h</DeclaredIn>
 			
-			<Declaration>@property (readonly) NSString *name</Declaration>
+			<Declaration>@property (nonatomic, readonly) PWIndoorLocation *location</Declaration>
 			
 			
-			<Anchor>//api/name/name</Anchor>
+			<Anchor>//api/name/location</Anchor>
             <NodeRef refid="14"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWMockLocationManagerConfiguration/name</TokenIdentifier>
-			<Abstract type="html">The name of the configuration</Abstract>
-			<DeclaredIn>PWMockLocationManagerConfiguration.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWMockLocationManager/location</TokenIdentifier>
+			<Abstract type="html">The latest indoor location received from the location service.</Abstract>
+			<DeclaredIn>PWMockLocationManager.h</DeclaredIn>
 			
-			<Declaration>@property (readonly) NSString *name</Declaration>
+			<Declaration>@property (nonatomic, readonly) PWIndoorLocation *location</Declaration>
 			
 			
-			<Anchor>//api/name/name</Anchor>
+			<Anchor>//api/name/location</Anchor>
             <NodeRef refid="14"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWMockLocationManagerConfiguration/name</TokenIdentifier>
-			<Abstract type="html">The name of the configuration</Abstract>
-			<DeclaredIn>PWMockLocationManagerConfiguration.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/PWMockLocationManager/location</TokenIdentifier>
+			<Abstract type="html">The latest indoor location received from the location service.</Abstract>
+			<DeclaredIn>PWMockLocationManager.h</DeclaredIn>
 			
-			<Declaration>@property (readonly) NSString *name</Declaration>
+			<Declaration>@property (nonatomic, readonly) PWIndoorLocation *location</Declaration>
 			
 			
-			<Anchor>//api/name/name</Anchor>
+			<Anchor>//api/name/location</Anchor>
             <NodeRef refid="14"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWMockLocationManagerConfiguration/setConfigurationDescription:</TokenIdentifier>
-			<Abstract type="html">The description of the configuration.</Abstract>
-			<DeclaredIn>PWMockLocationManagerConfiguration.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWMockLocationManager/initWithMockLocationManagerWithConfiguration:</TokenIdentifier>
+			<Abstract type="html">Initializes a mock location manager with the specified PWMockLocationManagerConfiguration.</Abstract>
+			<DeclaredIn>PWMockLocationManager.h</DeclaredIn>
 			
-			<Declaration>@property (readonly) NSString *configurationDescription</Declaration>
-			
-			
-			<Anchor>//api/name/configurationDescription</Anchor>
-            <NodeRef refid="14"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWMockLocationManagerConfiguration/configurationDescription</TokenIdentifier>
-			<Abstract type="html">The description of the configuration.</Abstract>
-			<DeclaredIn>PWMockLocationManagerConfiguration.h</DeclaredIn>
-			
-			<Declaration>@property (readonly) NSString *configurationDescription</Declaration>
-			
-			
-			<Anchor>//api/name/configurationDescription</Anchor>
-            <NodeRef refid="14"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWMockLocationManagerConfiguration/configurationDescription</TokenIdentifier>
-			<Abstract type="html">The description of the configuration.</Abstract>
-			<DeclaredIn>PWMockLocationManagerConfiguration.h</DeclaredIn>
-			
-			<Declaration>@property (readonly) NSString *configurationDescription</Declaration>
-			
-			
-			<Anchor>//api/name/configurationDescription</Anchor>
-            <NodeRef refid="14"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWMockLocationManagerConfiguration/setLocations:</TokenIdentifier>
-			<Abstract type="html">An array of PWMockLocationStep objects.</Abstract>
-			<DeclaredIn>PWMockLocationManagerConfiguration.h</DeclaredIn>
-			
-			<Declaration>@property (readonly) NSArray *locations</Declaration>
-			
-			
-			<Anchor>//api/name/locations</Anchor>
-            <NodeRef refid="14"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWMockLocationManagerConfiguration/locations</TokenIdentifier>
-			<Abstract type="html">An array of PWMockLocationStep objects.</Abstract>
-			<DeclaredIn>PWMockLocationManagerConfiguration.h</DeclaredIn>
-			
-			<Declaration>@property (readonly) NSArray *locations</Declaration>
-			
-			
-			<Anchor>//api/name/locations</Anchor>
-            <NodeRef refid="14"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWMockLocationManagerConfiguration/locations</TokenIdentifier>
-			<Abstract type="html">An array of PWMockLocationStep objects.</Abstract>
-			<DeclaredIn>PWMockLocationManagerConfiguration.h</DeclaredIn>
-			
-			<Declaration>@property (readonly) NSArray *locations</Declaration>
-			
-			
-			<Anchor>//api/name/locations</Anchor>
-            <NodeRef refid="14"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWMockLocationManagerConfiguration/setDefaultUpdateInterval:</TokenIdentifier>
-			<Abstract type="html">The default location update interval.</Abstract>
-			<DeclaredIn>PWMockLocationManagerConfiguration.h</DeclaredIn>
-			
-			<Declaration>@property (readonly) NSTimeInterval defaultUpdateInterval</Declaration>
-			
-			
-			<Anchor>//api/name/defaultUpdateInterval</Anchor>
-            <NodeRef refid="14"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWMockLocationManagerConfiguration/defaultUpdateInterval</TokenIdentifier>
-			<Abstract type="html">The default location update interval.</Abstract>
-			<DeclaredIn>PWMockLocationManagerConfiguration.h</DeclaredIn>
-			
-			<Declaration>@property (readonly) NSTimeInterval defaultUpdateInterval</Declaration>
-			
-			
-			<Anchor>//api/name/defaultUpdateInterval</Anchor>
-            <NodeRef refid="14"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWMockLocationManagerConfiguration/defaultUpdateInterval</TokenIdentifier>
-			<Abstract type="html">The default location update interval.</Abstract>
-			<DeclaredIn>PWMockLocationManagerConfiguration.h</DeclaredIn>
-			
-			<Declaration>@property (readonly) NSTimeInterval defaultUpdateInterval</Declaration>
-			
-			
-			<Anchor>//api/name/defaultUpdateInterval</Anchor>
-            <NodeRef refid="14"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWMockLocationManagerConfiguration/setRepeats:</TokenIdentifier>
-			<Abstract type="html">A BOOL value that determines whether location manager restarts the location updates after all location updates in the scene have played.</Abstract>
-			<DeclaredIn>PWMockLocationManagerConfiguration.h</DeclaredIn>
-			
-			<Declaration>@property (readonly) BOOL repeats</Declaration>
-			
-			
-			<Anchor>//api/name/repeats</Anchor>
-            <NodeRef refid="14"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWMockLocationManagerConfiguration/repeats</TokenIdentifier>
-			<Abstract type="html">A BOOL value that determines whether location manager restarts the location updates after all location updates in the scene have played.</Abstract>
-			<DeclaredIn>PWMockLocationManagerConfiguration.h</DeclaredIn>
-			
-			<Declaration>@property (readonly) BOOL repeats</Declaration>
-			
-			
-			<Anchor>//api/name/repeats</Anchor>
-            <NodeRef refid="14"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWMockLocationManagerConfiguration/repeats</TokenIdentifier>
-			<Abstract type="html">A BOOL value that determines whether location manager restarts the location updates after all location updates in the scene have played.</Abstract>
-			<DeclaredIn>PWMockLocationManagerConfiguration.h</DeclaredIn>
-			
-			<Declaration>@property (readonly) BOOL repeats</Declaration>
-			
-			
-			<Anchor>//api/name/repeats</Anchor>
-            <NodeRef refid="14"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/PWMockLocationManagerConfiguration/unpack:</TokenIdentifier>
-			<Abstract type="html">This method unpacks a configuration from a dictionary.</Abstract>
-			<DeclaredIn>PWMockLocationManagerConfiguration.h</DeclaredIn>
-			
-			<Declaration>+ (instancetype)unpack:(NSDictionary *)dictionary</Declaration>
+			<Declaration>- (instancetype)initWithMockLocationManagerWithConfiguration:(PWMockLocationManagerConfiguration *)configuration</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>dictionary</Name>
-					<Abstract type="html">The dictionary that containers the configuration information.</Abstract>
+					<Name>configuration</Name>
+					<Abstract type="html">The PWMockLocationManagerConfiguration object to initialize the manager with.</Abstract>
 				</Parameter>
 			</Parameters>
-			
-			<Anchor>//api/name/unpack:</Anchor>
+			<ReturnValue><Abstract type="html">Returns a PWMockLocationManager object.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithMockLocationManagerWithConfiguration:</Anchor>
             <NodeRef refid="14"/>
 		</Token>
 		
