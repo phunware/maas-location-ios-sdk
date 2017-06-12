@@ -3,11 +3,11 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>PWGPSLocationManager Class Reference</title>
+	<title></title>
 
 	<link rel="stylesheet" href="../css/style.css">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
-	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+	
 </head>
 <body class="appledoc">
 	<header>
@@ -43,43 +43,9 @@
 							<select id="jump-to">
 	<option value="top">Jump To&#133;</option>
 	
-	<option value="overview">Overview</option>
-	
-
-	
-	
-	<option value="tasks">Tasks</option>
-	
-	
-
-	
-	
-	<optgroup label="Properties">
-		
-		<option value="//api/name/floorIDMapping">floorIDMapping</option>
-		
-		<option value="//api/name/internalLocationManager">internalLocationManager</option>
-		
-		<option value="//api/name/location">location</option>
-		
-	</optgroup>
-	
 
 	
 
-	
-	<optgroup label="Instance Methods">
-		
-		<option value="//api/name/initWithCLLocationManager:">- initWithCLLocationManager:</option>
-		
-		<option value="//api/name/locationServicesAvailable">- locationServicesAvailable</option>
-		
-		<option value="//api/name/startUpdatingLocation">- startUpdatingLocation</option>
-		
-		<option value="//api/name/stopUpdatingLocation">- stopUpdatingLocation</option>
-		
-	</optgroup>
-	
 	
 </select>
 						</label>
@@ -93,386 +59,22 @@
 		<div id="overview_contents" class="container">
 			<div id="content">
 				<main role="main">
-					<h1 class="title">PWGPSLocationManager Class Reference</h1>
+					<h1 class="title"></h1>
 
-					
-					<div class="section section-specification"><table cellspacing="0"><tbody>
-						<tr>
-	<th>Inherits from</th>
-	<td>NSObject</td>
-</tr><tr>
-	<th>Conforms to</th>
-	<td><a href="../Protocols/PWLocationManager.html">PWLocationManager</a></td>
-</tr><tr>
-	<th>Declared in</th>
-	<td>PWGPSLocationManager.h</td>
-</tr>
-						</tbody></table></div>
 					
 
                     
-					
-					<div class="section section-overview">
-						<a title="Overview" name="overview"></a>
-						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<p>The <code>PWGPSLocationManager</code> class defines the interface for configuring the delivery of GPS location-related events to your application. You use an instance of this class to establish the parameters that determine when <a href="#//api/name/location">location</a> events should be delivered and to start and stop the actual delivery of those events. This class conforms to the <a href="../Protocols/PWLocationManager.html"><code>PWLocationManager</code></a> protocol.</p><p>You are still responsible for requesting permission to use <a href="#//api/name/location">location</a> services. In addition the <code>CLLocationManager</code> associated with this class is exposed so that it can be configured as desired.</p>
-					</div>
-					
-					
 
-					
-					
-					<div class="section section-tasks">
-						<a title="Tasks" name="tasks"></a>
-						
-
-						<a title="Determining Availability of Services" name="task_Determining Availability of Services"></a>
-						
-<h2 class="task-title">Determining Availability of Services</h2>
-						<div class="task-list">
-							<div class="section-method">
-	<a name="//api/name/internalLocationManager" title="internalLocationManager"></a>
-	<h3 class="method-title"><code><a href="#//api/name/internalLocationManager">&nbsp;&nbsp;internalLocationManager</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>The <code>CLLocationManager</code> used to deliver indoor GPS <a href="#//api/name/location">location</a> updates.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) CLLocationManager *internalLocationManager</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>You are still responsible for requesting permission to use <a href="#//api/name/location">location</a> services. The <code>CLLocationManagerDelegate</code> of this instance is owned by the <code>PWGPSLocationManager</code> instance.</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">PWGPSLocationManager.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/floorIDMapping" title="floorIDMapping"></a>
-	<h3 class="method-title"><code><a href="#//api/name/floorIDMapping">&nbsp;&nbsp;floorIDMapping</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>The floor ID mapping dictionary used to define the mapping between the <a href="#//api/name/location">location</a> provider floor ID and the Phunware floor ID. The dictionary format must adhere to the following format: <code>@{CUSTOMER_FLOORID : PHUNWARE_FLOOR_ID}</code>.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSDictionary *floorIDMapping</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">PWGPSLocationManager.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/location" title="location"></a>
-	<h3 class="method-title"><code><a href="#//api/name/location">&nbsp;&nbsp;location</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>The latest indoor location received from the Phunware location service.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) PWIndoorLocation *location</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">PWGPSLocationManager.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/initWithCLLocationManager:" title="initWithCLLocationManager:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/initWithCLLocationManager:">&ndash;&nbsp;initWithCLLocationManager:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Initializes the <a href="#//api/name/location">location</a> manager with the specified <code>CLLocationManager</code> instance.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (instancetype)initWithCLLocationManager:(CLLocationManager *)<em>locationManager</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>locationManager</code></th>
-						<td><p>The <a href="#//api/name/location">location</a> manager to use for GPS positioning. There parameter cannot be <code>nil</code>.</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-			<div class="method-subsection return">
-				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>A <code>PWGPSLocationManager</code> instance.</p>
-			</div>
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">PWGPSLocationManager.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/locationServicesAvailable" title="locationServicesAvailable"></a>
-	<h3 class="method-title"><code><a href="#//api/name/locationServicesAvailable">&ndash;&nbsp;locationServicesAvailable</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Returns a Boolean value indicating whether <a href="../Protocols/PWLocationManager.html#//api/name/location">location</a> services are enabled on the device.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (BOOL)locationServicesAvailable</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>In order to fetch the user&rsquo;s <a href="../Protocols/PWLocationManager.html#//api/name/location">location</a>, the manager must be within proximity of the venue and have retrieved specific device information from Phunware&rsquo;s servers.</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">PWLocationManager.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/startUpdatingLocation" title="startUpdatingLocation"></a>
-	<h3 class="method-title"><code><a href="#//api/name/startUpdatingLocation">&ndash;&nbsp;startUpdatingLocation</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Starts the generation of updates that report the user’s current <a href="../Protocols/PWLocationManager.html#//api/name/location">location</a>.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)startUpdatingLocation</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>This method returns immediately. Calling this method causes the <a href="../Protocols/PWLocationManager.html#//api/name/location">location</a> manager to obtain an initial <a href="../Protocols/PWLocationManager.html#//api/name/location">location</a> fix (which may take several seconds) and notify your <a href="../Protocols/PWLocationManager.html#//api/name/delegate">delegate</a> by calling its <code>locationManager:didUpdateToLocation:</code> method.</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">PWLocationManager.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/stopUpdatingLocation" title="stopUpdatingLocation"></a>
-	<h3 class="method-title"><code><a href="#//api/name/stopUpdatingLocation">&ndash;&nbsp;stopUpdatingLocation</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Stops the generation of <a href="../Protocols/PWLocationManager.html#//api/name/location">location</a> updates.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)stopUpdatingLocation</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>Call this method whenever your code no longer needs to receive location-related events. Disabling event delivery gives the receiver the option of disabling the appropriate hardware (and thereby saving power) when no clients need <a href="../Protocols/PWLocationManager.html#//api/name/location">location</a> data. You can always restart the generation of <a href="../Protocols/PWLocationManager.html#//api/name/location">location</a> updates by calling the <a href="../Protocols/PWLocationManager.html#//api/name/startUpdatingLocation"><code>startUpdatingLocation</code></a> method again.</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">PWLocationManager.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div>
-						</div>
-						
-					</div>
-					
 					
 
                     
-                    
-          
 				</main>
 
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2017 Phunware, Inc. All rights reserved. Updated: 2017-06-02</p>
+						<p class="copyright">Copyright &copy; 2017 Phunware, Inc. All rights reserved. Updated: 2017-06-12</p>
 						
-						
-						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
 						
 					</div>
 				</footer>

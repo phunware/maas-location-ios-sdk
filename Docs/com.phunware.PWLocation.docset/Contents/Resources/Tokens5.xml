@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/PWFusedLocationManagerZone.html">
+	<File path="Classes/PWFusedLocationManagerZoneConfiguration.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/PWFusedLocationManagerZone</TokenIdentifier>
-			<Abstract type="html">The &apos;PWFusedLocationManagerZone&apos; class defines a zone where a particular location manager should be used. The zone will be considered valid for use only if the location given by the location manager has a coordinate inside the polygon region and if the floorID of the location is contained in the floorIDs array.</Abstract>
-			<DeclaredIn>PWFusedLocationManagerZone.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/PWFusedLocationManagerZoneConfiguration</TokenIdentifier>
+			<Abstract type="html">The &apos;PWFusedLocationManagerZoneConfiguration&apos; class relates a location manager to the zones where the location manager should be used.</Abstract>
+			<DeclaredIn>PWFusedLocationManagerZoneConfiguration.h</DeclaredIn>
             
 			
 			<NodeRef refid="5"/>
@@ -13,94 +13,94 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWFusedLocationManagerZone/setPolygon:</TokenIdentifier>
-			<Abstract type="html">The polygon that encompasses the zone where the location manager should be used</Abstract>
-			<DeclaredIn>PWFusedLocationManagerZone.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWFusedLocationManagerZoneConfiguration/setLocationManager:</TokenIdentifier>
+			<Abstract type="html">The location manager object</Abstract>
+			<DeclaredIn>PWFusedLocationManagerZoneConfiguration.h</DeclaredIn>
 			
-			<Declaration>@property (readonly) MKPolygon *polygon</Declaration>
+			<Declaration>@property (readonly) id&lt;PWLocationManager&gt; locationManager</Declaration>
 			
 			
-			<Anchor>//api/name/polygon</Anchor>
+			<Anchor>//api/name/locationManager</Anchor>
             <NodeRef refid="5"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWFusedLocationManagerZone/polygon</TokenIdentifier>
-			<Abstract type="html">The polygon that encompasses the zone where the location manager should be used</Abstract>
-			<DeclaredIn>PWFusedLocationManagerZone.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWFusedLocationManagerZoneConfiguration/locationManager</TokenIdentifier>
+			<Abstract type="html">The location manager object</Abstract>
+			<DeclaredIn>PWFusedLocationManagerZoneConfiguration.h</DeclaredIn>
 			
-			<Declaration>@property (readonly) MKPolygon *polygon</Declaration>
+			<Declaration>@property (readonly) id&lt;PWLocationManager&gt; locationManager</Declaration>
 			
 			
-			<Anchor>//api/name/polygon</Anchor>
+			<Anchor>//api/name/locationManager</Anchor>
             <NodeRef refid="5"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWFusedLocationManagerZone/polygon</TokenIdentifier>
-			<Abstract type="html">The polygon that encompasses the zone where the location manager should be used</Abstract>
-			<DeclaredIn>PWFusedLocationManagerZone.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/PWFusedLocationManagerZoneConfiguration/locationManager</TokenIdentifier>
+			<Abstract type="html">The location manager object</Abstract>
+			<DeclaredIn>PWFusedLocationManagerZoneConfiguration.h</DeclaredIn>
 			
-			<Declaration>@property (readonly) MKPolygon *polygon</Declaration>
+			<Declaration>@property (readonly) id&lt;PWLocationManager&gt; locationManager</Declaration>
 			
 			
-			<Anchor>//api/name/polygon</Anchor>
+			<Anchor>//api/name/locationManager</Anchor>
             <NodeRef refid="5"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWFusedLocationManagerZone/setFloorIdentifiers:</TokenIdentifier>
-			<Abstract type="html">The identifiers of the floors where the polygon for this zone is be valid</Abstract>
-			<DeclaredIn>PWFusedLocationManagerZone.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWFusedLocationManagerZoneConfiguration/setZones:</TokenIdentifier>
+			<Abstract type="html">An array of zones where the location manager should be used</Abstract>
+			<DeclaredIn>PWFusedLocationManagerZoneConfiguration.h</DeclaredIn>
 			
-			<Declaration>@property (readonly) NSArray *floorIdentifiers</Declaration>
+			<Declaration>@property (readonly) NSArray *zones</Declaration>
 			
 			
-			<Anchor>//api/name/floorIdentifiers</Anchor>
+			<Anchor>//api/name/zones</Anchor>
             <NodeRef refid="5"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWFusedLocationManagerZone/floorIdentifiers</TokenIdentifier>
-			<Abstract type="html">The identifiers of the floors where the polygon for this zone is be valid</Abstract>
-			<DeclaredIn>PWFusedLocationManagerZone.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWFusedLocationManagerZoneConfiguration/zones</TokenIdentifier>
+			<Abstract type="html">An array of zones where the location manager should be used</Abstract>
+			<DeclaredIn>PWFusedLocationManagerZoneConfiguration.h</DeclaredIn>
 			
-			<Declaration>@property (readonly) NSArray *floorIdentifiers</Declaration>
+			<Declaration>@property (readonly) NSArray *zones</Declaration>
 			
 			
-			<Anchor>//api/name/floorIdentifiers</Anchor>
+			<Anchor>//api/name/zones</Anchor>
             <NodeRef refid="5"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWFusedLocationManagerZone/floorIdentifiers</TokenIdentifier>
-			<Abstract type="html">The identifiers of the floors where the polygon for this zone is be valid</Abstract>
-			<DeclaredIn>PWFusedLocationManagerZone.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/PWFusedLocationManagerZoneConfiguration/zones</TokenIdentifier>
+			<Abstract type="html">An array of zones where the location manager should be used</Abstract>
+			<DeclaredIn>PWFusedLocationManagerZoneConfiguration.h</DeclaredIn>
 			
-			<Declaration>@property (readonly) NSArray *floorIdentifiers</Declaration>
+			<Declaration>@property (readonly) NSArray *zones</Declaration>
 			
 			
-			<Anchor>//api/name/floorIdentifiers</Anchor>
+			<Anchor>//api/name/zones</Anchor>
             <NodeRef refid="5"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWFusedLocationManagerZone/initWithPolygon:floorIdentifiers:</TokenIdentifier>
-			<Abstract type="html">Initializes a zone where a location manager should be used.</Abstract>
-			<DeclaredIn>PWFusedLocationManagerZone.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWFusedLocationManagerZoneConfiguration/initWithLocationManager:zones:</TokenIdentifier>
+			<Abstract type="html">Initializes a &apos;PWFusedLocationManagerZoneConfiguration&apos; object with a location manager along with the zones where the location manager will be valid</Abstract>
+			<DeclaredIn>PWFusedLocationManagerZoneConfiguration.h</DeclaredIn>
 			
-			<Declaration>- (instancetype)initWithPolygon:(MKPolygon *)polygon floorIdentifiers:(NSArray *)floorIdentifiers</Declaration>
+			<Declaration>- (instancetype)initWithLocationManager:(id&lt;PWLocationManager&gt;)locationManager zones:(NSArray *)zones</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>polygon</Name>
-					<Abstract type="html">A polygon that encompasses the zone where the location manager should be used</Abstract>
+					<Name>locationManager</Name>
+					<Abstract type="html">A location manager object</Abstract>
 				</Parameter><Parameter>
-					<Name>floorIdentifiers</Name>
-					<Abstract type="html">An array of integers that indicate the floors where the polygon for this zone is be valid</Abstract>
+					<Name>zones</Name>
+					<Abstract type="html">The zones where the location manager will be valid</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">An initialized zone object.</Abstract></ReturnValue>
-			<Anchor>//api/name/initWithPolygon:floorIdentifiers:</Anchor>
+			<ReturnValue><Abstract type="html">An initialized &apos;PWFusedLocationManagerZoneConfiguration&apos; object.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithLocationManager:zones:</Anchor>
             <NodeRef refid="5"/>
 		</Token>
 		
