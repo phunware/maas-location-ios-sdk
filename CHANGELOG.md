@@ -1,5 +1,8 @@
 # PWLocation CHANGELOG
 
+##3.1.2 (Friday, Jun 23rd, 2017)
+* Further improvements on Mist conversion algorithm
+
 ##3.1.2 (Friday, Jun 2nd, 2017)
 * Improve Mist conversion algorithm
 
