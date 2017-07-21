@@ -1,14 +1,14 @@
 PWLocation SDK for iOS
 ================
 
->Version 3.1.3
+>Version 3.1.4
 
 This is Phunware's iOS SDK for the Location module. Visit http://maas.phunware.com/ for more details and to sign up.
 
 Requirements
 ------------
 
-- PWCore v3.0.3 or greater
+- PWCore v3.0.3
 - iOS 9.0 or greater
 - Xcode 7 or greater
 
@@ -73,27 +73,6 @@ PWManagedLocationManager *manager = [[PWManagedLocationManager alloc] initWithBu
 ````
 
 NOTE: If using a virtual beacon provider such as Mist or Beacon Point with PWManagedLocationManager, the "Uses Bluetooth LE accessories" background mode must be enabled in the "Capabilities" tab of your project's settings.
-
-## PWMockLocationManager
-
-The `PWMockLocationManager` class allows you to implement a mock provider for testing and validation. This is extremely useful for location testing when you are not able to be on-site at a venue with a proper location provider. The mock location manager is initialized with a configuration object that is populated with JSON data.
-
-It's important to note that the `floorIDMapping` property does not need to be specified for the `PWMockLocationManager`. The location floor IDs in the JSON should be equivalent to the building floor IDs.
-
-````objective-c
-// Initialize the configuration:
-NSURL *configurationURL = [NSURL URLWithString:@"YOUR_FILE_URL"];
-NSData *data = [NSData dataWithContentsOfURL:configurationURL];
-NSDictionary *configurationData = [NSJSONSerialization JSONObjectWithData:data options:0 error:NULL];
-PWMockLocationManagerConfiguration *configuration = [PWMockLocationManagerConfiguration unpack:configurationData];
-
-// Initializing the location manager:
-PWMockLocationManager *locationManager = [[PWMockLocationManager alloc] initWithMockLocationManagerWithConfiguration:configuration];
-locationManager.delegate = self;
-
-// Start fetching location updates:
-[locationManager startUpdatingLocation];
-````
 
 ## Location Updates
 
