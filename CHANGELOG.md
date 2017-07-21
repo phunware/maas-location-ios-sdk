@@ -1,5 +1,8 @@
 # PWLocation CHANGELOG
 
+##3.1.4 (Friday, Jul 21st, 2017)
+* Improvements to dead reckoning
+
 ##3.1.3 (Friday, Jun 23rd, 2017)
 * Further improvements on Mist conversion algorithm
 

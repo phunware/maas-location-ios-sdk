@@ -1,18 +1,18 @@
 Pod::Spec.new do |s|
   s.name         = "PWLocation"
-  s.version      = "3.1.3"
+  s.version      = "3.1.4"
   s.summary      = "PWLocation SDK for iOS"
   s.homepage     = "http://phunware.github.io/maas-location-ios-sdk/"
   s.author       = { 'Phunware, Inc.' => 'http://www.phunware.com' }
   s.social_media_url = 'https://twitter.com/Phunware'
 
   s.platform     = :ios, '9.0'
-  s.source       = { :git => "https://github.com/phunware/maas-location-ios-sdk.git", :tag => "v3.1.3" }
+  s.source       = { :git => "https://github.com/phunware/maas-location-ios-sdk.git", :tag => "v3.1.4" }
   s.license      = { :type => 'Copyright', :text => 'Copyright 2014 by Phunware Inc. All rights reserved.' }
 
   s.ios.vendored_frameworks = 'Framework/PWLocation.framework'
-  s.dependency 'PWCore'
-  s.dependency 'MistSDK'
+  s.dependency 'PWCore', '3.0.3'
+  s.dependency 'MistSDK', '0.0.1142'
   s.dependency 'TMCache'
 
   s.ios.library = 'c++'
