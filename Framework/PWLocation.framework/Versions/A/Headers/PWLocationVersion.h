@@ -8,6 +8,6 @@
 #ifndef PWLocation_PWLocationVersion_h
 #define PWLocation_PWLocationVersion_h
 
-#define       PWLocation_VERSION  @"3.1.4"
+#define       PWLocation_VERSION  @"3.1.5"
 
 #endif

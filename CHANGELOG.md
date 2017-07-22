@@ -1,5 +1,8 @@
 # PWLocation CHANGELOG
 
+##3.1.5 (Saturday, Jul 22nd, 2017)
+* Update MistSDK version to 0.0.1144
+
 ##3.1.4 (Friday, Jul 21st, 2017)
 * Improvements to dead reckoning
 
