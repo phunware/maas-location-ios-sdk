@@ -1,14 +1,14 @@
 PWLocation SDK for iOS
 ================
 
->Version 3.1.5
+>Version 3.1.6
 
 This is Phunware's iOS SDK for the Location module. Visit http://maas.phunware.com/ for more details and to sign up.
 
 Requirements
 ------------
 
-- PWCore v3.0.3
+- PWCore v3.1.0
 - iOS 9.0 or greater
 - Xcode 7 or greater
 
