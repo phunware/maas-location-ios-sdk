@@ -52,8 +52,7 @@ Some PWCore configuration is required to use any provider in PWLocation. In the 
 ````objective-c
 [PWCore setApplicationID:@"YOUR_APPLICATION_IDENTIFIER"
                accessKey:@"YOUR_ACCESS_KEY"
-            signatureKey:@"YOUR_SIGNATURE_KEY"
-           encryptionKey:@"YOUR_ENCRYPTION_KEY"]; // If you do not have an encryption key, just pass an empty string here i.e. @""
+            signatureKey:@"YOUR_SIGNATURE_KEY"];
 ````
 
 ## PWManagedLocationManager
@@ -67,6 +66,7 @@ To create a `PWManagedLocationManager`, call its `initWithBuildingId:` function 
 ````objective-c
 // Initialize the manager:
 PWManagedLocationManager *manager = [[PWManagedLocationManager alloc] initWithBuildingId:<YOUR_BUILDING_IDENTIFIER>];
+manager.delegate = self;
 
 // Start fetching location updates:
 [manager startUpdatingLocation];
