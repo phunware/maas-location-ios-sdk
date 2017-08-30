@@ -7,7 +7,6 @@
 
 #import <Foundation/Foundation.h>
 
-#import <PWLocation/PWLocationVersion.h>
 #import <PWLocation/PWLocationProtocol.h>
 #import <PWLocation/PWIndoorLocation.h>
 #import <PWLocation/PWLocationManager.h>
@@ -29,6 +28,8 @@
 /**
  PWLocation is a location provider SDK. This SDK encompasses a variety of indoor location providers and can be used in conjunction with PWMapKit to delivery and display indoor location location updates.
  */
+
+static NSString * const PWLocationVersion = @"3.1.7";
 
 @interface PWLocation : NSObject
 

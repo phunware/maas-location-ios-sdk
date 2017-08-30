@@ -34,6 +34,11 @@ extern NSString * const kFloorLongitudeKey;
  */
 @property (nonatomic, readonly) NSString *sdkToken;
 
+/**
+ The shared PWVBLocationManager instance. Must call `createMSWithSDKToken:floorConifgurations:onComplete` or `createBPWithSDKToken:floorConifgurations:onComplete` before the instance can return location.
+ */
++ (instancetype)sharedInstance;
+
 - (instancetype)init NS_UNAVAILABLE;
 
 @end
