@@ -1,5 +1,10 @@
 # PWLocation CHANGELOG
 
+##3.1.7 (Monday, Aug 30th, 2017)
+* Update Senion to 5.1
+* Update PWCore version to 3.1.1
+* Stability improvements to Mist
+
 ##3.1.6 (Monday, Jul 31st, 2017)
 * Update PWCore version to 3.1.0
 
