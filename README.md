@@ -45,14 +45,6 @@ Integration
 
 `PWLocation` is meant to be used in conjunction with PWMapKit but can be used as a standalone SDK.
 
-## Using Senion as a Provider
-
-Senion requires you to add the CocoaPod dependency at the application `Podfile` level. Please contact Phunware support for a username and password to access their SDK.
-
-````
-pod 'StepInsideSdk', :http => 'https://<username>:<password>@artifacts.senionlab.com/pods/stepinside-sdk/5.1.1.zip'
-````
-
 ## PWCore Setup
 
 Some PWCore configuration is required to use any provider in PWLocation. In the MaaS portal, retrieve your application identifier, signature key, access key, and encryption key (if you have one). In your application's AppDelegate, add the following:
