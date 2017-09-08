@@ -1,5 +1,8 @@
 # PWLocation CHANGELOG
 
+##3.1.5.1 (Friday, Sep 8th, 2017)
+* Mist double instance fix
+
 ##3.1.5 (Saturday, Jul 22nd, 2017)
 * Update MistSDK version to 0.0.1144
 
