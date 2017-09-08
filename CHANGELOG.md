@@ -1,5 +1,8 @@
 # PWLocation CHANGELOG
 
+##3.1.7.1 (Friday, Sep 8th, 2017)
+* Change to PWCore 3.0.3
+
 ##3.1.7 (Monday, Aug 30th, 2017)
 * Update Senion to 5.1
 * Update PWCore version to 3.1.1

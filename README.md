@@ -1,14 +1,14 @@
 PWLocation SDK for iOS
 ================
 
->Version 3.1.7
+>Version 3.1.7.1
 
 This is Phunware's iOS SDK for the Location module. Visit http://maas.phunware.com/ for more details and to sign up.
 
 Requirements
 ------------
 
-- PWCore v3.1.1
+- PWCore v3.0.3
 - iOS 9.0 or greater
 - Xcode 7 or greater
 
@@ -44,6 +44,14 @@ Integration
 -----------
 
 `PWLocation` is meant to be used in conjunction with PWMapKit but can be used as a standalone SDK.
+
+## Using Senion as a Provider
+
+Senion requires you to add the CocoaPod dependency at the application `Podfile` level. Please contact Phunware support for a username and password to access their SDK.
+
+````
+pod 'StepInsideSdk', :http => 'https://<username>:<password>@artifacts.senionlab.com/pods/stepinside-sdk/5.1.1.zip'
+````
 
 ## PWCore Setup
 
