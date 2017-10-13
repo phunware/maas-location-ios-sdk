@@ -5,9 +5,9 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.phunware.PWLocation</string>
+	<string>com.phunware.PWMapKit</string>
 	<key>CFBundleName</key>
-	<string>PWLocation Documentation</string>
+	<string>PWMapKit Documentation</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
@@ -17,7 +17,7 @@
 	
 	
 	<key>DocSetFeedName</key>
-	<string>PWLocation Documentation</string>
+	<string>PWMapKit Documentation</string>
 	
 	<key>DocSetMinimumXcodeVersion</key>
 	<string>3.0</string>

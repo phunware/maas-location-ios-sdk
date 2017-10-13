@@ -3,18 +3,18 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>PWMockLocationManagerConfiguration Class Reference</title>
+	<title></title>
 
 	<link rel="stylesheet" href="../css/style.css">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
-	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+	
 </head>
 <body class="appledoc">
 	<header>
 		<div class="container" class="hide-in-xcode">
 			
 			<h1 id="library-title">
-				<a href="../index.html">PWLocation </a>
+				<a href="../index.html">PWMapKit </a>
 			</h1>
 
 			<p id="developer-home">
@@ -43,41 +43,9 @@
 							<select id="jump-to">
 	<option value="top">Jump To&#133;</option>
 	
-	<option value="overview">Overview</option>
-	
 
 	
-	
-	<option value="tasks">Tasks</option>
-	
-	
 
-	
-	
-	<optgroup label="Properties">
-		
-		<option value="//api/name/configurationDescription">configurationDescription</option>
-		
-		<option value="//api/name/defaultUpdateInterval">defaultUpdateInterval</option>
-		
-		<option value="//api/name/locations">locations</option>
-		
-		<option value="//api/name/name">name</option>
-		
-		<option value="//api/name/repeats">repeats</option>
-		
-	</optgroup>
-	
-
-	
-	<optgroup label="Class Methods">
-		
-		<option value="//api/name/unpack:">+ unpack:</option>
-		
-	</optgroup>
-	
-
-	
 	
 </select>
 						</label>
@@ -91,332 +59,22 @@
 		<div id="overview_contents" class="container">
 			<div id="content">
 				<main role="main">
-					<h1 class="title">PWMockLocationManagerConfiguration Class Reference</h1>
+					<h1 class="title"></h1>
 
-					
-					<div class="section section-specification"><table cellspacing="0"><tbody>
-						<tr>
-	<th>Inherits from</th>
-	<td>NSObject</td>
-</tr><tr>
-	<th>Declared in</th>
-	<td>PWMockLocationManagerConfiguration.h</td>
-</tr>
-						</tbody></table></div>
 					
 
                     
-					
-					<div class="section section-overview">
-						<a title="Overview" name="overview"></a>
-						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<p>The JSON format for configurations should be as follows:</p>
 
-<p>{
-     &ldquo;name&rdquo; : &ldquo;Bistro to Elevator&rdquo;,          <!-- Location update interval -->
-     &ldquo;description&rdquo; : &ldquo;Normal route&hellip;&rdquo;,      <!-- Location update interval -->
-     &ldquo;updateInterval&rdquo; : 2.0,                 <!-- Location update interval -->
-     &ldquo;locations&rdquo;: [
-         {
-             &ldquo;latitude&rdquo;: 30.360012,          <!-- Mock latitude -->
-             &ldquo;longitude&rdquo;: -97.74255,         <!-- Mock longitude -->
-             &ldquo;horizontalAccuracy&rdquo;: 5.152377, <!-- Mock accuracy -->
-             &ldquo;floorID&rdquo;: 2,                   <!-- Mock floor ID -->
-             &ldquo;updateInterval&rdquo;: 1.2           <!-- Mock update interval -->
-         },
-     ]
-}</p>
-					</div>
-					
-					
-
-					
-					
-					<div class="section section-tasks">
-						<a title="Tasks" name="tasks"></a>
-						
-
-						
-						
-
-						<div class="task-list">
-							<div class="section-method">
-	<a name="//api/name/name" title="name"></a>
-	<h3 class="method-title"><code><a href="#//api/name/name">&nbsp;&nbsp;name</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>The name of the configuration</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>@property (readonly) NSString *name</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">PWMockLocationManagerConfiguration.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/configurationDescription" title="configurationDescription"></a>
-	<h3 class="method-title"><code><a href="#//api/name/configurationDescription">&nbsp;&nbsp;configurationDescription</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>The description of the configuration.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>@property (readonly) NSString *configurationDescription</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">PWMockLocationManagerConfiguration.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/locations" title="locations"></a>
-	<h3 class="method-title"><code><a href="#//api/name/locations">&nbsp;&nbsp;locations</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>An array of <a href="../Classes/PWMockLocationStep.html"><code>PWMockLocationStep</code></a> objects.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>@property (readonly) NSArray *locations</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">PWMockLocationManagerConfiguration.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/defaultUpdateInterval" title="defaultUpdateInterval"></a>
-	<h3 class="method-title"><code><a href="#//api/name/defaultUpdateInterval">&nbsp;&nbsp;defaultUpdateInterval</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>The default location update interval.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>@property (readonly) NSTimeInterval defaultUpdateInterval</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">PWMockLocationManagerConfiguration.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/repeats" title="repeats"></a>
-	<h3 class="method-title"><code><a href="#//api/name/repeats">&nbsp;&nbsp;repeats</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>A <code>BOOL</code> value that determines whether location manager restarts the location updates after all location updates in the scene have played.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>@property (readonly) BOOL repeats</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">PWMockLocationManagerConfiguration.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/unpack:" title="unpack:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/unpack:">+&nbsp;unpack:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>This method unpacks a configuration from a dictionary.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>+ (instancetype)unpack:(NSDictionary *)<em>dictionary</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>dictionary</code></th>
-						<td><p>The dictionary that containers the configuration information.</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">PWMockLocationManagerConfiguration.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div>
-						</div>
-						
-					</div>
-					
 					
 
                     
-                    
-          
 				</main>
 
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2017 Phunware, Inc. All rights reserved. Updated: 2017-06-12</p>
+						<p class="copyright">Copyright &copy; 2017 Phunware, Inc. All rights reserved. Updated: 2017-10-13</p>
 						
-						
-						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
 						
 					</div>
 				</footer>
