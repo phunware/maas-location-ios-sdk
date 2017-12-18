@@ -1,5 +1,8 @@
 # PWLocation CHANGELOG
 
+##3.1.10 (Monday, Dec 18th, 2017)
+* Update MistSDK version to 1.1.2
+
 ##3.1.9 (Thursday, Oct 19th, 2017)
 * Update to PWCore version 3.1.3
 
