@@ -1,5 +1,8 @@
 # PWLocation CHANGELOG
 
+##3.1.11 (Wednesday, Jan 10th, 2018)
+* Make managed/BLE provider work when offline
+
 ##3.1.10 (Monday, Dec 18th, 2017)
 * Update MistSDK version to 1.1.2
 
