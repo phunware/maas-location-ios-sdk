@@ -31,8 +31,15 @@
  */
 - (instancetype)initWithBuildingId:(NSInteger)buildingId;
 
+/**
+ Initialization
+ */
 - (instancetype)init NS_UNAVAILABLE;
 
+/**
+ @param bundleURL The bundle URL.
+ @param completion Block called when PWManagedLocationManager has been initialized. Gives the manager object or error if there was one.
+ */
 + (void)createWithBundleURL:(NSURL *)bundleURL completion:(void(^)(PWManagedLocationManager *managedLocationManager, NSError *error))completion;
 
 /**

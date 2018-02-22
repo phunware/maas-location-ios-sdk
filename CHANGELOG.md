@@ -1,52 +1,60 @@
 # PWLocation CHANGELOG
 
-##3.1.11 (Wednesday, Jan 10th, 2018)
+## 3.3.0 (Thursday, Feb 22nd, 2018)
+#### Features
+* New BLE provider (Phunware Locate)
+* Update to PWCore 3.3.x
+
+#### Bug fixes / performance enhancements
+* Added additional error logging for troubleshooting
+
+## 3.1.11 (Wednesday, Jan 10th, 2018)
 * Make managed/BLE provider work when offline
 
-##3.1.10 (Monday, Dec 18th, 2017)
+## 3.1.10 (Monday, Dec 18th, 2017)
 * Update MistSDK version to 1.1.2
 
-##3.1.9 (Thursday, Oct 19th, 2017)
+## 3.1.9 (Thursday, Oct 19th, 2017)
 * Update to PWCore version 3.1.3
 
-##3.1.8 (Friday, Oct 13th, 2017)
+## 3.1.8 (Friday, Oct 13th, 2017)
 * Update MistSDK version to 1.1.1
 * Update PWCore version to 3.1.2
 * Optional use of pressure sensor to prevent floor hopping
 
-##3.1.7 (Monday, Aug 30th, 2017)
+## 3.1.7 (Monday, Aug 30th, 2017)
 * Update Senion to 5.1
 * Update PWCore version to 3.1.1
 * Stability improvements to Mist
 
-##3.1.6 (Monday, Jul 31st, 2017)
+## 3.1.6 (Monday, Jul 31st, 2017)
 * Update PWCore version to 3.1.0
 
 ##3.1.5 (Saturday, Jul 22nd, 2017)
 * Update MistSDK version to 0.0.1144
 
-##3.1.4 (Friday, Jul 21st, 2017)
+## 3.1.4 (Friday, Jul 21st, 2017)
 * Improvements to dead reckoning
 
-##3.1.3 (Friday, Jun 23rd, 2017)
+## 3.1.3 (Friday, Jun 23rd, 2017)
 * Further improvements on Mist conversion algorithm
 
-##3.1.2 (Friday, Jun 2nd, 2017)
+## 3.1.2 (Friday, Jun 2nd, 2017)
 * Improve Mist conversion algorithm
 
-##3.1.1 (Tuesday, Mar 28th, 2017)
+## 3.1.1 (Tuesday, Mar 28th, 2017)
 * Improve algorithm for managed location provider.
 * Add Mist location provider.
 * Remove `VB token/Senion credential/CMX GUID` properties from PWManagedLocationManager, which can be read from bundle.
 
-##3.1.0 (Friday, Jan 27th, 2017)
+## 3.1.0 (Friday, Jan 27th, 2017)
 * Initial release of Managed Provider.
 * Upgrade SenionLab SDK from v4.8.0 to v4.9.0.
 
-##3.0.1 (Monday, October 24th, 2016)
+## 3.0.1 (Monday, October 24th, 2016)
 * Upgrade SenionLab SDK from v4.5.4 to v4.8.0.
 
-##3.0.0 (Monday, July 25th, 2016)
+## 3.0.0 (Monday, July 25th, 2016)
 * Upgrade SenionLab SDK from v4.1.2 to v4.5.4.
 * Be able to auto re-bind for MSE location manager.
 
