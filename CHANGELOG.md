@@ -1,5 +1,11 @@
 # PWLocation CHANGELOG
 
+## 3.3.1 (Thursday, Mar 15th, 2018)
+#### Bug fixes / performance enhancements
+* Updates made to Locate algorithm
+* Fixed crash when Locate has an invalid beacon UUID
+* Cleaned up some logging
+
 ## 3.3.0 (Thursday, Feb 22nd, 2018)
 #### Features
 * New BLE provider (Phunware Locate)
