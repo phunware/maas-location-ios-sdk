@@ -1,5 +1,9 @@
 # PWLocation CHANGELOG
 
+## 3.3.2 (Tuesday, Mar 20th, 2018)
+#### Bug fixes / performance enhancements
+* Updates made to Locate algorithm
+
 ## 3.3.1 (Thursday, Mar 15th, 2018)
 #### Bug fixes / performance enhancements
 * Updates made to Locate algorithm
