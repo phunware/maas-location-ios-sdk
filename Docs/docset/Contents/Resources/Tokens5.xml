@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PWFusedLocationManagerZone.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PWFusedLocationManagerZone</TokenIdentifier>
+			<Abstract type="html">The &apos;PWFusedLocationManagerZone&apos; class defines a zone where a particular location manager should be used. The zone will be considered valid for use only if the location given by the location manager has a coordinate inside the polygon region and if the floorID of the location is contained in the floorIDs array.</Abstract>
+			<DeclaredIn>PWFusedLocationManagerZone.h</DeclaredIn>
+            
+			
+			<NodeRef refid="5"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWFusedLocationManagerZone/setPolygon:</TokenIdentifier>
+			<Abstract type="html">The polygon that encompasses the zone where the location manager should be used</Abstract>
+			<DeclaredIn>PWFusedLocationManagerZone.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) MKPolygon *polygon</Declaration>
+			
+			
+			<Anchor>//api/name/polygon</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWFusedLocationManagerZone/polygon</TokenIdentifier>
+			<Abstract type="html">The polygon that encompasses the zone where the location manager should be used</Abstract>
+			<DeclaredIn>PWFusedLocationManagerZone.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) MKPolygon *polygon</Declaration>
+			
+			
+			<Anchor>//api/name/polygon</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWFusedLocationManagerZone/polygon</TokenIdentifier>
+			<Abstract type="html">The polygon that encompasses the zone where the location manager should be used</Abstract>
+			<DeclaredIn>PWFusedLocationManagerZone.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) MKPolygon *polygon</Declaration>
+			
+			
+			<Anchor>//api/name/polygon</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWFusedLocationManagerZone/setFloorIdentifiers:</TokenIdentifier>
+			<Abstract type="html">The identifiers of the floors where the polygon for this zone is be valid</Abstract>
+			<DeclaredIn>PWFusedLocationManagerZone.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) NSArray *floorIdentifiers</Declaration>
+			
+			
+			<Anchor>//api/name/floorIdentifiers</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWFusedLocationManagerZone/floorIdentifiers</TokenIdentifier>
+			<Abstract type="html">The identifiers of the floors where the polygon for this zone is be valid</Abstract>
+			<DeclaredIn>PWFusedLocationManagerZone.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) NSArray *floorIdentifiers</Declaration>
+			
+			
+			<Anchor>//api/name/floorIdentifiers</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWFusedLocationManagerZone/floorIdentifiers</TokenIdentifier>
+			<Abstract type="html">The identifiers of the floors where the polygon for this zone is be valid</Abstract>
+			<DeclaredIn>PWFusedLocationManagerZone.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) NSArray *floorIdentifiers</Declaration>
+			
+			
+			<Anchor>//api/name/floorIdentifiers</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWFusedLocationManagerZone/initWithPolygon:floorIdentifiers:</TokenIdentifier>
+			<Abstract type="html">Initializes a zone where a location manager should be used.</Abstract>
+			<DeclaredIn>PWFusedLocationManagerZone.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithPolygon:(MKPolygon *)polygon floorIdentifiers:(NSArray *)floorIdentifiers</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>polygon</Name>
+					<Abstract type="html">A polygon that encompasses the zone where the location manager should be used</Abstract>
+				</Parameter><Parameter>
+					<Name>floorIdentifiers</Name>
+					<Abstract type="html">An array of integers that indicate the floors where the polygon for this zone is be valid</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An initialized zone object.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithPolygon:floorIdentifiers:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

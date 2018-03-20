@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PWMSLocationManager.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PWMSLocationManager</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PWVBLocationManager.h</DeclaredIn>
+            
+			
+			<NodeRef refid="11"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PWMSLocationManager/createMSWithSDKToken:floorConfigurations:onComplete:</TokenIdentifier>
+			<Abstract type="html">The Mist SDK token, which starts with D, S, or P.</Abstract>
+			<DeclaredIn>PWVBLocationManager.h</DeclaredIn>
+			
+			<Declaration>+ (void)createMSWithSDKToken:(NSString *)sdkToken floorConfigurations:(NSArray *)floorConfigurations onComplete:(void ( ^ ) ( PWMSLocationManager *manager , NSError *error ))completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sdkToken</Name>
+					<Abstract type="html">The Mist SDK token, which starts with D, S, or P.</Abstract>
+				</Parameter><Parameter>
+					<Name>floorConfigurations</Name>
+					<Abstract type="html">array containing dictionaries of floor info. Example for one floor:
+{
+     &quot;id&quot; : @&quot;MISTFLOORNAME&quot;,
+     &quot;maasId&quot; : 195842,
+
+     &quot;topLeft&quot; : {
+         &quot;longitude&quot; : -97.742525,
+         &quot;latitude&quot; : 30.360108
+     },
+     &quot;topRight&quot; : {
+         &quot;longitude&quot; : -97.741753,
+         &quot;latitude&quot; : 30.359737
+     }
+     &quot;bottomLeft&quot; : {
+         &quot;longitude&quot; : -97.741753,
+         &quot;latitude&quot; : 30.359737
+     }
+}</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">Block called when PWMSLocationManager has been initialized. Gives the manager object or error if there was one.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/createMSWithSDKToken:floorConfigurations:onComplete:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>
