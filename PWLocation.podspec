@@ -11,9 +11,9 @@ Pod::Spec.new do |s|
   s.license      = { :type => 'Copyright', :text => 'Copyright 2014 by Phunware Inc. All rights reserved.' }
 
   s.ios.vendored_frameworks = 'Framework/PWLocation.framework'
-  s.dependency 'PWCore', '~> 3.3.0'
-  s.dependency 'MistSDK', '1.1.2'
-  s.dependency 'TMCache'
+  s.ios.dependency 'PWCore', '~> 3.3.0'
+  s.ios.dependency 'MistSDK', '1.1.2'
+  s.ios.dependency 'TMCache'
 
   s.ios.library = 'c++'
   s.ios.frameworks = 'Security', 'QuartzCore', 'SystemConfiguration', 'MobileCoreServices', 'CoreTelephony', 'CoreBluetooth', 'CoreMotion', 'CoreLocation', 'MapKit'
