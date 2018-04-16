@@ -1,5 +1,5 @@
 # PWLocation CHANGELOG
-## 3.3.3 (Monday, Apr 16th, 2018)
+## 3.3.4 (Monday, Apr 16th, 2018)
 #### Features
 * Exposed userInfo object from bundle download on PWManagedLocationManager
 

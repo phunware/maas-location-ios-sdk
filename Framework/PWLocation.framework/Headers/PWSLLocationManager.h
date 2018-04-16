@@ -10,6 +10,8 @@
 #import <PWLocation/PWLocationManager.h>
 #import <PWLocation/PWIndoorLocation.h>
 
+@protocol PWSLLocationManagerDelegate;
+
 /**
  The `PWSLLocationManager` class defines the interface for configuring the delivery of BLE location-related events to your application. You use an instance of this class to establish the parameters that determine when location events should be delivered and to start and stop the actual delivery of those events. This class conforms to the `PWLocationManager` protocol.
  */
