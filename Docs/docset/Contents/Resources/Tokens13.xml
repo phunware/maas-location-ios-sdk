@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/PWManagedProviderInfo.html">
+	<File path="Classes/PWVBLocationManager.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/PWManagedProviderInfo</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cl/PWVBLocationManager</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>PWManagedProviderInfo.h</DeclaredIn>
+			<DeclaredIn>PWVBLocationManager.h</DeclaredIn>
             
 			
 			<NodeRef refid="13"/>
@@ -13,153 +13,93 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWManagedProviderInfo/setProviderType:</TokenIdentifier>
-			<Abstract type="html">The provider type.</Abstract>
-			<DeclaredIn>PWManagedProviderInfo.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWVBLocationManager/setLocation:</TokenIdentifier>
+			<Abstract type="html">The last indoor location received.</Abstract>
+			<DeclaredIn>PWVBLocationManager.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) PWManagedProviderType providerType</Declaration>
+			<Declaration>@property (nonatomic, readonly) PWIndoorLocation *location</Declaration>
 			
 			
-			<Anchor>//api/name/providerType</Anchor>
+			<Anchor>//api/name/location</Anchor>
             <NodeRef refid="13"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWManagedProviderInfo/providerType</TokenIdentifier>
-			<Abstract type="html">The provider type.</Abstract>
-			<DeclaredIn>PWManagedProviderInfo.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWVBLocationManager/location</TokenIdentifier>
+			<Abstract type="html">The last indoor location received.</Abstract>
+			<DeclaredIn>PWVBLocationManager.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) PWManagedProviderType providerType</Declaration>
+			<Declaration>@property (nonatomic, readonly) PWIndoorLocation *location</Declaration>
 			
 			
-			<Anchor>//api/name/providerType</Anchor>
+			<Anchor>//api/name/location</Anchor>
             <NodeRef refid="13"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWManagedProviderInfo/providerType</TokenIdentifier>
-			<Abstract type="html">The provider type.</Abstract>
-			<DeclaredIn>PWManagedProviderInfo.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/PWVBLocationManager/location</TokenIdentifier>
+			<Abstract type="html">The last indoor location received.</Abstract>
+			<DeclaredIn>PWVBLocationManager.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) PWManagedProviderType providerType</Declaration>
+			<Declaration>@property (nonatomic, readonly) PWIndoorLocation *location</Declaration>
 			
 			
-			<Anchor>//api/name/providerType</Anchor>
+			<Anchor>//api/name/location</Anchor>
             <NodeRef refid="13"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWManagedProviderInfo/setProviderName:</TokenIdentifier>
-			<Abstract type="html">The provider name.</Abstract>
-			<DeclaredIn>PWManagedProviderInfo.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWVBLocationManager/setSdkToken:</TokenIdentifier>
+			<Abstract type="html">The MIST SDK token, starts with D, S, or P.</Abstract>
+			<DeclaredIn>PWVBLocationManager.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong, readonly) NSString *providerName</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *sdkToken</Declaration>
 			
 			
-			<Anchor>//api/name/providerName</Anchor>
+			<Anchor>//api/name/sdkToken</Anchor>
             <NodeRef refid="13"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWManagedProviderInfo/providerName</TokenIdentifier>
-			<Abstract type="html">The provider name.</Abstract>
-			<DeclaredIn>PWManagedProviderInfo.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWVBLocationManager/sdkToken</TokenIdentifier>
+			<Abstract type="html">The MIST SDK token, starts with D, S, or P.</Abstract>
+			<DeclaredIn>PWVBLocationManager.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong, readonly) NSString *providerName</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *sdkToken</Declaration>
 			
 			
-			<Anchor>//api/name/providerName</Anchor>
+			<Anchor>//api/name/sdkToken</Anchor>
             <NodeRef refid="13"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWManagedProviderInfo/providerName</TokenIdentifier>
-			<Abstract type="html">The provider name.</Abstract>
-			<DeclaredIn>PWManagedProviderInfo.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/PWVBLocationManager/sdkToken</TokenIdentifier>
+			<Abstract type="html">The MIST SDK token, starts with D, S, or P.</Abstract>
+			<DeclaredIn>PWVBLocationManager.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong, readonly) NSString *providerName</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *sdkToken</Declaration>
 			
 			
-			<Anchor>//api/name/providerName</Anchor>
+			<Anchor>//api/name/sdkToken</Anchor>
             <NodeRef refid="13"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWManagedProviderInfo/setIsActive:</TokenIdentifier>
-			<Abstract type="html">isActive is YES if the provider is active in the PWManagedLocationManager</Abstract>
-			<DeclaredIn>PWManagedProviderInfo.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/clm/PWVBLocationManager/sharedInstance</TokenIdentifier>
+			<Abstract type="html">The shared PWVBLocationManager instance. Must call createMSWithSDKToken:floorConifgurations:onComplete or createBPWithSDKToken:floorConifgurations:onComplete before the instance can return location.</Abstract>
+			<DeclaredIn>PWVBLocationManager.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign, readonly) BOOL isActive</Declaration>
+			<Declaration>+ (instancetype)sharedInstance</Declaration>
 			
 			
-			<Anchor>//api/name/isActive</Anchor>
+			<Anchor>//api/name/sharedInstance</Anchor>
             <NodeRef refid="13"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWManagedProviderInfo/isActive</TokenIdentifier>
-			<Abstract type="html">isActive is YES if the provider is active in the PWManagedLocationManager</Abstract>
-			<DeclaredIn>PWManagedProviderInfo.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, assign, readonly) BOOL isActive</Declaration>
-			
-			
-			<Anchor>//api/name/isActive</Anchor>
-            <NodeRef refid="13"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWManagedProviderInfo/isActive</TokenIdentifier>
-			<Abstract type="html">isActive is YES if the provider is active in the PWManagedLocationManager</Abstract>
-			<DeclaredIn>PWManagedProviderInfo.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, assign, readonly) BOOL isActive</Declaration>
-			
-			
-			<Anchor>//api/name/isActive</Anchor>
-            <NodeRef refid="13"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWManagedProviderInfo/setConfidenceFactor:</TokenIdentifier>
-			<Abstract type="html">The confidence factor of the provider, on a scale of 0 (least confident) to 1 (most confident).</Abstract>
-			<DeclaredIn>PWManagedProviderInfo.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, strong, readonly) NSNumber *confidenceFactor</Declaration>
-			
-			
-			<Anchor>//api/name/confidenceFactor</Anchor>
-            <NodeRef refid="13"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWManagedProviderInfo/confidenceFactor</TokenIdentifier>
-			<Abstract type="html">The confidence factor of the provider, on a scale of 0 (least confident) to 1 (most confident).</Abstract>
-			<DeclaredIn>PWManagedProviderInfo.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, strong, readonly) NSNumber *confidenceFactor</Declaration>
-			
-			
-			<Anchor>//api/name/confidenceFactor</Anchor>
-            <NodeRef refid="13"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWManagedProviderInfo/confidenceFactor</TokenIdentifier>
-			<Abstract type="html">The confidence factor of the provider, on a scale of 0 (least confident) to 1 (most confident).</Abstract>
-			<DeclaredIn>PWManagedProviderInfo.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, strong, readonly) NSNumber *confidenceFactor</Declaration>
-			
-			
-			<Anchor>//api/name/confidenceFactor</Anchor>
-            <NodeRef refid="13"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWManagedProviderInfo/init</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/PWVBLocationManager/init</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>PWManagedProviderInfo.h</DeclaredIn>
+			<DeclaredIn>PWVBLocationManager.h</DeclaredIn>
 			
 			<Declaration>- (instancetype)init</Declaration>
 			

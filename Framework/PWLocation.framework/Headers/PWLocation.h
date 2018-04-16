@@ -19,17 +19,12 @@
 #import <PWLocation/PWMockLocationManager.h>
 #import <PWLocation/PWMockLocationManagerConfiguration.h>
 #import <PWLocation/PWMockLocationStep.h>
-#import <PWLocation/PWBeaconProximityManager.h>
-#import <PWLocation/PWBeaconProximityRegion.h>
-#import <PWLocation/PWFusedLocationManager.h>
-#import <PWLocation/PWFusedLocationManagerZone.h>
-#import <PWLocation/PWFusedLocationManagerZoneConfiguration.h>
 
 /**
  PWLocation is a location provider SDK. This SDK encompasses a variety of indoor location providers and can be used in conjunction with PWMapKit to delivery and display indoor location location updates.
  */
 
-static NSString * const PWLocationVersion = @"3.3.2";
+static NSString * const PWLocationVersion = @"3.3.3";
 
 @interface PWLocation : NSObject
 

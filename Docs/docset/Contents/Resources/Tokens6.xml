@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/PWFusedLocationManagerZoneConfiguration.html">
+	<File path="Classes/PWMSLocationManager.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/PWFusedLocationManagerZoneConfiguration</TokenIdentifier>
-			<Abstract type="html">The &apos;PWFusedLocationManagerZoneConfiguration&apos; class relates a location manager to the zones where the location manager should be used.</Abstract>
-			<DeclaredIn>PWFusedLocationManagerZoneConfiguration.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/PWMSLocationManager</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PWVBLocationManager.h</DeclaredIn>
             
 			
 			<NodeRef refid="6"/>
@@ -13,94 +13,42 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWFusedLocationManagerZoneConfiguration/setLocationManager:</TokenIdentifier>
-			<Abstract type="html">The location manager object</Abstract>
-			<DeclaredIn>PWFusedLocationManagerZoneConfiguration.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/clm/PWMSLocationManager/createMSWithSDKToken:floorConfigurations:onComplete:</TokenIdentifier>
+			<Abstract type="html">The Mist SDK token, which starts with D, S, or P.</Abstract>
+			<DeclaredIn>PWVBLocationManager.h</DeclaredIn>
 			
-			<Declaration>@property (readonly) id&lt;PWLocationManager&gt; locationManager</Declaration>
-			
-			
-			<Anchor>//api/name/locationManager</Anchor>
-            <NodeRef refid="6"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWFusedLocationManagerZoneConfiguration/locationManager</TokenIdentifier>
-			<Abstract type="html">The location manager object</Abstract>
-			<DeclaredIn>PWFusedLocationManagerZoneConfiguration.h</DeclaredIn>
-			
-			<Declaration>@property (readonly) id&lt;PWLocationManager&gt; locationManager</Declaration>
-			
-			
-			<Anchor>//api/name/locationManager</Anchor>
-            <NodeRef refid="6"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWFusedLocationManagerZoneConfiguration/locationManager</TokenIdentifier>
-			<Abstract type="html">The location manager object</Abstract>
-			<DeclaredIn>PWFusedLocationManagerZoneConfiguration.h</DeclaredIn>
-			
-			<Declaration>@property (readonly) id&lt;PWLocationManager&gt; locationManager</Declaration>
-			
-			
-			<Anchor>//api/name/locationManager</Anchor>
-            <NodeRef refid="6"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWFusedLocationManagerZoneConfiguration/setZones:</TokenIdentifier>
-			<Abstract type="html">An array of zones where the location manager should be used</Abstract>
-			<DeclaredIn>PWFusedLocationManagerZoneConfiguration.h</DeclaredIn>
-			
-			<Declaration>@property (readonly) NSArray *zones</Declaration>
-			
-			
-			<Anchor>//api/name/zones</Anchor>
-            <NodeRef refid="6"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWFusedLocationManagerZoneConfiguration/zones</TokenIdentifier>
-			<Abstract type="html">An array of zones where the location manager should be used</Abstract>
-			<DeclaredIn>PWFusedLocationManagerZoneConfiguration.h</DeclaredIn>
-			
-			<Declaration>@property (readonly) NSArray *zones</Declaration>
-			
-			
-			<Anchor>//api/name/zones</Anchor>
-            <NodeRef refid="6"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWFusedLocationManagerZoneConfiguration/zones</TokenIdentifier>
-			<Abstract type="html">An array of zones where the location manager should be used</Abstract>
-			<DeclaredIn>PWFusedLocationManagerZoneConfiguration.h</DeclaredIn>
-			
-			<Declaration>@property (readonly) NSArray *zones</Declaration>
-			
-			
-			<Anchor>//api/name/zones</Anchor>
-            <NodeRef refid="6"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWFusedLocationManagerZoneConfiguration/initWithLocationManager:zones:</TokenIdentifier>
-			<Abstract type="html">Initializes a &apos;PWFusedLocationManagerZoneConfiguration&apos; object with a location manager along with the zones where the location manager will be valid</Abstract>
-			<DeclaredIn>PWFusedLocationManagerZoneConfiguration.h</DeclaredIn>
-			
-			<Declaration>- (instancetype)initWithLocationManager:(id&lt;PWLocationManager&gt;)locationManager zones:(NSArray *)zones</Declaration>
+			<Declaration>+ (void)createMSWithSDKToken:(NSString *)sdkToken floorConfigurations:(NSArray *)floorConfigurations onComplete:(void ( ^ ) ( PWMSLocationManager *manager , NSError *error ))completion</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>locationManager</Name>
-					<Abstract type="html">A location manager object</Abstract>
+					<Name>sdkToken</Name>
+					<Abstract type="html">The Mist SDK token, which starts with D, S, or P.</Abstract>
 				</Parameter><Parameter>
-					<Name>zones</Name>
-					<Abstract type="html">The zones where the location manager will be valid</Abstract>
+					<Name>floorConfigurations</Name>
+					<Abstract type="html">array containing dictionaries of floor info. Example for one floor:
+{
+     &quot;id&quot; : @&quot;MISTFLOORNAME&quot;,
+     &quot;maasId&quot; : 195842,
+
+     &quot;topLeft&quot; : {
+         &quot;longitude&quot; : -97.742525,
+         &quot;latitude&quot; : 30.360108
+     },
+     &quot;topRight&quot; : {
+         &quot;longitude&quot; : -97.741753,
+         &quot;latitude&quot; : 30.359737
+     }
+     &quot;bottomLeft&quot; : {
+         &quot;longitude&quot; : -97.741753,
+         &quot;latitude&quot; : 30.359737
+     }
+}</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">Block called when PWMSLocationManager has been initialized. Gives the manager object or error if there was one.</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">An initialized &apos;PWFusedLocationManagerZoneConfiguration&apos; object.</Abstract></ReturnValue>
-			<Anchor>//api/name/initWithLocationManager:zones:</Anchor>
+			
+			<Anchor>//api/name/createMSWithSDKToken:floorConfigurations:onComplete:</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		

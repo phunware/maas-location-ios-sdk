@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/PWMockLocationManager.html">
+	<File path="Protocols/PWGPSLocationManagerDelegate.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/PWMockLocationManager</TokenIdentifier>
-			<Abstract type="html">The PWMockLocationManager class allows you to implement a mock location provider for testing and validation. This is extremely useful for location testing outside of a venue with a proper location provider.</Abstract>
-			<DeclaredIn>PWMockLocationManager.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intf/PWGPSLocationManagerDelegate</TokenIdentifier>
+			<Abstract type="html">The PWMSELocationManagerDelegate protocol defines the methods used to receive location updates from a PWMSELocationManager object. This class conforms to the PWLocationManagerDelegate protocol.</Abstract>
+			<DeclaredIn>PWGPSLocationManager.h</DeclaredIn>
             
 			
 			<NodeRef refid="14"/>
@@ -13,55 +13,42 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWMockLocationManager/setLocation:</TokenIdentifier>
-			<Abstract type="html">The latest indoor location received from the location service.</Abstract>
-			<DeclaredIn>PWMockLocationManager.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intfm/PWGPSLocationManagerDelegate/locationManager:didUpdateToLocation:</TokenIdentifier>
+			<Abstract type="html">Tells the delegate that a new location update is available.</Abstract>
+			<DeclaredIn>PWGPSLocationManager.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) PWIndoorLocation *location</Declaration>
-			
-			
-			<Anchor>//api/name/location</Anchor>
-            <NodeRef refid="14"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWMockLocationManager/location</TokenIdentifier>
-			<Abstract type="html">The latest indoor location received from the location service.</Abstract>
-			<DeclaredIn>PWMockLocationManager.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) PWIndoorLocation *location</Declaration>
-			
-			
-			<Anchor>//api/name/location</Anchor>
-            <NodeRef refid="14"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWMockLocationManager/location</TokenIdentifier>
-			<Abstract type="html">The latest indoor location received from the location service.</Abstract>
-			<DeclaredIn>PWMockLocationManager.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) PWIndoorLocation *location</Declaration>
-			
-			
-			<Anchor>//api/name/location</Anchor>
-            <NodeRef refid="14"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWMockLocationManager/initWithMockLocationManagerWithConfiguration:</TokenIdentifier>
-			<Abstract type="html">Initializes a mock location manager with the specified PWMockLocationManagerConfiguration.</Abstract>
-			<DeclaredIn>PWMockLocationManager.h</DeclaredIn>
-			
-			<Declaration>- (instancetype)initWithMockLocationManagerWithConfiguration:(PWMockLocationManagerConfiguration *)configuration</Declaration>
+			<Declaration>- (void)locationManager:(PWGPSLocationManager *)manager didUpdateToLocation:(id&lt;PWLocation&gt;)location</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>configuration</Name>
-					<Abstract type="html">The PWMockLocationManagerConfiguration object to initialize the manager with.</Abstract>
+					<Name>manager</Name>
+					<Abstract type="html">The location manager object that generated the update event.</Abstract>
+				</Parameter><Parameter>
+					<Name>location</Name>
+					<Abstract type="html">A location object with the updated location information. This object conforms to the PWLocation protocol.</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">Returns a PWMockLocationManager object.</Abstract></ReturnValue>
-			<Anchor>//api/name/initWithMockLocationManagerWithConfiguration:</Anchor>
+			
+			<Anchor>//api/name/locationManager:didUpdateToLocation:</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/PWGPSLocationManagerDelegate/locationManager:failedWithError:</TokenIdentifier>
+			<Abstract type="html">Tells the delegate that the location manager was unable to retrieve a location value.</Abstract>
+			<DeclaredIn>PWGPSLocationManager.h</DeclaredIn>
+			
+			<Declaration>- (void)locationManager:(PWGPSLocationManager *)manager failedWithError:(NSError *)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>manager</Name>
+					<Abstract type="html">The location manager object that was unable to retrieve the location.</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">The error object containing the reason the location could not be retrieved.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/locationManager:failedWithError:</Anchor>
             <NodeRef refid="14"/>
 		</Token>
 		

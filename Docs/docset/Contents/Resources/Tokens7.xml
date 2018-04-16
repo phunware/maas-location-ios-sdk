@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/PWGPSLocationManager.html">
+	<File path="Classes/PWManagedLocationManager.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/PWGPSLocationManager</TokenIdentifier>
-			<Abstract type="html">The PWGPSLocationManager class defines the interface for configuring the delivery of GPS location-related events to your application. You use an instance of this class to establish the parameters that determine when location events should be delivered and to start and stop the actual delivery of those events. This class conforms to the PWLocationManager protocol.</Abstract>
-			<DeclaredIn>PWGPSLocationManager.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/PWManagedLocationManager</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PWManagedLocationManager.h</DeclaredIn>
             
 			
 			<NodeRef refid="7"/>
@@ -13,81 +13,45 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWGPSLocationManager/setInternalLocationManager:</TokenIdentifier>
-			<Abstract type="html">The CLLocationManager used to deliver indoor GPS location updates.</Abstract>
-			<DeclaredIn>PWGPSLocationManager.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWManagedLocationManager/setBuildingId:</TokenIdentifier>
+			<Abstract type="html">The building identifier.</Abstract>
+			<DeclaredIn>PWManagedLocationManager.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) CLLocationManager *internalLocationManager</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSInteger buildingId</Declaration>
 			
 			
-			<Anchor>//api/name/internalLocationManager</Anchor>
+			<Anchor>//api/name/buildingId</Anchor>
             <NodeRef refid="7"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWGPSLocationManager/internalLocationManager</TokenIdentifier>
-			<Abstract type="html">The CLLocationManager used to deliver indoor GPS location updates.</Abstract>
-			<DeclaredIn>PWGPSLocationManager.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWManagedLocationManager/buildingId</TokenIdentifier>
+			<Abstract type="html">The building identifier.</Abstract>
+			<DeclaredIn>PWManagedLocationManager.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) CLLocationManager *internalLocationManager</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSInteger buildingId</Declaration>
 			
 			
-			<Anchor>//api/name/internalLocationManager</Anchor>
+			<Anchor>//api/name/buildingId</Anchor>
             <NodeRef refid="7"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWGPSLocationManager/internalLocationManager</TokenIdentifier>
-			<Abstract type="html">The CLLocationManager used to deliver indoor GPS location updates.</Abstract>
-			<DeclaredIn>PWGPSLocationManager.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/PWManagedLocationManager/buildingId</TokenIdentifier>
+			<Abstract type="html">The building identifier.</Abstract>
+			<DeclaredIn>PWManagedLocationManager.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) CLLocationManager *internalLocationManager</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSInteger buildingId</Declaration>
 			
 			
-			<Anchor>//api/name/internalLocationManager</Anchor>
+			<Anchor>//api/name/buildingId</Anchor>
             <NodeRef refid="7"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWGPSLocationManager/setFloorIDMapping:</TokenIdentifier>
-			<Abstract type="html">The floor ID mapping dictionary used to define the mapping between the location provider floor ID and the Phunware floor ID. The dictionary format must adhere to the following format: @{CUSTOMERFLOORID : PHUNWAREFLOOR_ID}.</Abstract>
-			<DeclaredIn>PWGPSLocationManager.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, strong) NSDictionary *floorIDMapping</Declaration>
-			
-			
-			<Anchor>//api/name/floorIDMapping</Anchor>
-            <NodeRef refid="7"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWGPSLocationManager/floorIDMapping</TokenIdentifier>
-			<Abstract type="html">The floor ID mapping dictionary used to define the mapping between the location provider floor ID and the Phunware floor ID. The dictionary format must adhere to the following format: @{CUSTOMERFLOORID : PHUNWAREFLOOR_ID}.</Abstract>
-			<DeclaredIn>PWGPSLocationManager.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, strong) NSDictionary *floorIDMapping</Declaration>
-			
-			
-			<Anchor>//api/name/floorIDMapping</Anchor>
-            <NodeRef refid="7"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWGPSLocationManager/floorIDMapping</TokenIdentifier>
-			<Abstract type="html">The floor ID mapping dictionary used to define the mapping between the location provider floor ID and the Phunware floor ID. The dictionary format must adhere to the following format: @{CUSTOMERFLOORID : PHUNWAREFLOOR_ID}.</Abstract>
-			<DeclaredIn>PWGPSLocationManager.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, strong) NSDictionary *floorIDMapping</Declaration>
-			
-			
-			<Anchor>//api/name/floorIDMapping</Anchor>
-            <NodeRef refid="7"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWGPSLocationManager/setLocation:</TokenIdentifier>
-			<Abstract type="html">The latest indoor location received from the Phunware location service.</Abstract>
-			<DeclaredIn>PWGPSLocationManager.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWManagedLocationManager/setLocation:</TokenIdentifier>
+			<Abstract type="html">The last indoor location received.</Abstract>
+			<DeclaredIn>PWManagedLocationManager.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly) PWIndoorLocation *location</Declaration>
 			
@@ -97,9 +61,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWGPSLocationManager/location</TokenIdentifier>
-			<Abstract type="html">The latest indoor location received from the Phunware location service.</Abstract>
-			<DeclaredIn>PWGPSLocationManager.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWManagedLocationManager/location</TokenIdentifier>
+			<Abstract type="html">The last indoor location received.</Abstract>
+			<DeclaredIn>PWManagedLocationManager.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly) PWIndoorLocation *location</Declaration>
 			
@@ -109,9 +73,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWGPSLocationManager/location</TokenIdentifier>
-			<Abstract type="html">The latest indoor location received from the Phunware location service.</Abstract>
-			<DeclaredIn>PWGPSLocationManager.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/PWManagedLocationManager/location</TokenIdentifier>
+			<Abstract type="html">The last indoor location received.</Abstract>
+			<DeclaredIn>PWManagedLocationManager.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly) PWIndoorLocation *location</Declaration>
 			
@@ -121,55 +85,171 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWGPSLocationManager/initWithCLLocationManager:</TokenIdentifier>
-			<Abstract type="html">Initializes the location manager with the specified CLLocationManager instance.</Abstract>
-			<DeclaredIn>PWGPSLocationManager.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWManagedLocationManager/setFloorIDMapping:</TokenIdentifier>
+			<Abstract type="html">The floor ID mapping dictionary used to define the mapping between the location provider floor ID and the Phunware floor ID. The dictionary format must adhere to the following format: @{CUSTOMERFLOORID : PHUNWAREFLOOR_ID}.</Abstract>
+			<DeclaredIn>PWManagedLocationManager.h</DeclaredIn>
 			
-			<Declaration>- (instancetype)initWithCLLocationManager:(CLLocationManager *)locationManager</Declaration>
+			<Declaration>@property (nonatomic, strong) NSDictionary *floorIDMapping</Declaration>
+			
+			
+			<Anchor>//api/name/floorIDMapping</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWManagedLocationManager/floorIDMapping</TokenIdentifier>
+			<Abstract type="html">The floor ID mapping dictionary used to define the mapping between the location provider floor ID and the Phunware floor ID. The dictionary format must adhere to the following format: @{CUSTOMERFLOORID : PHUNWAREFLOOR_ID}.</Abstract>
+			<DeclaredIn>PWManagedLocationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary *floorIDMapping</Declaration>
+			
+			
+			<Anchor>//api/name/floorIDMapping</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWManagedLocationManager/floorIDMapping</TokenIdentifier>
+			<Abstract type="html">The floor ID mapping dictionary used to define the mapping between the location provider floor ID and the Phunware floor ID. The dictionary format must adhere to the following format: @{CUSTOMERFLOORID : PHUNWAREFLOOR_ID}.</Abstract>
+			<DeclaredIn>PWManagedLocationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary *floorIDMapping</Declaration>
+			
+			
+			<Anchor>//api/name/floorIDMapping</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWManagedLocationManager/initWithBuildingId:</TokenIdentifier>
+			<Abstract type="html">Initialize with a building identifier.</Abstract>
+			<DeclaredIn>PWManagedLocationManager.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithBuildingId:(NSInteger)buildingId</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>locationManager</Name>
-					<Abstract type="html">The location manager to use for GPS positioning. There parameter cannot be nil.</Abstract>
+					<Name>buildingId</Name>
+					<Abstract type="html">The building identifier.</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">A PWGPSLocationManager instance.</Abstract></ReturnValue>
-			<Anchor>//api/name/initWithCLLocationManager:</Anchor>
+			
+			<Anchor>//api/name/initWithBuildingId:</Anchor>
             <NodeRef refid="7"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWGPSLocationManager/locationServicesAvailable</TokenIdentifier>
-			<Abstract type="html">Returns a Boolean value indicating whether location services are enabled on the device.</Abstract>
-			<DeclaredIn>PWGPSLocationManager.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWManagedLocationManager/init</TokenIdentifier>
+			<Abstract type="html">Initialization</Abstract>
+			<DeclaredIn>PWManagedLocationManager.h</DeclaredIn>
 			
-			<Declaration>- (BOOL)locationServicesAvailable</Declaration>
+			<Declaration>- (instancetype)init</Declaration>
 			
 			
-			<Anchor>//api/name/locationServicesAvailable</Anchor>
+			<Anchor>//api/name/init</Anchor>
             <NodeRef refid="7"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWGPSLocationManager/startUpdatingLocation</TokenIdentifier>
-			<Abstract type="html">Starts the generation of updates that report the user’s current location.</Abstract>
-			<DeclaredIn>PWGPSLocationManager.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/clm/PWManagedLocationManager/createWithBundleURL:completion:</TokenIdentifier>
+			<Abstract type="html">The bundle URL.</Abstract>
+			<DeclaredIn>PWManagedLocationManager.h</DeclaredIn>
 			
-			<Declaration>- (void)startUpdatingLocation</Declaration>
+			<Declaration>+ (void)createWithBundleURL:(NSURL *)bundleURL completion:(void ( ^ ) ( PWManagedLocationManager *managedLocationManager , NSError *error ))completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>bundleURL</Name>
+					<Abstract type="html">The bundle URL.</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">Block called when PWManagedLocationManager has been initialized. Gives the manager object or error if there was one.</Abstract>
+				</Parameter>
+			</Parameters>
 			
-			
-			<Anchor>//api/name/startUpdatingLocation</Anchor>
+			<Anchor>//api/name/createWithBundleURL:completion:</Anchor>
             <NodeRef refid="7"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWGPSLocationManager/stopUpdatingLocation</TokenIdentifier>
-			<Abstract type="html">Stops the generation of location updates.</Abstract>
-			<DeclaredIn>PWGPSLocationManager.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWManagedLocationManager/internalProviderInformation</TokenIdentifier>
+			<Abstract type="html">Returns an array of PWManagedProviderInfo objects. Each provider will have its own PWManagedProviderInfo object. This will return nothing if the bundle has not already been loaded by a completed startUpdatingLocation call.</Abstract>
+			<DeclaredIn>PWManagedLocationManager.h</DeclaredIn>
 			
-			<Declaration>- (void)stopUpdatingLocation</Declaration>
+			<Declaration>- (NSArray *)internalProviderInformation</Declaration>
 			
 			
-			<Anchor>//api/name/stopUpdatingLocation</Anchor>
+			<Anchor>//api/name/internalProviderInformation</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWManagedLocationManager/setStabilizeFloorSwitching:</TokenIdentifier>
+			<Abstract type="html">Use the device&apos;s pressure sensor to prevent erroneous floor switches. Disabled by default and not recommended for most setups.</Abstract>
+			<DeclaredIn>PWManagedLocationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL stabilizeFloorSwitching</Declaration>
+			
+			
+			<Anchor>//api/name/stabilizeFloorSwitching</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWManagedLocationManager/stabilizeFloorSwitching</TokenIdentifier>
+			<Abstract type="html">Use the device&apos;s pressure sensor to prevent erroneous floor switches. Disabled by default and not recommended for most setups.</Abstract>
+			<DeclaredIn>PWManagedLocationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL stabilizeFloorSwitching</Declaration>
+			
+			
+			<Anchor>//api/name/stabilizeFloorSwitching</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWManagedLocationManager/stabilizeFloorSwitching</TokenIdentifier>
+			<Abstract type="html">Use the device&apos;s pressure sensor to prevent erroneous floor switches. Disabled by default and not recommended for most setups.</Abstract>
+			<DeclaredIn>PWManagedLocationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL stabilizeFloorSwitching</Declaration>
+			
+			
+			<Anchor>//api/name/stabilizeFloorSwitching</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWManagedLocationManager/setUserInfo:</TokenIdentifier>
+			<Abstract type="html">Extra information about the PWManagedLocationManager and the data it consumes.</Abstract>
+			<DeclaredIn>PWManagedLocationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary *userInfo</Declaration>
+			
+			
+			<Anchor>//api/name/userInfo</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWManagedLocationManager/userInfo</TokenIdentifier>
+			<Abstract type="html">Extra information about the PWManagedLocationManager and the data it consumes.</Abstract>
+			<DeclaredIn>PWManagedLocationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary *userInfo</Declaration>
+			
+			
+			<Anchor>//api/name/userInfo</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWManagedLocationManager/userInfo</TokenIdentifier>
+			<Abstract type="html">Extra information about the PWManagedLocationManager and the data it consumes.</Abstract>
+			<DeclaredIn>PWManagedLocationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary *userInfo</Declaration>
+			
+			
+			<Anchor>//api/name/userInfo</Anchor>
             <NodeRef refid="7"/>
 		</Token>
 		

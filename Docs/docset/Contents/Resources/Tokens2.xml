@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/PWBeaconProximityManager.html">
+	<File path="Classes/PWGPSLocationManager.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/PWBeaconProximityManager</TokenIdentifier>
-			<Abstract type="html">The PWBeaconProximityManager class defines the interface for configuring the delivery of beacon proximity-related events to your application. You use an instance of this class to establish the parameters that determine when beacon proximity events should be delivered and to start and stop the actual delivery of those events.</Abstract>
-			<DeclaredIn>PWBeaconProximityManager.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/PWGPSLocationManager</TokenIdentifier>
+			<Abstract type="html">The PWGPSLocationManager class defines the interface for configuring the delivery of GPS location-related events to your application. You use an instance of this class to establish the parameters that determine when location events should be delivered and to start and stop the actual delivery of those events. This class conforms to the PWLocationManager protocol.</Abstract>
+			<DeclaredIn>PWGPSLocationManager.h</DeclaredIn>
             
 			
 			<NodeRef refid="2"/>
@@ -13,9 +13,9 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWBeaconProximityManager/setInternalLocationManager:</TokenIdentifier>
-			<Abstract type="html">The CLLocationManager used to deliver beacon location updates.</Abstract>
-			<DeclaredIn>PWBeaconProximityManager.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWGPSLocationManager/setInternalLocationManager:</TokenIdentifier>
+			<Abstract type="html">The CLLocationManager used to deliver indoor GPS location updates.</Abstract>
+			<DeclaredIn>PWGPSLocationManager.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly) CLLocationManager *internalLocationManager</Declaration>
 			
@@ -25,9 +25,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWBeaconProximityManager/internalLocationManager</TokenIdentifier>
-			<Abstract type="html">The CLLocationManager used to deliver beacon location updates.</Abstract>
-			<DeclaredIn>PWBeaconProximityManager.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWGPSLocationManager/internalLocationManager</TokenIdentifier>
+			<Abstract type="html">The CLLocationManager used to deliver indoor GPS location updates.</Abstract>
+			<DeclaredIn>PWGPSLocationManager.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly) CLLocationManager *internalLocationManager</Declaration>
 			
@@ -37,9 +37,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWBeaconProximityManager/internalLocationManager</TokenIdentifier>
-			<Abstract type="html">The CLLocationManager used to deliver beacon location updates.</Abstract>
-			<DeclaredIn>PWBeaconProximityManager.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/PWGPSLocationManager/internalLocationManager</TokenIdentifier>
+			<Abstract type="html">The CLLocationManager used to deliver indoor GPS location updates.</Abstract>
+			<DeclaredIn>PWGPSLocationManager.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly) CLLocationManager *internalLocationManager</Declaration>
 			
@@ -49,81 +49,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWBeaconProximityManager/setBeaconRegions:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>PWBeaconProximityManager.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSArray *beaconRegions</Declaration>
-			
-			
-			<Anchor>//api/name/beaconRegions</Anchor>
-            <NodeRef refid="2"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWBeaconProximityManager/beaconRegions</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>PWBeaconProximityManager.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSArray *beaconRegions</Declaration>
-			
-			
-			<Anchor>//api/name/beaconRegions</Anchor>
-            <NodeRef refid="2"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWBeaconProximityManager/beaconRegions</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>PWBeaconProximityManager.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSArray *beaconRegions</Declaration>
-			
-			
-			<Anchor>//api/name/beaconRegions</Anchor>
-            <NodeRef refid="2"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWBeaconProximityManager/setMaximumBeaconRegionsToMonitor:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>PWBeaconProximityManager.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readwrite) NSUInteger maximumBeaconRegionsToMonitor</Declaration>
-			
-			
-			<Anchor>//api/name/maximumBeaconRegionsToMonitor</Anchor>
-            <NodeRef refid="2"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWBeaconProximityManager/maximumBeaconRegionsToMonitor</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>PWBeaconProximityManager.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readwrite) NSUInteger maximumBeaconRegionsToMonitor</Declaration>
-			
-			
-			<Anchor>//api/name/maximumBeaconRegionsToMonitor</Anchor>
-            <NodeRef refid="2"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWBeaconProximityManager/maximumBeaconRegionsToMonitor</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>PWBeaconProximityManager.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readwrite) NSUInteger maximumBeaconRegionsToMonitor</Declaration>
-			
-			
-			<Anchor>//api/name/maximumBeaconRegionsToMonitor</Anchor>
-            <NodeRef refid="2"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWBeaconProximityManager/setFloorIDMapping:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/PWGPSLocationManager/setFloorIDMapping:</TokenIdentifier>
 			<Abstract type="html">The floor ID mapping dictionary used to define the mapping between the location provider floor ID and the Phunware floor ID. The dictionary format must adhere to the following format: @{CUSTOMERFLOORID : PHUNWAREFLOOR_ID}.</Abstract>
-			<DeclaredIn>PWBeaconProximityManager.h</DeclaredIn>
+			<DeclaredIn>PWGPSLocationManager.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, strong) NSDictionary *floorIDMapping</Declaration>
 			
@@ -133,9 +61,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWBeaconProximityManager/floorIDMapping</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/PWGPSLocationManager/floorIDMapping</TokenIdentifier>
 			<Abstract type="html">The floor ID mapping dictionary used to define the mapping between the location provider floor ID and the Phunware floor ID. The dictionary format must adhere to the following format: @{CUSTOMERFLOORID : PHUNWAREFLOOR_ID}.</Abstract>
-			<DeclaredIn>PWBeaconProximityManager.h</DeclaredIn>
+			<DeclaredIn>PWGPSLocationManager.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, strong) NSDictionary *floorIDMapping</Declaration>
 			
@@ -145,9 +73,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWBeaconProximityManager/floorIDMapping</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/PWGPSLocationManager/floorIDMapping</TokenIdentifier>
 			<Abstract type="html">The floor ID mapping dictionary used to define the mapping between the location provider floor ID and the Phunware floor ID. The dictionary format must adhere to the following format: @{CUSTOMERFLOORID : PHUNWAREFLOOR_ID}.</Abstract>
-			<DeclaredIn>PWBeaconProximityManager.h</DeclaredIn>
+			<DeclaredIn>PWGPSLocationManager.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, strong) NSDictionary *floorIDMapping</Declaration>
 			
@@ -157,9 +85,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWBeaconProximityManager/setLocation:</TokenIdentifier>
-			<Abstract type="html">The most recently retrieved indoor location.</Abstract>
-			<DeclaredIn>PWBeaconProximityManager.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWGPSLocationManager/setLocation:</TokenIdentifier>
+			<Abstract type="html">The latest indoor location received from the Phunware location service.</Abstract>
+			<DeclaredIn>PWGPSLocationManager.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly) PWIndoorLocation *location</Declaration>
 			
@@ -169,9 +97,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWBeaconProximityManager/location</TokenIdentifier>
-			<Abstract type="html">The most recently retrieved indoor location.</Abstract>
-			<DeclaredIn>PWBeaconProximityManager.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWGPSLocationManager/location</TokenIdentifier>
+			<Abstract type="html">The latest indoor location received from the Phunware location service.</Abstract>
+			<DeclaredIn>PWGPSLocationManager.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly) PWIndoorLocation *location</Declaration>
 			
@@ -181,9 +109,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWBeaconProximityManager/location</TokenIdentifier>
-			<Abstract type="html">The most recently retrieved indoor location.</Abstract>
-			<DeclaredIn>PWBeaconProximityManager.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/PWGPSLocationManager/location</TokenIdentifier>
+			<Abstract type="html">The latest indoor location received from the Phunware location service.</Abstract>
+			<DeclaredIn>PWGPSLocationManager.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly) PWIndoorLocation *location</Declaration>
 			
@@ -193,33 +121,26 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWBeaconProximityManager/initWithCLLocationManager:beaconRegions:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>PWBeaconProximityManager.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PWGPSLocationManager/initWithCLLocationManager:</TokenIdentifier>
+			<Abstract type="html">Initializes the location manager with the specified CLLocationManager instance.</Abstract>
+			<DeclaredIn>PWGPSLocationManager.h</DeclaredIn>
 			
-			<Declaration>- (instancetype)initWithCLLocationManager:(CLLocationManager *)locationManager beaconRegions:(NSArray *)beaconRegions</Declaration>
-			
-			
-			<Anchor>//api/name/initWithCLLocationManager:beaconRegions:</Anchor>
+			<Declaration>- (instancetype)initWithCLLocationManager:(CLLocationManager *)locationManager</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>locationManager</Name>
+					<Abstract type="html">The location manager to use for GPS positioning. There parameter cannot be nil.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A PWGPSLocationManager instance.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithCLLocationManager:</Anchor>
             <NodeRef refid="2"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWBeaconProximityManager/init</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>PWBeaconProximityManager.h</DeclaredIn>
-			
-			<Declaration>- (instancetype)init</Declaration>
-			
-			
-			<Anchor>//api/name/init</Anchor>
-            <NodeRef refid="2"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWBeaconProximityManager/locationServicesAvailable</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/PWGPSLocationManager/locationServicesAvailable</TokenIdentifier>
 			<Abstract type="html">Returns a Boolean value indicating whether location services are enabled on the device.</Abstract>
-			<DeclaredIn>PWBeaconProximityManager.h</DeclaredIn>
+			<DeclaredIn>PWGPSLocationManager.h</DeclaredIn>
 			
 			<Declaration>- (BOOL)locationServicesAvailable</Declaration>
 			
@@ -229,9 +150,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWBeaconProximityManager/startUpdatingLocation</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/PWGPSLocationManager/startUpdatingLocation</TokenIdentifier>
 			<Abstract type="html">Starts the generation of updates that report the user’s current location.</Abstract>
-			<DeclaredIn>PWBeaconProximityManager.h</DeclaredIn>
+			<DeclaredIn>PWGPSLocationManager.h</DeclaredIn>
 			
 			<Declaration>- (void)startUpdatingLocation</Declaration>
 			
@@ -241,9 +162,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWBeaconProximityManager/stopUpdatingLocation</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/PWGPSLocationManager/stopUpdatingLocation</TokenIdentifier>
 			<Abstract type="html">Stops the generation of location updates.</Abstract>
-			<DeclaredIn>PWBeaconProximityManager.h</DeclaredIn>
+			<DeclaredIn>PWGPSLocationManager.h</DeclaredIn>
 			
 			<Declaration>- (void)stopUpdatingLocation</Declaration>
 			
