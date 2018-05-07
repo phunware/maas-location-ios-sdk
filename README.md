@@ -1,14 +1,14 @@
 PWLocation SDK for iOS
 ================
 
->Version 3.3.4
+>Version 3.4.0
 
 This is Phunware's iOS SDK for the Location module. Visit http://maas.phunware.com/ for more details and to sign up.
 
 Requirements
 ------------
 
-- PWCore 3.4.x
+- PWCore 3.5.x
 - iOS 9.0 or greater
 - Xcode 8 or greater
 
@@ -54,6 +54,10 @@ Some PWCore configuration is required to use any provider in PWLocation. In the 
                accessKey:@"YOUR_ACCESS_KEY"
             signatureKey:@"YOUR_SIGNATURE_KEY"];
 ````
+
+## Location Permissions
+
+Location authorization of "When In Use" or "Always" is required for a PWLocationManager to function normally. Please follow [Apple's Best Practices](https://developer.apple.com/documentation/corelocation/choosing_the_authorization_level_for_location_services) for requesting location permissions. Do not attempt to use a PWLocationManager if the user does not provide location authorization as this can lead to unexpected behavior.
 
 ## PWManagedLocationManager
 

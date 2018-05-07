@@ -74,6 +74,8 @@
 	
 	<optgroup label="Instance Methods">
 		
+		<option value="//api/name/init">- init</option>
+		
 		<option value="//api/name/initWithVenueGUID:">- initWithVenueGUID:</option>
 		
 		<option value="//api/name/initWithVenueGUID:location:">- initWithVenueGUID:location:</option>
@@ -132,9 +134,9 @@
 						<a title="Tasks" name="tasks"></a>
 						
 
-						<a title="Determining Availability of Services" name="task_Determining Availability of Services"></a>
 						
-<h2 class="task-title">Determining Availability of Services</h2>
+						
+
 						<div class="task-list">
 							<div class="section-method">
 	<a name="//api/name/venueGUID" title="venueGUID"></a>
@@ -352,6 +354,47 @@
 		</div>
 	</div>
 </div><div class="section-method">
+	<a name="//api/name/init" title="init"></a>
+	<h3 class="method-title"><code><a href="#//api/name/init">&ndash;&nbsp;init</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Initialization</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (instancetype)init</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PWMSELocationManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
 	<a name="//api/name/initWithVenueGUID:location:" title="initWithVenueGUID:location:"></a>
 	<h3 class="method-title"><code><a href="#//api/name/initWithVenueGUID:location:">&ndash;&nbsp;initWithVenueGUID:location:</a></code>
 </h3>
@@ -503,7 +546,7 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Returns a Boolean value indicating whether <a href="../Protocols/PWLocationManager.html#//api/name/location">location</a> services are enabled on the device.</p>
+				<p>Returns a Boolean value indicating whether <a href="#//api/name/location">location</a> services are enabled on the device.</p>
 			</div>
 			
 		    
@@ -518,11 +561,6 @@
 			
 
 			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>In order to fetch the user&rsquo;s <a href="../Protocols/PWLocationManager.html#//api/name/location">location</a>, the manager must be within proximity of the venue and have retrieved specific device information from Phunware&rsquo;s servers.</p>
-			</div>
-			
 
 			
 
@@ -531,7 +569,7 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">PWLocationManager.h</code></p>
+				<p><code class="declared-in-ref">PWMSELocationManager.h</code></p>
 			</div>
 			
 			
@@ -549,7 +587,7 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Starts the generation of updates that report the user’s current <a href="../Protocols/PWLocationManager.html#//api/name/location">location</a>.</p>
+				<p>Starts the generation of updates that report the user’s current <a href="#//api/name/location">location</a>.</p>
 			</div>
 			
 		    
@@ -564,11 +602,6 @@
 			
 
 			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>This method returns immediately. Calling this method causes the <a href="../Protocols/PWLocationManager.html#//api/name/location">location</a> manager to obtain an initial <a href="../Protocols/PWLocationManager.html#//api/name/location">location</a> fix (which may take several seconds) and notify your <a href="../Protocols/PWLocationManager.html#//api/name/delegate">delegate</a> by calling its <code>locationManager:didUpdateToLocation:</code> method.</p>
-			</div>
-			
 
 			
 
@@ -577,7 +610,7 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">PWLocationManager.h</code></p>
+				<p><code class="declared-in-ref">PWMSELocationManager.h</code></p>
 			</div>
 			
 			
@@ -595,7 +628,7 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Stops the generation of <a href="../Protocols/PWLocationManager.html#//api/name/location">location</a> updates.</p>
+				<p>Stops the generation of updates that report the user’s current <a href="#//api/name/location">location</a>.</p>
 			</div>
 			
 		    
@@ -610,11 +643,6 @@
 			
 
 			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>Call this method whenever your code no longer needs to receive location-related events. Disabling event delivery gives the receiver the option of disabling the appropriate hardware (and thereby saving power) when no clients need <a href="../Protocols/PWLocationManager.html#//api/name/location">location</a> data. You can always restart the generation of <a href="../Protocols/PWLocationManager.html#//api/name/location">location</a> updates by calling the <a href="../Protocols/PWLocationManager.html#//api/name/startUpdatingLocation"><code>startUpdatingLocation</code></a> method again.</p>
-			</div>
-			
 
 			
 
@@ -623,7 +651,7 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">PWLocationManager.h</code></p>
+				<p><code class="declared-in-ref">PWMSELocationManager.h</code></p>
 			</div>
 			
 			
@@ -644,7 +672,7 @@
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2018 Phunware, Inc. All rights reserved. Updated: 2018-04-16</p>
+						<p class="copyright">Copyright &copy; 2018 Phunware, Inc. All rights reserved. Updated: 2018-05-07</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
