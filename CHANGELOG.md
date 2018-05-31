@@ -1,4 +1,9 @@
 # PWLocation CHANGELOG
+## 3.4.1 (Thursday, May 31st, 2018)
+#### Bug fixes / performance enhancements
+* Fix CMX crash
+* Updates made to Locate Algorithm
+
 ## 3.4.0 (Monday, May 7th, 2018)
 #### Features
 * Remove location permission prompting

@@ -7,7 +7,7 @@ To align with best practices, PWLocation no longer prompts for location permissi
 
 #### Upgrade Steps
 
-1. Open the `Podfile` from your project and change PWLocation to include `pod 'PWLocation', '3.4.x'`, then run `pod update` in the Terminal to update the framework. This will include the latest version of PWCore 3.5.x.
+1. Open the `Podfile` from your project and change PWLocation to include `pod 'PWLocation', '3.4.x'`, then run `pod update` in the Terminal to update the framework. This will include the latest version of PWCore 3.6.x.
 
 2. Please follow [Apple's Best Practices](https://developer.apple.com/documentation/corelocation/choosing_the_authorization_level_for_location_services) for requesting location permissions.
 
