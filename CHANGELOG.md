@@ -1,4 +1,8 @@
 # PWLocation CHANGELOG
+## 3.4.2 (Wednesday, June 27th, 2018)
+#### Bug fixes / performance enhancements
+* Updates made to Locate Algorithm
+
 ## 3.4.1 (Thursday, May 31st, 2018)
 #### Bug fixes / performance enhancements
 * Fix CMX crash
