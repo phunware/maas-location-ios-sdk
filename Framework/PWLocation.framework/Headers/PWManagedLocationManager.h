@@ -57,4 +57,16 @@
  */
 @property (nonatomic, strong) NSDictionary *userInfo;
 
+#pragma mark - Internal Use Only
+#pragma mark Diagnostics
+
+@property (nonatomic, strong) NSNumber *beaconsRequiredForFloor;
+
+- (void)startRecording;
+- (void)recordCustomFlag:(NSString *)customFlag;
+- (NSURL *)stopRecording;
+- (BOOL)isRecording;
+
+- (void)startPlaybackWithFileURLs:(NSArray *)fileURLs;
+
 @end

@@ -253,6 +253,102 @@
             <NodeRef refid="7"/>
 		</Token>
 		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWManagedLocationManager/setBeaconsRequiredForFloor:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PWManagedLocationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *beaconsRequiredForFloor</Declaration>
+			
+			
+			<Anchor>//api/name/beaconsRequiredForFloor</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWManagedLocationManager/beaconsRequiredForFloor</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PWManagedLocationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *beaconsRequiredForFloor</Declaration>
+			
+			
+			<Anchor>//api/name/beaconsRequiredForFloor</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWManagedLocationManager/beaconsRequiredForFloor</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PWManagedLocationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *beaconsRequiredForFloor</Declaration>
+			
+			
+			<Anchor>//api/name/beaconsRequiredForFloor</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWManagedLocationManager/startRecording</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PWManagedLocationManager.h</DeclaredIn>
+			
+			<Declaration>- (void)startRecording</Declaration>
+			
+			
+			<Anchor>//api/name/startRecording</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWManagedLocationManager/recordCustomFlag:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PWManagedLocationManager.h</DeclaredIn>
+			
+			<Declaration>- (void)recordCustomFlag:(NSString *)customFlag</Declaration>
+			
+			
+			<Anchor>//api/name/recordCustomFlag:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWManagedLocationManager/stopRecording</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PWManagedLocationManager.h</DeclaredIn>
+			
+			<Declaration>- (NSURL *)stopRecording</Declaration>
+			
+			
+			<Anchor>//api/name/stopRecording</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWManagedLocationManager/isRecording</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PWManagedLocationManager.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)isRecording</Declaration>
+			
+			
+			<Anchor>//api/name/isRecording</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWManagedLocationManager/startPlaybackWithFileURLs:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PWManagedLocationManager.h</DeclaredIn>
+			
+			<Declaration>- (void)startPlaybackWithFileURLs:(NSArray *)fileURLs</Declaration>
+			
+			
+			<Anchor>//api/name/startPlaybackWithFileURLs:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
         
         
 	</File>

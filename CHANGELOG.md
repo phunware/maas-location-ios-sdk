@@ -1,4 +1,9 @@
 # PWLocation CHANGELOG
+## 3.5.0 (Tuesday, July 31st, 2018)
+#### Bug fixes / performance enhancements
+* Updates made to Locate Algorithm
+* iOS deployment target increased from 9.0 to 10.0
+
 ## 3.4.2 (Wednesday, June 27th, 2018)
 #### Bug fixes / performance enhancements
 * Updates made to Locate Algorithm
