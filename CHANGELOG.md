@@ -1,4 +1,9 @@
 # PWLocation CHANGELOG
+## 3.5.2 (Thursday, October 4th, 2018)
+#### Bug fixes / performance enhancements
+* Updates made to Locate Algorithm
+* Improved Locate load time
+
 ## 3.5.1 (Wednesday, August 15th, 2018)
 #### Bug fixes / performance enhancements
 * Update for PWCore 3.7.0 compatibility

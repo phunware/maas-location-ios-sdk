@@ -62,6 +62,8 @@
 
 @property (nonatomic, strong) NSNumber *beaconsRequiredForFloor;
 
+- (NSAttributedString *)settingsInformation;
+
 - (void)startRecording;
 - (void)recordCustomFlag:(NSString *)customFlag;
 - (NSURL *)stopRecording;

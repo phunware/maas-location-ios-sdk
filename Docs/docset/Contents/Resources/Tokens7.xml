@@ -290,6 +290,18 @@
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWManagedLocationManager/settingsInformation</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PWManagedLocationManager.h</DeclaredIn>
+			
+			<Declaration>- (NSAttributedString *)settingsInformation</Declaration>
+			
+			
+			<Anchor>//api/name/settingsInformation</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/PWManagedLocationManager/startRecording</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>PWManagedLocationManager.h</DeclaredIn>
