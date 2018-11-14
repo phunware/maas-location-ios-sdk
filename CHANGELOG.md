@@ -1,4 +1,8 @@
 # PWLocation CHANGELOG
+## 3.6.0 (Wednesday, November 14th, 2018)
+#### Features
+* Update for PWCore 3.8.0 compatibility using new automatic screen view analytic events and simplified custom event creation.
+
 ## 3.5.2 (Thursday, October 4th, 2018)
 #### Bug fixes / performance enhancements
 * Updates made to Locate Algorithm
