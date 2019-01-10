@@ -1,4 +1,14 @@
 # PWLocation Migration Guide
+## Upgrade from 3.6.x to 3.7.x
+
+#### General
+
+This release actively updates the status of beacons heard by the device running the SDK.
+
+#### Upgrade Steps
+
+1. Open the `Podfile` from your project and change PWLocation to include `pod 'PWLocation', '3.7.x'`, then run `pod update` in the Terminal to update the framework.
+
 ## Upgrade from 3.5.x to 3.6.x
 
 #### General

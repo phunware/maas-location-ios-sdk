@@ -1,4 +1,11 @@
 # PWLocation CHANGELOG
+## 3.7.0 (Thursday, January 10th, 2019)
+#### Features
+* Update the status of the beacons heard by the device
+
+#### Bug fixes / performance enhancements
+* Update to MistSDK 1.4.2
+
 ## 3.6.1 (Thursday, November 29th, 2018)
 #### Bug fixes / performance enhancements
 * Update to MistSDK 1.3.0
