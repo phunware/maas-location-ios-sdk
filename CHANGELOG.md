@@ -1,4 +1,8 @@
 # PWLocation CHANGELOG
+## 3.7.1 (Tuesday, February 26th, 2019)
+#### Bug fixes / performance enhancements
+* Use new v3 Map-API
+
 ## 3.7.0 (Thursday, January 10th, 2019)
 #### Features
 * Update the status of the beacons heard by the device
