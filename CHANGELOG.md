@@ -1,4 +1,9 @@
 # PWLocation CHANGELOG
+## 3.8.0 (Tuesday, April 2nd, 2019)
+#### Features
+* Ability to blend GPS with indoor location providers
+* Add Managed Compass for use with PWMapKit to improve heading experience
+
 ## 3.7.1 (Tuesday, February 26th, 2019)
 #### Bug fixes / performance enhancements
 * Use new v3 Map-API

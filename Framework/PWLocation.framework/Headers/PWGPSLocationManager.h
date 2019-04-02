@@ -30,8 +30,15 @@
 
 /**
  The floor ID mapping dictionary used to define the mapping between the location provider floor ID and the Phunware floor ID. The dictionary format must adhere to the following format: `@{CUSTOMER_FLOORID : PHUNWARE_FLOOR_ID}`.
+ 
+ @deprecated Use `defaultFloorId` instead.
  */
-@property (nonatomic, strong) NSDictionary *floorIDMapping;
+@property (nonatomic, strong) NSDictionary *floorIDMapping __deprecated;
+
+/**
+ The Maas floor identifier that the GPS locations will map to.
+ */
+@property (nonatomic, strong) NSNumber *defaultFloorId;
 
 /**
  The latest indoor location received from the Phunware location service.
@@ -44,6 +51,8 @@
  @return A `PWGPSLocationManager` instance.
  */
 - (instancetype)initWithCLLocationManager:(CLLocationManager *)locationManager NS_DESIGNATED_INITIALIZER;
+    
+- (instancetype)init NS_UNAVAILABLE;
 
 - (BOOL)locationServicesAvailable;
 - (void)startUpdatingLocation;

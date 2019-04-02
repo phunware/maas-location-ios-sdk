@@ -49,38 +49,74 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWGPSLocationManager/setFloorIDMapping:</TokenIdentifier>
-			<Abstract type="html">The floor ID mapping dictionary used to define the mapping between the location provider floor ID and the Phunware floor ID. The dictionary format must adhere to the following format: @{CUSTOMERFLOORID : PHUNWAREFLOOR_ID}.</Abstract>
+			<TokenIdentifier>//apple_ref/occ/instm/PWGPSLocationManager/set__deprecated:</TokenIdentifier>
+			<Abstract type="html">The floor ID mapping dictionary used to define the mapping between the location provider floor ID and the Phunware floor ID. The dictionary format must adhere to the following format: @{CUSTOMERFLOORID : PHUNWAREFLOOR_ID}. (&lt;b class=&quot;deprecated&quot;&gt;Deprecated:&lt;/b&gt;&lt;span class=&quot;deprecated&quot;&gt; Use defaultFloorId instead.&lt;/span&gt;)</Abstract>
 			<DeclaredIn>PWGPSLocationManager.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSDictionary *floorIDMapping</Declaration>
+			<Declaration>@property (nonatomic, strong) NSDictionary *__deprecated</Declaration>
 			
 			
-			<Anchor>//api/name/floorIDMapping</Anchor>
+			<Anchor>//api/name/__deprecated</Anchor>
             <NodeRef refid="2"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PWGPSLocationManager/floorIDMapping</TokenIdentifier>
-			<Abstract type="html">The floor ID mapping dictionary used to define the mapping between the location provider floor ID and the Phunware floor ID. The dictionary format must adhere to the following format: @{CUSTOMERFLOORID : PHUNWAREFLOOR_ID}.</Abstract>
+			<TokenIdentifier>//apple_ref/occ/instm/PWGPSLocationManager/__deprecated</TokenIdentifier>
+			<Abstract type="html">The floor ID mapping dictionary used to define the mapping between the location provider floor ID and the Phunware floor ID. The dictionary format must adhere to the following format: @{CUSTOMERFLOORID : PHUNWAREFLOOR_ID}. (&lt;b class=&quot;deprecated&quot;&gt;Deprecated:&lt;/b&gt;&lt;span class=&quot;deprecated&quot;&gt; Use defaultFloorId instead.&lt;/span&gt;)</Abstract>
 			<DeclaredIn>PWGPSLocationManager.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSDictionary *floorIDMapping</Declaration>
+			<Declaration>@property (nonatomic, strong) NSDictionary *__deprecated</Declaration>
 			
 			
-			<Anchor>//api/name/floorIDMapping</Anchor>
+			<Anchor>//api/name/__deprecated</Anchor>
             <NodeRef refid="2"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PWGPSLocationManager/floorIDMapping</TokenIdentifier>
-			<Abstract type="html">The floor ID mapping dictionary used to define the mapping between the location provider floor ID and the Phunware floor ID. The dictionary format must adhere to the following format: @{CUSTOMERFLOORID : PHUNWAREFLOOR_ID}.</Abstract>
+			<TokenIdentifier>//apple_ref/occ/instp/PWGPSLocationManager/__deprecated</TokenIdentifier>
+			<Abstract type="html">The floor ID mapping dictionary used to define the mapping between the location provider floor ID and the Phunware floor ID. The dictionary format must adhere to the following format: @{CUSTOMERFLOORID : PHUNWAREFLOOR_ID}. (&lt;b class=&quot;deprecated&quot;&gt;Deprecated:&lt;/b&gt;&lt;span class=&quot;deprecated&quot;&gt; Use defaultFloorId instead.&lt;/span&gt;)</Abstract>
 			<DeclaredIn>PWGPSLocationManager.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSDictionary *floorIDMapping</Declaration>
+			<Declaration>@property (nonatomic, strong) NSDictionary *__deprecated</Declaration>
 			
 			
-			<Anchor>//api/name/floorIDMapping</Anchor>
+			<Anchor>//api/name/__deprecated</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWGPSLocationManager/setDefaultFloorId:</TokenIdentifier>
+			<Abstract type="html">The Maas floor identifier that the GPS locations will map to.</Abstract>
+			<DeclaredIn>PWGPSLocationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *defaultFloorId</Declaration>
+			
+			
+			<Anchor>//api/name/defaultFloorId</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWGPSLocationManager/defaultFloorId</TokenIdentifier>
+			<Abstract type="html">The Maas floor identifier that the GPS locations will map to.</Abstract>
+			<DeclaredIn>PWGPSLocationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *defaultFloorId</Declaration>
+			
+			
+			<Anchor>//api/name/defaultFloorId</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWGPSLocationManager/defaultFloorId</TokenIdentifier>
+			<Abstract type="html">The Maas floor identifier that the GPS locations will map to.</Abstract>
+			<DeclaredIn>PWGPSLocationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *defaultFloorId</Declaration>
+			
+			
+			<Anchor>//api/name/defaultFloorId</Anchor>
             <NodeRef refid="2"/>
 		</Token>
 		
@@ -134,6 +170,18 @@
 			</Parameters>
 			<ReturnValue><Abstract type="html">A PWGPSLocationManager instance.</Abstract></ReturnValue>
 			<Anchor>//api/name/initWithCLLocationManager:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWGPSLocationManager/init</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PWGPSLocationManager.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)init</Declaration>
+			
+			
+			<Anchor>//api/name/init</Anchor>
             <NodeRef refid="2"/>
 		</Token>
 		

@@ -13,7 +13,8 @@ typedef NS_ENUM(NSUInteger, PWManagedProviderType) {
     PWManagedProviderTypeCMX = 1,
     PWManagedProviderTypeBeaconPoint = 2,
     PWManagedProviderTypeMist = 3,
-    PWManagedProviderTypeLocate = 4
+    PWManagedProviderTypeLocate = 4,
+    PWManagedProviderTypeGPS = 5
 };
 
 @interface PWManagedProviderInfo : NSObject

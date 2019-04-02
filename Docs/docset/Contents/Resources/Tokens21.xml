@@ -63,6 +63,16 @@
             <NodeRef refid="21"/>
         </Token>
         
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/PWManagedProviderTypeGPS</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>PWManagedProviderTypeGPS</Declaration>
+            
+            <DeclaredIn>PWManagedProviderInfo.h</DeclaredIn>
+            
+            <NodeRef refid="21"/>
+        </Token>
+        
         
 	</File>
 </Tokens>

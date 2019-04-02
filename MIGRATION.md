@@ -1,4 +1,14 @@
 # PWLocation Migration Guide
+## Upgrade from 3.7.x to 3.8.x
+
+#### General
+
+This release adds the ability to blend GPS with indoor location providers when configured as such in the MaaS portal, as well as provide an alternate compass experience for PWMapKit (see PWMapKit documentation for how to use it).
+
+#### Upgrade Steps
+
+1. Open the `Podfile` from your project and change PWLocation to include `pod 'PWLocation', '3.8.x'`, then run `pod update` in the Terminal to update the framework.
+
 ## Upgrade from 3.6.x to 3.7.x
 
 #### General
