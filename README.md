@@ -1,7 +1,7 @@
 PWLocation SDK for iOS
 ================
 
->Version 3.8.0
+>Version 3.8.1
 
 This is Phunware's iOS SDK for the Location module. Visit http://maas.phunware.com/ for more details and to sign up.
 
@@ -20,6 +20,12 @@ The easiest way to use PWLocation is via CocoaPods. Simply add
 `pod PWLocation`
 
 to your `Podfile`, then the `PWCore` would be automatically included.
+
+Alternatively you could specify 
+
+`pod PWLocation/NoAds`
+
+in your `Podfile` which would bring in `PWCoreNoAds` automatically.
 
 
 The following frameworks are required:

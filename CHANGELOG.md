@@ -1,4 +1,8 @@
 # PWLocation CHANGELOG
+## 3.8.1 (Tuesday, September 3rd, 2019)
+#### Features
+* Add subspec to import PWCoreNoAds pod
+
 ## 3.8.0 (Tuesday, April 2nd, 2019)
 #### Features
 * Ability to blend GPS with indoor location providers
