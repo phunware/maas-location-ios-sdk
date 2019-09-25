@@ -1,4 +1,10 @@
 # PWLocation CHANGELOG
+## 3.8.2 (Wednesday, September 25rd, 2019)
+#### Bug fixes / performance enhancements
+* Improved transition between GPS and BLE
+* Improved blue dot accuracy
+* Floor detection works better with GPS enabled
+
 ## 3.8.1 (Tuesday, September 3rd, 2019)
 #### Features
 * Add subspec to import PWCoreNoAds pod
