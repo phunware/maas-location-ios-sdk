@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.ios.dependency 'MistSDK', '1.4.2'
   s.ios.dependency 'TMCache'
   s.ios.dependency 'SSZipArchive'
-          
+              
   s.default_subspec = 'all-frameworks'
 
   s.subspec 'all-frameworks' do |sub|
