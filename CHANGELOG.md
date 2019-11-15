@@ -1,4 +1,10 @@
 # PWLocation CHANGELOG
+## 3.8.3 (Friday, November 15, 2019)
+#### Bug Fixes/Performance Enhancements
+* Improve blue dot accuracy when initially transitioning from GPS to BLE location providers
+* Improve managed compass
+* Increase threshold for dead reckoning
+
 ## 3.8.2 (Wednesday, September 25rd, 2019)
 #### Bug fixes / performance enhancements
 * Improved transition between GPS and BLE
