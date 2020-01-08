@@ -1,4 +1,11 @@
 # PWLocation CHANGELOG
+## 3.8.4 (Wednesday, January 8, 2020)
+#### Bug Fixes/Performance Enhancements
+* Improve accuracy of the managed compass
+* Improve walking vs stationary detection
+* Improve blue dot accuracy when transitioning between indoor and outdoor navigation
+* Improve code stability and performance
+
 ## 3.8.3 (Friday, November 15, 2019)
 #### Bug Fixes/Performance Enhancements
 * Improve blue dot accuracy when initially transitioning from GPS to BLE location providers
