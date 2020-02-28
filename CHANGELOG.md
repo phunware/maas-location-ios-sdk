@@ -1,4 +1,8 @@
 # PWLocation CHANGELOG
+## 3.8.5 (Friday, February 28, 2020)
+#### Features
+* Add support for ranging with CenTrak beacons
+
 ## 3.8.4 (Wednesday, January 8, 2020)
 #### Bug Fixes/Performance Enhancements
 * Improve accuracy of the managed compass
