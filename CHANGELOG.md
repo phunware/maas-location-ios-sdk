@@ -1,4 +1,10 @@
 # PWLocation CHANGELOG
+## 3.8.6 (Monday, March 16, 2020)
+#### Bug Fixes/Performance Enhancements
+* Update Mist location provider to support iOS 13+
+* Fix an issue with identifying beacons that include a major/minor value of 0
+* Fix an issue that could prevent location updates for some location providers
+
 ## 3.8.5 (Friday, February 28, 2020)
 #### Features
 * Add support for ranging with CenTrak beacons
