@@ -50,7 +50,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/PWVBLocationManager/setSdkToken:</TokenIdentifier>
-			<Abstract type="html">The MIST SDK token, starts with D, S, or P.</Abstract>
+			<Abstract type="html">The provider&apos;s SDK token.</Abstract>
 			<DeclaredIn>PWVBLocationManager.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly) NSString *sdkToken</Declaration>
@@ -62,7 +62,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/PWVBLocationManager/sdkToken</TokenIdentifier>
-			<Abstract type="html">The MIST SDK token, starts with D, S, or P.</Abstract>
+			<Abstract type="html">The provider&apos;s SDK token.</Abstract>
 			<DeclaredIn>PWVBLocationManager.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly) NSString *sdkToken</Declaration>
@@ -74,25 +74,13 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/PWVBLocationManager/sdkToken</TokenIdentifier>
-			<Abstract type="html">The MIST SDK token, starts with D, S, or P.</Abstract>
+			<Abstract type="html">The provider&apos;s SDK token.</Abstract>
 			<DeclaredIn>PWVBLocationManager.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly) NSString *sdkToken</Declaration>
 			
 			
 			<Anchor>//api/name/sdkToken</Anchor>
-            <NodeRef refid="13"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/PWVBLocationManager/sharedInstance</TokenIdentifier>
-			<Abstract type="html">The shared PWVBLocationManager instance. Must call createMSWithSDKToken:floorConifgurations:onComplete or createBPWithSDKToken:floorConifgurations:onComplete before the instance can return location.</Abstract>
-			<DeclaredIn>PWVBLocationManager.h</DeclaredIn>
-			
-			<Declaration>+ (instancetype)sharedInstance</Declaration>
-			
-			
-			<Anchor>//api/name/sharedInstance</Anchor>
             <NodeRef refid="13"/>
 		</Token>
 		

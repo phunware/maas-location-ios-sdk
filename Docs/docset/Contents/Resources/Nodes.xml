@@ -40,6 +40,7 @@
 						<NodeRef refid="17"/>
 						<NodeRef refid="18"/>
 						<NodeRef refid="19"/>
+						<NodeRef refid="20"/>
 						
 					</Subnodes>
 				</Node>
@@ -49,8 +50,8 @@
 					<Name>Constants</Name>
 					<Path>index.html</Path>
 					<Subnodes>
-						<NodeRef refid="20"/>
 						<NodeRef refid="21"/>
+						<NodeRef refid="22"/>
 						
 					</Subnodes>
 				</Node>
@@ -62,30 +63,8 @@
 	<Library>
 		
 		<Node id="1" type="file" documentType="reference">
-            <Name>PWBPLocationManager</Name>
-            <Path>Classes/PWBPLocationManager.html</Path>
-            
-                <Subnodes>
-                <Node type="section">
-                    <Path>Classes/PWBPLocationManager.html</Path>
-                    <Name>Overview</Name>
-                    <Anchor>overview</Anchor>
-                </Node>
-                <Node type="section">
-                    <Path>Classes/PWBPLocationManager.html</Path>
-                    <Name>Tasks</Name>
-                    <Anchor>tasks</Anchor>
-                </Node>
-                
-                
-                <Node type="section">
-                    <Path>Classes/PWBPLocationManager.html</Path>
-                    <Name>Class Methods</Name>
-                    <Anchor>class_methods</Anchor>
-                </Node>
-                
-                
-            </Subnodes>
+            <Name>PWBeaconPointLocationManager</Name>
+            <Path>Classes/PWBeaconPointLocationManager.html</Path>
             
         </Node>
 		<Node id="2" type="file" documentType="reference">
@@ -209,33 +188,6 @@
             
         </Node>
 		<Node id="6" type="file" documentType="reference">
-            <Name>PWMSLocationManager</Name>
-            <Path>Classes/PWMSLocationManager.html</Path>
-            
-                <Subnodes>
-                <Node type="section">
-                    <Path>Classes/PWMSLocationManager.html</Path>
-                    <Name>Overview</Name>
-                    <Anchor>overview</Anchor>
-                </Node>
-                <Node type="section">
-                    <Path>Classes/PWMSLocationManager.html</Path>
-                    <Name>Tasks</Name>
-                    <Anchor>tasks</Anchor>
-                </Node>
-                
-                
-                <Node type="section">
-                    <Path>Classes/PWMSLocationManager.html</Path>
-                    <Name>Class Methods</Name>
-                    <Anchor>class_methods</Anchor>
-                </Node>
-                
-                
-            </Subnodes>
-            
-        </Node>
-		<Node id="7" type="file" documentType="reference">
             <Name>PWManagedLocationManager</Name>
             <Path>Classes/PWManagedLocationManager.html</Path>
             
@@ -274,7 +226,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="8" type="file" documentType="reference">
+		<Node id="7" type="file" documentType="reference">
             <Name>PWManagedProviderInfo</Name>
             <Path>Classes/PWManagedProviderInfo.html</Path>
             
@@ -305,6 +257,11 @@
                 </Node>
                 
             </Subnodes>
+            
+        </Node>
+		<Node id="8" type="file" documentType="reference">
+            <Name>PWMistLocationManager</Name>
+            <Path>Classes/PWMistLocationManager.html</Path>
             
         </Node>
 		<Node id="9" type="file" documentType="reference">
@@ -461,12 +418,6 @@
                     <Anchor>properties</Anchor>
                 </Node>
                 
-                
-                <Node type="section">
-                    <Path>Classes/PWVBLocationManager.html</Path>
-                    <Name>Class Methods</Name>
-                    <Anchor>class_methods</Anchor>
-                </Node>
                 
                 
                 <Node type="section">
@@ -648,13 +599,46 @@
             </Subnodes>
             
         </Node>
+		<Node id="20" type="file" documentType="reference">
+            <Name>PWVBLocationManagerProvider</Name>
+            <Path>Protocols/PWVBLocationManagerProvider.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Protocols/PWVBLocationManagerProvider.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Protocols/PWVBLocationManagerProvider.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Protocols/PWVBLocationManagerProvider.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Protocols/PWVBLocationManagerProvider.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
 		
-        <Node id="20" type="file" documentType="reference">
+        <Node id="21" type="file" documentType="reference">
             <Name>PWLocationManagerError</Name>
             <Path>Constants/PWLocationManagerError.html</Path>
             
         </Node>
-		<Node id="21" type="file" documentType="reference">
+		<Node id="22" type="file" documentType="reference">
             <Name>PWManagedProviderType</Name>
             <Path>Constants/PWManagedProviderType.html</Path>
             
