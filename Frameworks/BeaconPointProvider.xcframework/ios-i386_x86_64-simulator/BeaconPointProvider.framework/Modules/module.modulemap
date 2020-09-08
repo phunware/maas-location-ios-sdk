@@ -1,0 +1,6 @@
+framework module BeaconPointProvider {
+  umbrella header "BeaconPointProvider.h"
+
+  export *
+  module * { export * }
+}

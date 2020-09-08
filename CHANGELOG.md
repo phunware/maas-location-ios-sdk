@@ -1,4 +1,13 @@
 # PWLocation CHANGELOG
+## 3.9.0 (Thursday, September 3rd, 2020)
+#### Features
+* Migrated to use XCFrameworks
+
+#### Bug Fixes/Performance Enhancements
+* [Mist location provider] Updated Mist SDK dependency to v1.5.272 for better accuracy (includes dead reckoning)
+* Migrated Mist location provider into its own framework
+* Migrated Beacon Point location provider into its own framework
+
 ## 3.8.6 (Monday, March 16, 2020)
 #### Bug Fixes/Performance Enhancements
 * Update Mist location provider to support iOS 13+
