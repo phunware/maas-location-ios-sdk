@@ -22,6 +22,7 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'LimitedDeviceIdentity' do |sub|
+    sub.ios.vendored_frameworks = 'Frameworks/PWLocation.xcframework'
     sub.dependency 'PWCore', '~> 3.9.1'
   end
   
