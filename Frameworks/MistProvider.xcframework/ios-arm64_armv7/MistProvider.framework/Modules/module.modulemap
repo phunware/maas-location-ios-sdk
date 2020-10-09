@@ -1,0 +1,6 @@
+framework module MistProvider {
+  umbrella header "MistProvider.h"
+
+  export *
+  module * { export * }
+}
