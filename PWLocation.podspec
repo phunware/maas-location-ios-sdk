@@ -28,13 +28,11 @@ Pod::Spec.new do |s|
   
   s.subspec 'MistProvider' do |sub|
     sub.ios.vendored_frameworks = 'Frameworks/MistProvider.xcframework'
-    sub.dependency 'PWLocation/all-frameworks'
     sub.dependency 'MistSDKDR', '1.5.272'
   end
   
   s.subspec 'BeaconPointProvider' do |sub|
      sub.ios.vendored_frameworks = 'Frameworks/BeaconPointProvider.xcframework'
-     sub.dependency 'PWLocation/all-frameworks'
      sub.dependency 'MistSDK', '1.5.58'
   end
                                             

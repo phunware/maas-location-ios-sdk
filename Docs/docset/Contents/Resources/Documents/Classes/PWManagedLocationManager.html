@@ -3,11 +3,11 @@
 <head>
 	<meta charset="utf-8">
 
-	<title></title>
+	<title>PWManagedLocationManager Class Reference</title>
 
 	<link rel="stylesheet" href="../css/style.css">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
-	
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
 </head>
 <body class="appledoc">
 	<header>
@@ -45,7 +45,61 @@
 	
 
 	
+	
+	<option value="tasks">Tasks</option>
+	
+	
 
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/beaconsRequiredForFloor">beaconsRequiredForFloor</option>
+		
+		<option value="//api/name/buildingId">buildingId</option>
+		
+		<option value="//api/name/floorIDMapping">floorIDMapping</option>
+		
+		<option value="//api/name/location">location</option>
+		
+		<option value="//api/name/stabilizeFloorSwitching">stabilizeFloorSwitching</option>
+		
+		<option value="//api/name/userInfo">userInfo</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/createWithBundleURL:completion:">+ createWithBundleURL:completion:</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/init">- init</option>
+		
+		<option value="//api/name/initWithBuildingId:">- initWithBuildingId:</option>
+		
+		<option value="//api/name/internalProviderInformation">- internalProviderInformation</option>
+		
+		<option value="//api/name/isRecording">- isRecording</option>
+		
+		<option value="//api/name/recordCustomFlag:">- recordCustomFlag:</option>
+		
+		<option value="//api/name/settingsInformation">- settingsInformation</option>
+		
+		<option value="//api/name/startPlaybackWithFileURLs:">- startPlaybackWithFileURLs:</option>
+		
+		<option value="//api/name/startRecording">- startRecording</option>
+		
+		<option value="//api/name/stopRecording">- stopRecording</option>
+		
+	</optgroup>
+	
 	
 </select>
 						</label>
@@ -59,22 +113,564 @@
 		<div id="overview_contents" class="container">
 			<div id="content">
 				<main role="main">
-					<h1 class="title"></h1>
+					<h1 class="title">PWManagedLocationManager Class Reference</h1>
 
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Conforms to</th>
+	<td><a href="../Protocols/PWLocationManager.html">PWLocationManager</a></td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>PWManagedLocationManager.h</td>
+</tr>
+						</tbody></table></div>
 					
 
                     
 
 					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/buildingId" title="buildingId"></a>
+	<h3 class="method-title"><code><a href="#//api/name/buildingId">&nbsp;&nbsp;buildingId</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The building identifier.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSInteger buildingId</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PWManagedLocationManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/location" title="location"></a>
+	<h3 class="method-title"><code><a href="#//api/name/location">&nbsp;&nbsp;location</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The last indoor location received.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) PWIndoorLocation *location</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PWManagedLocationManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/floorIDMapping" title="floorIDMapping"></a>
+	<h3 class="method-title"><code><a href="#//api/name/floorIDMapping">&nbsp;&nbsp;floorIDMapping</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The floor ID mapping dictionary used to define the mapping between the <a href="#//api/name/location">location</a> provider floor ID and the Phunware floor ID. The dictionary format must adhere to the following format: <code>@{CUSTOMER_FLOORID : PHUNWARE_FLOOR_ID}</code>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSDictionary *floorIDMapping</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PWManagedLocationManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initWithBuildingId:" title="initWithBuildingId:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithBuildingId:">&ndash;&nbsp;initWithBuildingId:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Initialize with a building identifier.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (instancetype)initWithBuildingId:(NSInteger)<em>buildingId</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>buildingId</code></th>
+						<td><p>The building identifier.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PWManagedLocationManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/init" title="init"></a>
+	<h3 class="method-title"><code><a href="#//api/name/init">&ndash;&nbsp;init</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Initialization</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (instancetype)init</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PWManagedLocationManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/createWithBundleURL:completion:" title="createWithBundleURL:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createWithBundleURL:completion:">+&nbsp;createWithBundleURL:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The bundle URL.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)createWithBundleURL:(NSURL *)<em>bundleURL</em> completion:(void ( ^ ) ( PWManagedLocationManager *managedLocationManager , NSError *error ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>bundleURL</code></th>
+						<td><p>The bundle URL.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>Block called when PWManagedLocationManager has been initialized. Gives the manager object or error if there was one.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PWManagedLocationManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/internalProviderInformation" title="internalProviderInformation"></a>
+	<h3 class="method-title"><code><a href="#//api/name/internalProviderInformation">&ndash;&nbsp;internalProviderInformation</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns an array of <a href="../Classes/PWManagedProviderInfo.html">PWManagedProviderInfo</a> objects. Each provider will have its own <a href="../Classes/PWManagedProviderInfo.html">PWManagedProviderInfo</a> object. This will return nothing if the bundle has not already been loaded by a completed startUpdatingLocation call.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSArray *)internalProviderInformation</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PWManagedLocationManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/stabilizeFloorSwitching" title="stabilizeFloorSwitching"></a>
+	<h3 class="method-title"><code><a href="#//api/name/stabilizeFloorSwitching">&nbsp;&nbsp;stabilizeFloorSwitching</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Use the device&rsquo;s pressure sensor to prevent erroneous floor switches. Disabled by default and not recommended for most setups.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL stabilizeFloorSwitching</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PWManagedLocationManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/userInfo" title="userInfo"></a>
+	<h3 class="method-title"><code><a href="#//api/name/userInfo">&nbsp;&nbsp;userInfo</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Extra information about the PWManagedLocationManager and the data it consumes.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSDictionary *userInfo</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PWManagedLocationManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/beaconsRequiredForFloor" title="beaconsRequiredForFloor"></a>
+	<h3 class="method-title"><code><a href="#//api/name/beaconsRequiredForFloor">&nbsp;&nbsp;beaconsRequiredForFloor</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSNumber *beaconsRequiredForFloor</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/settingsInformation" title="settingsInformation"></a>
+	<h3 class="method-title"><code><a href="#//api/name/settingsInformation">&ndash;&nbsp;settingsInformation</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (NSAttributedString *)settingsInformation</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/startRecording" title="startRecording"></a>
+	<h3 class="method-title"><code><a href="#//api/name/startRecording">&ndash;&nbsp;startRecording</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)startRecording</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/recordCustomFlag:" title="recordCustomFlag:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/recordCustomFlag:">&ndash;&nbsp;recordCustomFlag:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)recordCustomFlag:(NSString *)<em>customFlag</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/stopRecording" title="stopRecording"></a>
+	<h3 class="method-title"><code><a href="#//api/name/stopRecording">&ndash;&nbsp;stopRecording</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (NSURL *)stopRecording</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isRecording" title="isRecording"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isRecording">&ndash;&nbsp;isRecording</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)isRecording</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/startPlaybackWithFileURLs:" title="startPlaybackWithFileURLs:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/startPlaybackWithFileURLs:">&ndash;&nbsp;startPlaybackWithFileURLs:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)startPlaybackWithFileURLs:(NSArray *)<em>fileURLs</em></code></div>
+
+		    
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
 
                     
+                    
+          
 				</main>
 
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2020 Phunware, Inc. All rights reserved. Updated: 2020-10-08</p>
+						<p class="copyright">Copyright &copy; 2020 Phunware, Inc. All rights reserved. Updated: 2020-10-13</p>
 						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
 						
 					</div>
 				</footer>
