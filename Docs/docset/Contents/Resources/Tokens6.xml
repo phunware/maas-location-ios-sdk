@@ -13,6 +13,42 @@
 		
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWManagedLocationManager/setCampusId:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PWManagedLocationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger campusId</Declaration>
+			
+			
+			<Anchor>//api/name/campusId</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWManagedLocationManager/campusId</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PWManagedLocationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger campusId</Declaration>
+			
+			
+			<Anchor>//api/name/campusId</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWManagedLocationManager/campusId</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PWManagedLocationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger campusId</Declaration>
+			
+			
+			<Anchor>//api/name/campusId</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/PWManagedLocationManager/setBuildingId:</TokenIdentifier>
 			<Abstract type="html">The building identifier.</Abstract>
 			<DeclaredIn>PWManagedLocationManager.h</DeclaredIn>
@@ -134,6 +170,18 @@
 			</Parameters>
 			
 			<Anchor>//api/name/initWithBuildingId:</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWManagedLocationManager/initWithCampusId:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PWManagedLocationManager.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithCampusId:(NSInteger)campusId</Declaration>
+			
+			
+			<Anchor>//api/name/initWithCampusId:</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		

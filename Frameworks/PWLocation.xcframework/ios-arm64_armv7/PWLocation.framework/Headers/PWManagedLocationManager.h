@@ -10,6 +10,7 @@
 
 @interface PWManagedLocationManager : NSObject <PWLocationManager>
 
+@property (nonatomic, readonly) NSInteger campusId;
 /**
  The building identifier.
  */
@@ -30,6 +31,8 @@
  @param buildingId The building identifier.
  */
 - (instancetype)initWithBuildingId:(NSInteger)buildingId;
+
+- (instancetype)initWithCampusId:(NSInteger)campusId;
 
 /**
  Initialization
