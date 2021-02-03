@@ -31,7 +31,7 @@ in your `Podfile`, which would automatically resolve the required dependency `PW
 The below supported third party location providers are disabled by default. To enable them, add their respective subspec to your `Podfile`.
 
 ### Mist
-`pod PWLocation/MistProvider`  
+`pod PWLocation/MistProvider`
 
 ### Beacon Point
 `pod PWLocation/BeaconPointProvider`
