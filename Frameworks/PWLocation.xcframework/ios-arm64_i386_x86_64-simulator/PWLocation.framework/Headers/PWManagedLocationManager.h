@@ -68,6 +68,11 @@
  */
 @property (nonatomic, strong) NSDictionary *userInfo;
 
+/**
+ Indicates whether the app should receive location updates when suspended.
+ */
+@property (nonatomic, assign) BOOL allowsBackgroundLocationUpdates;
+
 #pragma mark - Internal Use Only
 #pragma mark Diagnostics
 
