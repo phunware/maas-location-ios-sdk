@@ -1,4 +1,8 @@
 # PWLocation CHANGELOG
+## 3.9.1 (Thursday, November 5th, 2020)
+#### Features
+* Built and archived SDK with Xcode 12.
+
 ## 3.9.0 (Thursday, September 3rd, 2020)
 #### Features
 * Migrated to use XCFrameworks
