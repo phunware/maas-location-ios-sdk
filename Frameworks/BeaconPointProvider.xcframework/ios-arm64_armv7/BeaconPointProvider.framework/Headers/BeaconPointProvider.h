@@ -13,4 +13,4 @@
 #import "PWBeaconPointLocationManager+Provider.h"
 #endif
 
-static NSString * const BeaconPointProviderVersion = @"3.9.1";
+static NSString * const BeaconPointProviderVersion = @"3.10.0";

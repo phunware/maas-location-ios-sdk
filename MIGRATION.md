@@ -1,4 +1,23 @@
 # PWLocation Migration Guide
+## Upgrade from 3.9.x to 3.10.x
+
+#### General
+
+This release adds campus routing features.
+
+
+#### Change Detail
+
+#### PWManagedLocationManager
+
+*ADDED*
+
+- (instancetype)initWithCampusId:(NSInteger)campusId;
+
+#### Upgrade Steps
+
+1. Open the `Podfile` from your project and change PWLocation to include `pod 'PWLocation', '3.10.x'`, then run `pod update` in the Terminal to update the framework.
+
 ## Upgrade from 3.8.x to 3.9.x
 
 #### General

@@ -13,6 +13,42 @@
 		
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWManagedLocationManager/setCampusId:</TokenIdentifier>
+			<Abstract type="html">The campus identifier.</Abstract>
+			<DeclaredIn>PWManagedLocationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger campusId</Declaration>
+			
+			
+			<Anchor>//api/name/campusId</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWManagedLocationManager/campusId</TokenIdentifier>
+			<Abstract type="html">The campus identifier.</Abstract>
+			<DeclaredIn>PWManagedLocationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger campusId</Declaration>
+			
+			
+			<Anchor>//api/name/campusId</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWManagedLocationManager/campusId</TokenIdentifier>
+			<Abstract type="html">The campus identifier.</Abstract>
+			<DeclaredIn>PWManagedLocationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger campusId</Declaration>
+			
+			
+			<Anchor>//api/name/campusId</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/PWManagedLocationManager/setBuildingId:</TokenIdentifier>
 			<Abstract type="html">The building identifier.</Abstract>
 			<DeclaredIn>PWManagedLocationManager.h</DeclaredIn>
@@ -117,6 +153,23 @@
 			
 			
 			<Anchor>//api/name/floorIDMapping</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWManagedLocationManager/initWithCampusId:</TokenIdentifier>
+			<Abstract type="html">Initialize with a campus identifier.</Abstract>
+			<DeclaredIn>PWManagedLocationManager.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithCampusId:(NSInteger)campusId</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>campusId</Name>
+					<Abstract type="html">The campus identifier.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/initWithCampusId:</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		

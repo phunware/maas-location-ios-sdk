@@ -1,4 +1,8 @@
 # PWLocation CHANGELOG
+## 3.10.0 (Monday, March 15, 2021)
+#### Features
+* Added support for campus routing.
+
 ## 3.9.1 (Thursday, November 5th, 2020)
 #### Features
 * Built and archived SDK with Xcode 12.

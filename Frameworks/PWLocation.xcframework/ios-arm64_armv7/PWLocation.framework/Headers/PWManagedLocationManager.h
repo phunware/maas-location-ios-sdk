@@ -11,6 +11,11 @@
 @interface PWManagedLocationManager : NSObject <PWLocationManager>
 
 /**
+ The campus identifier.
+ */
+@property (nonatomic, readonly) NSInteger campusId;
+
+/**
  The building identifier.
  */
 @property (nonatomic, readonly) NSInteger buildingId;
@@ -24,6 +29,12 @@
  The floor ID mapping dictionary used to define the mapping between the location provider floor ID and the Phunware floor ID. The dictionary format must adhere to the following format: `@{CUSTOMER_FLOORID : PHUNWARE_FLOOR_ID}`.
  */
 @property (nonatomic, strong) NSDictionary *floorIDMapping;
+
+/**
+ Initialize with a campus identifier.
+ @param campusId The campus identifier.
+ */
+- (instancetype)initWithCampusId:(NSInteger)campusId;
 
 /**
  Initialize with a building identifier.
