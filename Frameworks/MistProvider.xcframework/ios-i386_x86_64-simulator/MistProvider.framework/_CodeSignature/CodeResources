@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/MistProvider.h</key>
 		<data>
-		TQgpu2IsgkSnHLiR/QSorc00HBY=
+		RF6sI7EPZSAH5dLOCj460DZE9HM=
 		</data>
 		<key>Headers/PWMistLocationManager+Provider.h</key>
 		<data>
@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		PNSSt6lgJWTLyiofFRDl2eTovOc=
+		Avf7YNPqxVGuHjw7Pr2/ND5LRqY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -27,11 +27,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			TQgpu2IsgkSnHLiR/QSorc00HBY=
+			RF6sI7EPZSAH5dLOCj460DZE9HM=
 			</data>
 			<key>hash2</key>
 			<data>
-			YeGpI8x0nUvRCUQJQTjBb0KIYqh8fPi9lyogMnZEzcw=
+			P+CSwBivOi0305NvTbfpEruq2qRJA+CAGS/N6QcYKlc=
 			</data>
 		</dict>
 		<key>Headers/PWMistLocationManager+Provider.h</key>
