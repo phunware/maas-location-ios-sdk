@@ -18,11 +18,11 @@
 		</data>
 		<key>Headers/PWLocation.h</key>
 		<data>
-		2weUr+0YO1e4TTzpzYjIg9EiOq0=
+		9w5GBXBuEDI0xB8Ull/qgTU1uFw=
 		</data>
 		<key>Headers/PWLocationManager.h</key>
 		<data>
-		nrOe8XywGlke8Pu8ACTs8/AJiaw=
+		ncKwd1okHSpkqKmVMRoiC1hKCX4=
 		</data>
 		<key>Headers/PWLocationProtocol.h</key>
 		<data>
@@ -66,7 +66,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		2XchsYAHJ1aBoN4vnVG8gMnzzaI=
+		IavIr0VkaFmXeSL7eL0Z7LR1eQ8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -112,22 +112,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2weUr+0YO1e4TTzpzYjIg9EiOq0=
+			9w5GBXBuEDI0xB8Ull/qgTU1uFw=
 			</data>
 			<key>hash2</key>
 			<data>
-			g8gPJ1XrcLCIAcPZdD78U6fsvHPPBz8waxp0c2XlB2I=
+			/IMqSTZmRfKP07WVDN2I1LhWOrElaWaCk1O9X4CpVj8=
 			</data>
 		</dict>
 		<key>Headers/PWLocationManager.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			nrOe8XywGlke8Pu8ACTs8/AJiaw=
+			ncKwd1okHSpkqKmVMRoiC1hKCX4=
 			</data>
 			<key>hash2</key>
 			<data>
-			70tyWVrShHs9kuNFyl2B3XHJK8ndRACEjhb4FGZs3ok=
+			uEzlHd+xx8lfdV7UUGiHDOTwWvqITO3aOLgjmHNVF3Y=
 			</data>
 		</dict>
 		<key>Headers/PWLocationProtocol.h</key>

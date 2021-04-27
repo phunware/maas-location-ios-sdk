@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/BeaconPointProvider.h</key>
 		<data>
-		lE0aKheOgjGHY0+zCyF46OuIlc4=
+		N9crrX8YNFC1gB0o7SbLEEm6Gyg=
 		</data>
 		<key>Headers/PWBeaconPointLocationManager+Provider.h</key>
 		<data>
@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		qaH2b67NHncISrcpugAQT1yN+KM=
+		Ip6X3XVPO6HNPZHLEVkA0iWtfAE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -27,11 +27,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			lE0aKheOgjGHY0+zCyF46OuIlc4=
+			N9crrX8YNFC1gB0o7SbLEEm6Gyg=
 			</data>
 			<key>hash2</key>
 			<data>
-			JiuS6n5SAIwZy4hB0HRp+45Rs005xejTcUJ3WHDf8DY=
+			Ag4dUpQ6DEbnFbjgweZ1tv8OswAoovvBSuqkJ+jLRiY=
 			</data>
 		</dict>
 		<key>Headers/PWBeaconPointLocationManager+Provider.h</key>

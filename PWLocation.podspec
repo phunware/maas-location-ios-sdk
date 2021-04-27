@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "PWLocation"
-  s.version      = "3.10.0"
+  s.version      = "3.12.0"
   s.summary      = "Phunware's Location SDK for use with its Multiscreen-as-a-Service platform"
   s.homepage     = "http://phunware.github.io/maas-location-ios-sdk/"
   s.author       = { 'Phunware, Inc.' => 'http://www.phunware.com' }
@@ -17,13 +17,13 @@ Pod::Spec.new do |s|
   s.default_subspec = 'all-frameworks'
 
   s.subspec 'all-frameworks' do |sub|
-    sub.dependency 'PWCore', '~> 3.10.0'
-    sub.dependency 'PWCore/DeviceIdentity', '~> 3.10.0'
+    sub.dependency 'PWCore', '~> 3.11.0'
+    sub.dependency 'PWCore/DeviceIdentity', '~> 3.11.0'
   end
 
   s.subspec 'LimitedDeviceIdentity' do |sub|
     sub.ios.vendored_frameworks = 'Frameworks/PWLocation.xcframework'
-    sub.dependency 'PWCore', '~> 3.10.0'
+    sub.dependency 'PWCore', '~> 3.11.0'
   end
   
   s.subspec 'MistProvider' do |sub|

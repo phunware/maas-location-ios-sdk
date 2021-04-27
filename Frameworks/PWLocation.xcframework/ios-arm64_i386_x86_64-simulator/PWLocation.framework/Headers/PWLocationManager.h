@@ -117,5 +117,22 @@ typedef NS_ENUM(NSUInteger, PWLocationManagerError) {
  */
 - (void)locationManager:(id<PWLocationManager>)manager failedWithError:(NSError *)error;
     
+/**
+ Tells the delegate that user has entered the beacon coverage area.
+ @param manager The location manager object that generated the beacon coverage entered event.
+ 
+ The location manager calls this method when it detects user has entered the beacon coverage area.
+ */
+- (void)locationManagerDidEnterBeaconCoverageArea:(id<PWLocationManager>)manager;
+
+/**
+ Tells the delegate that user has exited the beacon coverage area.
+ @param manager The location manager object that generated the beacon coverage exited event.
+ 
+ The location manager calls this method when it detects user has exited the beacon coverage area.
+ */
+- (void)locationManagerDidExitBeaconCoverageArea:(id<PWLocationManager>)manager;
+
+
 @end
 
