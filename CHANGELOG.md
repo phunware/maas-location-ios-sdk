@@ -1,4 +1,8 @@
 # PWLocation CHANGELOG
+## 3.11.0 (TBD)
+#### Features
+* Updated to PWCore 3.11.0.
+
 ## 3.10.0 (Monday, March 15, 2021)
 #### Features
 * Added support for campus routing.
