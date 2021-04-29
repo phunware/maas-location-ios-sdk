@@ -8,8 +8,8 @@ This is Phunware's iOS SDK for the Location module. Visit http://maas.phunware.c
 Requirements
 ------------
 
-- PWCore 3.10.x
-- iOS 10.0 or greater
+- PWCore 3.11.x
+- iOS 12.0 or greater
 - Xcode 12.0 or greater
 
 Installation

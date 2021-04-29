@@ -1,4 +1,16 @@
 # PWLocation Migration Guide
+## Upgrade from 3.10.x to 3.11.x
+
+#### General
+
+The iOS deployment target of PWLocation is now 12.0 instead of 10.0. To be compatible with PWLocation, an application must have a minimum iOS deployment target of 12.0 as well.
+
+#### Upgrade Steps
+
+1. Update your applicable Xcode project settings to a minimum iOS deployment target of 12.0 or greater.
+
+2. Open the `Podfile` from your project and change PWLocation to include `pod 'PWLocation', '3.11.x'`, update your iOS platform to 12.0 or greater, then run `pod update` in the Terminal to update the framework.
+
 ## Upgrade from 3.9.x to 3.10.x
 
 #### General

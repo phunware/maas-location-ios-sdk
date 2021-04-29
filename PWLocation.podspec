@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
   
   s.subspec 'MistProvider' do |sub|
     sub.ios.vendored_frameworks = 'Frameworks/MistProvider.xcframework'
-    sub.dependency 'MistSDKDR', '1.5.272'
+    sub.dependency 'MistSDKDR', '1.5.280'
     sub.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'}
     sub.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'}
   end
