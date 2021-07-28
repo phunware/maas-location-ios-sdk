@@ -1,99 +1,78 @@
 PWLocation SDK for iOS
 ================
+[![Version](https://img.shields.io/cocoapods/v/PWLocation.svg?style=flat-square)](https://cocoapods.org/pods/PWLocation) [![License](https://img.shields.io/cocoapods/l/PWLocation.svg?style=flat-square)](https://cocoapods.org/pods/PWLocation) [![Platforms](https://img.shields.io/cocoapods/p/PWLocation?style=flat-square)](https://cocoapods.org/pods/PWLocation) [![Twitter](https://img.shields.io/badge/twitter-@phunware-blue.svg?style=flat-square)](https://twitter.com/phunware)
 
->Version 3.10.0
-
-This is Phunware's iOS SDK for the Location module. Visit http://maas.phunware.com/ for more details and to sign up.
+This is Phunware's Location SDK for use with its Multiscreen-as-a-Service platform. It provides indoor/outdoor positioning capabilities for venues. Visit http://maas.phunware.com for more details and to sign up.
 
 Requirements
 ------------
-
-- PWCore 3.10.x
-- iOS 10.0 or greater
-- Xcode 11.0 or greater
+- PWCore 3.11.x
+- iOS 13.0 or greater
+- Xcode 12.0 or greater
 
 Installation
 ------------
+### CocoaPods
+It is required to use [CocoaPods](http://www.cocoapods.org) 1.10 or greater to integrate the framework. Simply add the following to your Podfile:
 
-Phunware recommends using [CocoaPods](http://www.cocoapods.org) 1.10 or greater to integrate the framework. Simply add
-
-`pod PWLocation`
-
-to your `Podfile`, which would automatically resolve the required dependency `PWCore`.
-
-## Location Provider Subspecs
-The below supported third party location providers are disabled by default. To enable them, add their respective subspec to your `Podfile`.
-
-### Mist
-`pod PWLocation/MistProvider`
-
-### Beacon Point
-`pod PWLocation/BeaconPointProvider`
-
-The following frameworks are required:
-
+````ruby
+pod 'PWLocation'
 ````
-CoreMotion.framework
-CoreBluetooth.framework
-libz.dylib
-libxml2.2.dylib
-libsqlite3.dylib
+
+To enable support for Mist as a location provider, add the `MistProvider` subspec:
+
+````ruby
+pod 'PWLocation/MistProvider'
 ````
 
 Documentation
 ------------
-
-Documentation is included in the Documents folder in the repository as both HTML and as a .docset. You can also find the latest documentation here: http://phunware.github.io/maas-location-ios-sdk/
+Documentation is included in the Documents folder in the repository as both HTML and as a .docset. You can also find the latest documentation here: http://phunware.github.io/maas-location-ios-sdk
 
 Integration
 -----------
+PWLocation is meant to be used as a dependency to PWMapKit, but can be used as a standalone SDK.
 
-`PWLocation` is meant to be used in conjunction with PWMapKit but can be used as a standalone SDK.
+### PWCore
+PWCore configuration is required to use any location provider in PWLocation. In the MaaS portal, retrieve your application identifier, signature key, access key, and encryption key (if you have one). In your application's delegate, add the following:
 
-## PWCore Setup
-
-Some PWCore configuration is required to use any provider in PWLocation. In the MaaS portal, retrieve your application identifier, signature key, access key, and encryption key (if you have one). In your application's AppDelegate, add the following:
-
-````objective-c
-[PWCore setApplicationID:@"YOUR_APPLICATION_IDENTIFIER"
-               accessKey:@"YOUR_ACCESS_KEY"
-            signatureKey:@"YOUR_SIGNATURE_KEY"];
+````swift
+PWCore.setApplicationID("APPLICATION_ID",
+                        accessKey: "ACCESS_KEY",
+                        signatureKey: "SIGNATURE_KEY")
 ````
 
 ## Location Permissions
-
 Location authorization of "When In Use" or "Always" is required for a PWLocationManager to function normally. Please follow [Apple's Best Practices](https://developer.apple.com/documentation/corelocation/choosing_the_authorization_level_for_location_services) for requesting location permissions. Do not attempt to use a PWLocationManager if the user does not provide location authorization as this can lead to unexpected behavior.
 
 ## PWManagedLocationManager
+`PWManagedLocationManager` is a class that takes a location update from one of the other location providers and uses an algorithm to improve the accuracy of that location before returning it to the consumer.
 
-The `PWManagedLocationManager` class take a location update from one of the other providers and uses an algorithm to improve the accuracy of that location before returning it to the consumer.
-
-This manager relies on a building bundle that is created by the MaaS server. The building is configured in the MaaS portal, and the building identifier will be found in those portal configuration pages.
+`PWManagedLocationManager` relies on a building bundle that is created by the MaaS server. The building is configured in the MaaS portal, and the building identifier will be found in those portal configuration pages.
 
 To create a `PWManagedLocationManager`, call its `initWithBuildingId:` function and pass it the desired building identifier. Finally, call `startUpdatingLocation` on the `PWManagedLocationManager` object. The manager will fetch and parse the required server bundles and begin giving location updates as soon as possible.
 
-````objective-c
-// Initialize the manager:
-PWManagedLocationManager *manager = [[PWManagedLocationManager alloc] initWithBuildingId:<YOUR_BUILDING_IDENTIFIER>];
-manager.delegate = self;
+````swift
+// Initialize the manager
+let manager = PWManagedLocationManager(buildingId: <BUILDING_IDENTIFIER>)
+manager.delegate = self
 
-// Start fetching location updates:
-[manager startUpdatingLocation];
+// Start fetching location updates
+manager.startUpdatingLocation()
 ````
 
-NOTE: If using a virtual beacon provider such as Mist or Beacon Point with PWManagedLocationManager, the "Uses Bluetooth LE accessories" background mode must be enabled in the "Capabilities" tab of your project's settings.
+**NOTE**: If using a virtual beacon location provider, such as Mist, the "Uses Bluetooth LE accessories" background mode must be enabled in the "Capabilities" tab of your project's settings.
 
 ## Location Updates
-
 Location updates are returned via the delegate. Update events are very similar to `CLLocationManagerDelegate` events.
 
-````objective-c
-- (void)locationManager:(id<PWLocationManager>)manager didUpdateToLocation:(id<PWLocation>)location {
-    // Handle update.
+````swift
+func locationManager(_ manager: PWLocationManager!, didUpdateTo location: PWLocationProtocol!) {
+    // Handle update
 }
 
-- (void)locationManager:(id<PWLocationManager>)manager failedWithError:(NSError *)error {
-    // Handle failure.
+func locationManager(_ manager: PWLocationManager!, failedWithError error: Error!) {
+    // Handle failure
 }
 ````
 
@@ -103,4 +82,4 @@ You understand and consent to Phunware’s Privacy Policy located at www.phunwar
 
 Terms
 -----------
-Use of this software requires review and acceptance of our terms and conditions for developer use located at http://www.phunware.com/terms/
+Use of this software requires review and acceptance of our terms and conditions for developer use located at http://www.phunware.com/terms
