@@ -1,4 +1,10 @@
 # PWLocation CHANGELOG
+## 3.11.0 (Wednesday, July 28, 2021)
+#### Features
+* Updated to PWCore 3.11.0.
+* iOS deployment target increased from 10.0 to 13.0
+* [Mist location provider] Updated Mist SDK dependency to v1.5.280 for better accuracy
+
 ## 3.10.0 (Monday, March 15, 2021)
 #### Features
 * Added support for campus routing.

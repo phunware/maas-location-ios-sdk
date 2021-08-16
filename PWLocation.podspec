@@ -1,47 +1,89 @@
-Pod::Spec.new do |s|
-  s.name         = "PWLocation"
-  s.version      = "3.12.0"
-  s.summary      = "Phunware's Location SDK for use with its Multiscreen-as-a-Service platform"
-  s.homepage     = "http://phunware.github.io/maas-location-ios-sdk/"
-  s.author       = { 'Phunware, Inc.' => 'http://www.phunware.com' }
-  s.social_media_url = 'https://twitter.com/Phunware'
+Pod::Spec.new do |spec|
+  spec.name = 'PWLocation'
+  spec.version = '3.12.0'
+  spec.license = { :type => 'Copyright', :text => 'Copyright 2009-present Phunware Inc. All rights reserved.' }
+  spec.summary = "Phunware's Location SDK for use with its Multiscreen-as-a-Service platform"
+  spec.homepage = 'https://github.com/phunware/maas-location-ios-sdk/'
+  spec.author = { 'Phunware, Inc.' => 'https://www.phunware.com' }
+  spec.social_media_url = 'https://twitter.com/phunware'
 
-  s.platform     = :ios, '10.0'
-  s.source       = { :git => "https://github.com/phunware/maas-location-ios-sdk.git", :tag => "v#{s.version}" }
-  s.license      = { :type => 'Copyright', :text => 'Copyright 2009-present Phunware Inc. All rights reserved.' }
+  spec.platform = :ios, '13.0'
+  spec.source = { :git => "https://github.com/phunware/maas-location-ios-sdk.git", :tag => "v#{spec.version}" }
+  spec.documentation_url = 'https://phunware.github.io/maas-location-ios-sdk/'
 
-  s.ios.vendored_frameworks = 'Frameworks/PWLocation.xcframework'
-  s.ios.dependency 'TMCache'
-  s.ios.dependency 'SSZipArchive'
-                          
-  s.default_subspec = 'all-frameworks'
+  spec.default_subspecs =
+    'Core',
+    'DeviceIdentity'
 
-  s.subspec 'all-frameworks' do |sub|
-    sub.dependency 'PWCore', '~> 3.11.0'
-    sub.dependency 'PWCore/DeviceIdentity', '~> 3.11.0'
+  spec.subspec 'Core' do |subspec|
+    subspec.dependency 'PWCore', '~> 3.12.0'
+    subspec.dependency 'SSZipArchive', '~> 2.4.0'
+    subspec.dependency 'TMCache', '~> 2.1.0'
+
+    subspec.vendored_frameworks = 'Frameworks/PWLocation.xcframework'
+    
+    subspec.frameworks =
+      'CoreBluetooth',
+      'CoreLocation',
+      'CoreMotion',
+      'CoreServices',
+      'CoreTelephony',
+      'MapKit',
+      'QuartzCore',
+      'Security',
+      'SystemConfiguration'
+
+    subspec.libraries =
+      'c++',
+      'sqlite3',
+      'xml2.2',
+      'z'
   end
 
-  s.subspec 'LimitedDeviceIdentity' do |sub|
-    sub.ios.vendored_frameworks = 'Frameworks/PWLocation.xcframework'
-    sub.dependency 'PWCore', '~> 3.11.0'
+  spec.subspec 'DeviceIdentity' do |subspec|
+    subspec.dependency 'PWLocation/Core'
+    subspec.dependency 'PWCore/DeviceIdentity', '~> 3.12.0'
   end
   
-  s.subspec 'MistProvider' do |sub|
-    sub.ios.vendored_frameworks = 'Frameworks/MistProvider.xcframework'
-    sub.dependency 'MistSDKDR', '1.5.272'
-    sub.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'}
-    sub.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'}
+  spec.subspec 'LimitedDeviceIdentity' do |subspec|
+    subspec.dependency 'PWLocation/Core'
+  end
+
+  spec.subspec 'MistProviderCore' do |subspec|
+    subspec.dependency 'PWLocation/Core'
+    subspec.dependency 'MistSDKDR', '1.5.280'
+
+    subspec.vendored_frameworks = 'Frameworks/MistProvider.xcframework'
+    
+    subspec.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+    subspec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  end
+
+  spec.subspec 'MistProvider' do |subspec|
+    subspec.dependency 'PWLocation/MistProviderCore'
+    subspec.dependency 'PWLocation/DeviceIdentity'
   end
   
-  s.subspec 'BeaconPointProvider' do |sub|
-     sub.ios.vendored_frameworks = 'Frameworks/BeaconPointProvider.xcframework'
-     sub.dependency 'MistSDK', '1.5.58'
-    sub.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'}
-    sub.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'}
+  spec.subspec 'MistProviderWithLimitedDeviceIdentity' do |subspec|
+    subspec.dependency 'PWLocation/MistProviderCore'
   end
-                                            
-  s.ios.library = 'c++'
-  s.ios.frameworks = 'Security', 'QuartzCore', 'SystemConfiguration', 'MobileCoreServices', 'CoreTelephony', 'CoreBluetooth', 'CoreMotion', 'CoreLocation', 'MapKit'
-  s.library = 'sqlite3', 'z', 'xml2.2'
-  s.requires_arc = true
+
+  spec.subspec 'BeaconPointProviderCore' do |subspec|
+    subspec.dependency 'PWLocation/Core'
+    subspec.dependency 'MistSDK', '1.5.58'
+
+    subspec.vendored_frameworks = 'Frameworks/BeaconPointProvider.xcframework'
+    
+    subspec.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+    subspec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  end
+
+  spec.subspec 'BeaconPointProvider' do |subspec|
+    subspec.dependency 'PWLocation/BeaconPointProviderCore'
+    subspec.dependency 'PWLocation/DeviceIdentity'
+  end
+  
+  spec.subspec 'BeaconPointProviderWithLimitedDeviceIdentity' do |subspec|
+    subspec.dependency 'PWLocation/BeaconPointProviderCore'
+  end
 end
