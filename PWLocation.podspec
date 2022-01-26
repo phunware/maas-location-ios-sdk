@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name = 'PWLocation'
-  spec.version = '3.12.0-beta-03'
+  spec.version = '3.12.0'
   spec.license = { :type => 'Copyright', :text => 'Copyright 2009-present Phunware Inc. All rights reserved.' }
   spec.summary = "Phunware's Location SDK for use with its Multiscreen-as-a-Service platform"
   spec.homepage = 'https://github.com/phunware/maas-location-ios-sdk/'
@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
     'DeviceIdentity'
 
   spec.subspec 'Core' do |subspec|
-    subspec.dependency 'PWCore', '~> 3.12.0-beta-03'
+    subspec.dependency 'PWCore', '~> 3.12.0'
     subspec.dependency 'SSZipArchive', '~> 2.4.0'
     subspec.dependency 'TMCache', '~> 2.1.0'
 
@@ -42,7 +42,7 @@ Pod::Spec.new do |spec|
 
   spec.subspec 'DeviceIdentity' do |subspec|
     subspec.dependency 'PWLocation/Core'
-    subspec.dependency 'PWCore/DeviceIdentity', '~> 3.12.0-beta-03'
+    subspec.dependency 'PWCore/DeviceIdentity', '~> 3.12.0'
   end
   
   spec.subspec 'LimitedDeviceIdentity' do |subspec|
@@ -86,4 +86,16 @@ Pod::Spec.new do |spec|
   spec.subspec 'BeaconPointProviderWithLimitedDeviceIdentity' do |subspec|
     subspec.dependency 'PWLocation/BeaconPointProviderCore'
   end
+
+  ## Frameworks linked with static libraries
+  spec.subspec 'CoreStaticLinks' do |subspec|
+    subspec.dependency 'PWCore/CoreStaticLinks', '~> 3.12.0'
+
+    subspec.vendored_frameworks = 'FrameworksStaticLinks/PWLocation.xcframework'    
+  end
+
+  spec.subspec 'LimitedDeviceIdentityStaticLinks' do |subspec|
+    subspec.dependency 'PWLocation/CoreStaticLinks'
+  end
+
 end
