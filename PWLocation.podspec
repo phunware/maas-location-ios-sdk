@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name = 'PWLocation'
-  spec.version = '3.12.0-beta-04'
+  spec.version = '3.12.0-rc.1'
   spec.license = { :type => 'Copyright', :text => 'Copyright 2009-present Phunware Inc. All rights reserved.' }
   spec.summary = "Phunware's Location SDK for use with its Multiscreen-as-a-Service platform"
   spec.homepage = 'https://github.com/phunware/maas-location-ios-sdk/'
