@@ -1,5 +1,5 @@
 # PWLocation CHANGELOG
-## 3.12.0 (TBD)
+## 3.12.0 (Monday, April 18, 2022)
 #### Bug Fixes/Performance Enhancements.
 * Removed deprecated signature key
 * Improved network loading time.
