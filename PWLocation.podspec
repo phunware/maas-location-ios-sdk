@@ -70,7 +70,7 @@ Pod::Spec.new do |spec|
 
   spec.subspec 'BeaconPointProviderCore' do |subspec|
     subspec.dependency 'PWLocation/Core'
-    subspec.dependency 'MistSDK', '1.5.58'
+    subspec.dependency 'MistSDKDR', '1.5.280'
 
     subspec.vendored_frameworks = 'Frameworks/BeaconPointProvider.xcframework'
     
