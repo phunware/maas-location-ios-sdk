@@ -1,4 +1,10 @@
 # PWLocation CHANGELOG
+## 3.12.0 (Monday, April 18, 2022)
+#### Bug Fixes/Performance Enhancements.
+* Removed deprecated signature key
+* Improved network loading time.
+* Prevent crash when POI name is empty.
+
 ## 3.11.0 (Wednesday, July 28, 2021)
 #### Features
 * Updated to PWCore 3.11.0.

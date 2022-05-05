@@ -1,4 +1,16 @@
 # PWLocation Migration Guide
+## Upgrade from 3.11.x to 3.12.x
+
+#### General
+
+This release includes bug fixes and performance enhancements.
+
+#### Upgrade Steps
+
+1. Update your applicable Xcode project settings to a minimum iOS deployment target of 13.0 or greater.
+
+2. Open the `Podfile` from your project and change PWLocation to include `pod 'PWLocation', '3.12.x'`, update your iOS platform to 13.0 or greater, then run `pod update` in the Terminal to update the framework.
+
 ## Upgrade from 3.10.x to 3.11.x
 
 #### General

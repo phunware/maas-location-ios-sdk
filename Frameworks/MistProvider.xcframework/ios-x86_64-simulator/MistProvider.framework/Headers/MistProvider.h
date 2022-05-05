@@ -13,4 +13,4 @@
 #import "PWMistLocationManager+Provider.h"
 #endif
 
-static NSString * const MistProviderVersion = @"3.11.0";
+static NSString * const MistProviderVersion = @"3.12.0";

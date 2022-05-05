@@ -6,7 +6,7 @@ This is Phunware's Location SDK for use with its Multiscreen-as-a-Service platfo
 
 Requirements
 ------------
-- PWCore 3.11.x
+- PWCore 3.12.x
 - iOS 13.0 or greater
 - Xcode 12.0 or greater
 
