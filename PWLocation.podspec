@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name = 'PWLocation'
-  spec.version = '3.12.0'
+  spec.version = '3.13.0-beta.1'
   spec.license = { :type => 'Copyright', :text => 'Copyright 2009-present Phunware Inc. All rights reserved.' }
   spec.summary = "Phunware's Location SDK for use with its Multiscreen-as-a-Service platform"
   spec.homepage = 'https://github.com/phunware/maas-location-ios-sdk/'
@@ -47,44 +47,6 @@ Pod::Spec.new do |spec|
   
   spec.subspec 'LimitedDeviceIdentity' do |subspec|
     subspec.dependency 'PWLocation/Core'
-  end
-
-  spec.subspec 'MistProviderCore' do |subspec|
-    subspec.dependency 'PWLocation/Core'
-    subspec.dependency 'MistSDKDR', '1.5.280'
-
-    subspec.vendored_frameworks = 'Frameworks/MistProvider.xcframework'
-    
-    subspec.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
-    subspec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
-  end
-
-  spec.subspec 'MistProvider' do |subspec|
-    subspec.dependency 'PWLocation/MistProviderCore'
-    subspec.dependency 'PWLocation/DeviceIdentity'
-  end
-  
-  spec.subspec 'MistProviderWithLimitedDeviceIdentity' do |subspec|
-    subspec.dependency 'PWLocation/MistProviderCore'
-  end
-
-  spec.subspec 'BeaconPointProviderCore' do |subspec|
-    subspec.dependency 'PWLocation/Core'
-    subspec.dependency 'MistSDKDR', '1.5.280'
-
-    subspec.vendored_frameworks = 'Frameworks/BeaconPointProvider.xcframework'
-    
-    subspec.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
-    subspec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
-  end
-
-  spec.subspec 'BeaconPointProvider' do |subspec|
-    subspec.dependency 'PWLocation/BeaconPointProviderCore'
-    subspec.dependency 'PWLocation/DeviceIdentity'
-  end
-  
-  spec.subspec 'BeaconPointProviderWithLimitedDeviceIdentity' do |subspec|
-    subspec.dependency 'PWLocation/BeaconPointProviderCore'
   end
 
   ## Frameworks linked with static libraries
