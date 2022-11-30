@@ -9,12 +9,10 @@
 #import <Foundation/Foundation.h>
 
 typedef NS_ENUM(NSUInteger, PWManagedProviderType) {
-    PWManagedProviderTypeSenion = 0,
-    PWManagedProviderTypeCMX = 1,
-    PWManagedProviderTypeBeaconPoint = 2,
-    PWManagedProviderTypeMist = 3,
-    PWManagedProviderTypeLocate = 4,
-    PWManagedProviderTypeGPS = 5
+    PWManagedProviderTypeSenion,
+    PWManagedProviderTypeCMX,
+    PWManagedProviderTypeLocate,
+    PWManagedProviderTypeGPS
 };
 
 @interface PWManagedProviderInfo : NSObject

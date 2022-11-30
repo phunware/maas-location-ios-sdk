@@ -8,7 +8,7 @@ Requirements
 ------------
 - PWCore 3.12.x
 - iOS 13.0 or greater
-- Xcode 12.0 or greater
+- Xcode 13.0 or greater
 
 Installation
 ------------
@@ -17,12 +17,6 @@ It is required to use [CocoaPods](http://www.cocoapods.org) 1.10 or greater to i
 
 ````ruby
 pod 'PWLocation'
-````
-
-To enable support for Mist as a location provider, add the `MistProvider` subspec:
-
-````ruby
-pod 'PWLocation/MistProvider'
 ````
 
 Documentation
@@ -60,8 +54,6 @@ manager.delegate = self
 // Start fetching location updates
 manager.startUpdatingLocation()
 ````
-
-**NOTE**: If using a virtual beacon location provider, such as Mist, the "Uses Bluetooth LE accessories" background mode must be enabled in the "Capabilities" tab of your project's settings.
 
 ## Location Updates
 Location updates are returned via the delegate. Update events are very similar to `CLLocationManagerDelegate` events.
