@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
     'DeviceIdentity'
 
   spec.subspec 'Core' do |subspec|
-    subspec.dependency 'PWCore', '~> 3.12.0'
+    subspec.dependency 'PWCore', '~> 3.12.2'
     subspec.dependency 'SSZipArchive', '~> 2.4.0'
     subspec.dependency 'TMCache', '~> 2.1.0'
 
@@ -42,7 +42,7 @@ Pod::Spec.new do |spec|
 
   spec.subspec 'DeviceIdentity' do |subspec|
     subspec.dependency 'PWLocation/Core'
-    subspec.dependency 'PWCore/DeviceIdentity', '~> 3.12.0'
+    subspec.dependency 'PWCore/DeviceIdentity', '~> 3.12.2'
   end
   
   spec.subspec 'LimitedDeviceIdentity' do |subspec|
@@ -51,7 +51,7 @@ Pod::Spec.new do |spec|
 
   ## Frameworks linked with static libraries
   spec.subspec 'CoreStaticLinks' do |subspec|
-    subspec.dependency 'PWCore/CoreStaticLinks', '~> 3.12.0'
+    subspec.dependency 'PWCore/CoreStaticLinks', '~> 3.12.2'
 
     subspec.vendored_frameworks = 'FrameworksStaticLinks/PWLocation.xcframework'    
   end
