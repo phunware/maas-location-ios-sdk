@@ -32,8 +32,7 @@ PWCore configuration is required to use any location provider in PWLocation. In 
 
 ````swift
 PWCore.setApplicationID("APPLICATION_ID",
-                        accessKey: "ACCESS_KEY",
-                        signatureKey: "SIGNATURE_KEY")
+                        accessKey: "ACCESS_KEY")
 ````
 
 ## Location Permissions

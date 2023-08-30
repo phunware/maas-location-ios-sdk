@@ -14,7 +14,7 @@
 		</data>
 		<key>Headers/PWLocation.h</key>
 		<data>
-		9JE0yLxYaavcTGE9Tc69YsQV4RU=
+		Ge6i9ve2yj20YJuXFGmo2V4CBuQ=
 		</data>
 		<key>Headers/PWLocationManager.h</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Headers/PWManagedLocationManager.h</key>
 		<data>
-		vqrx7w+zTQWEua6QFNTeGJ0Z/MY=
+		Q7LcQs9OR2Ip4fl/i2ZflZQ3044=
 		</data>
 		<key>Headers/PWManagedProviderInfo.h</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		jz7u3hGEcQoWsUR9vQ5ZwjB72yY=
+		ooE8FKLOdNoDAS2sa/ShwngGJ4Q=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -81,7 +81,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			DQjHgPVfArS7lVXe1IcTBqtNHgnTOXLSDToesAB06X0=
+			syIYIEHGX1BkZp36UXCWma+s6Gm3lQ7HO96ULZrkG5A=
 			</data>
 		</dict>
 		<key>Headers/PWLocationManager.h</key>
@@ -109,7 +109,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			SYkvBkO6SokCJtXPPexZRagsiYbaH96hF0mO345Bopg=
+			+z9Ol7zm74dtw0Xl7rvUtljVL6rK90H3OcuCY/8/iAc=
 			</data>
 		</dict>
 		<key>Headers/PWManagedProviderInfo.h</key>
