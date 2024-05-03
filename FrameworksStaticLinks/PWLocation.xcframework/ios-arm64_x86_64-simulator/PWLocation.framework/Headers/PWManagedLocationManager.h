@@ -5,9 +5,8 @@
 //
 
 #import <Foundation/Foundation.h>
-
-@protocol PWLocationManager;
-@class PWIndoorLocation;
+#import <PWLocation/PWLocationManager.h>
+#import <PWLocation/PWIndoorLocation.h>
 
 @interface PWManagedLocationManager : NSObject <PWLocationManager>
 
