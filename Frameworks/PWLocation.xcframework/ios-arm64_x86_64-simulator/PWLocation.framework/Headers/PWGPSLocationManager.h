@@ -61,7 +61,7 @@
 @end
 
 /**
- The `PWMSELocationManagerDelegate` protocol defines the methods used to receive location updates from a `PWMSELocationManager` object. This class conforms to the `PWLocationManagerDelegate` protocol.
+ The `PWGPSLocationManagerDelegate` protocol defines the methods used to receive location updates from a `PWGPSLocationManager` object. This class conforms to the `PWLocationManagerDelegate` protocol.
  
  The methods of your delegate object are called from the main application thread.
  */
