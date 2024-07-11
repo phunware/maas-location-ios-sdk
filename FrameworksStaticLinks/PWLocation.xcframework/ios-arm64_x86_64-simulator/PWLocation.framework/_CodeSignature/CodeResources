@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/PWGPSLocationManager.h</key>
 		<data>
-		0g9qaPwheqnQzAmyU9BZFC58ViU=
+		i/SSawxTINTuJFBEhfOCrH2S1/0=
 		</data>
 		<key>Headers/PWIndoorLocation.h</key>
 		<data>
@@ -14,7 +14,7 @@
 		</data>
 		<key>Headers/PWLocation.h</key>
 		<data>
-		hnB+xmaCkAuK/1HHLGnd3LM4WLk=
+		SHoh+UaoJB3EGv7DmbQgCahy+Ks=
 		</data>
 		<key>Headers/PWLocationManager.h</key>
 		<data>
@@ -24,17 +24,13 @@
 		<data>
 		nKh9xKUnDyiev8lwDRwYCw7SqJA=
 		</data>
-		<key>Headers/PWMSELocationManager.h</key>
-		<data>
-		UAIk0lSez60zEGSzDtBBQ1uHyEg=
-		</data>
 		<key>Headers/PWManagedLocationManager.h</key>
 		<data>
 		nNgy5PLwD6dgi7DUCNFGWNLqeVA=
 		</data>
 		<key>Headers/PWManagedProviderInfo.h</key>
 		<data>
-		DNO15GWLhvZK3MmoR5Gy/j5MIEE=
+		1FB4nILvpNMjx/UzTk99YKZp8+c=
 		</data>
 		<key>Headers/PWMockLocationManager.h</key>
 		<data>
@@ -48,17 +44,41 @@
 		<data>
 		Pqq+UuW6wkdOo4yCzZ/dyf+u2k8=
 		</data>
-		<key>Headers/PWSLLocationManager.h</key>
-		<data>
-		LXmgSfmd0vo8v6yxnVH1SUOf8E4=
-		</data>
 		<key>Info.plist</key>
 		<data>
-		nB/wb1ksZxLuJ9heQiff8KJ4da8=
+		N6YBrDfR+HrtzGqtB1zbENJEPhY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		iDyf5xVb6r6zUQGgiTRNsikf5D4=
+		wIoqFV96xORAHKOurM5RAm96wAw=
+		</data>
+		<key>PINCache.bundle/Info.plist</key>
+		<data>
+		SXtzubaM9mQQBxpmfDzBKl7IFOA=
+		</data>
+		<key>PINCache.bundle/PrivacyInfo.xcprivacy</key>
+		<data>
+		8s3cq/vtcqYLKrB/zFQJQ7yKXGQ=
+		</data>
+		<key>PINOperation.bundle/Info.plist</key>
+		<data>
+		scHOxVD7nrEpBEMEo3/LZgxZwwQ=
+		</data>
+		<key>PINOperation.bundle/PrivacyInfo.xcprivacy</key>
+		<data>
+		ucg9pita0v8d353x3NuGfxweQYU=
+		</data>
+		<key>PrivacyInfo.xcprivacy</key>
+		<data>
+		uO4w+xqs7IzAvo31uLiTgqn8log=
+		</data>
+		<key>SSZipArchive.bundle/Info.plist</key>
+		<data>
+		8vF8jB3xZ6pOcXg0kOITMiS+5fo=
+		</data>
+		<key>SSZipArchive.bundle/PrivacyInfo.xcprivacy</key>
+		<data>
+		PFHYbs0V3eUFDWQyYQcwEetuqEk=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -67,7 +87,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			wrvkhF8EWEP6tMGm7KXauj3wFvumq4QneqvxND63vCM=
+			BsTKc+cOB3TazzIxC6rcd6oMo5AkxjzgYxAQr9N/ab4=
 			</data>
 		</dict>
 		<key>Headers/PWIndoorLocation.h</key>
@@ -81,7 +101,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			azWQn7Zk9oFU1XNb7ww3t248YzwIPjZkYB+fDJAI+ws=
+			VvsDLKGcF6rMtXn/ZeEPo5koDi0PAbqy4DJXSr1vDOo=
 			</data>
 		</dict>
 		<key>Headers/PWLocationManager.h</key>
@@ -98,13 +118,6 @@
 			lwe3IvVvFOd32m6hUP8vvDQhWtGEk1WVWU6+k8WnVDg=
 			</data>
 		</dict>
-		<key>Headers/PWMSELocationManager.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			WsFKn7U8/cMtc4UEGPuIDw36U67MXBSyTvj4yw2yqyc=
-			</data>
-		</dict>
 		<key>Headers/PWManagedLocationManager.h</key>
 		<dict>
 			<key>hash2</key>
@@ -116,7 +129,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			XcRk7vQF/wsEe19gD/2u/9AlNQQs/fPQF3OMQy2dqvc=
+			hkkOhHsI4O+6Kncrc9UGS9ZrHnCcNKBWD5IHgyYbjy0=
 			</data>
 		</dict>
 		<key>Headers/PWMockLocationManager.h</key>
@@ -140,18 +153,60 @@
 			TaG2tG7BCQ79MIamE5+xo8SADj4RY8LxppDWnbF9pSA=
 			</data>
 		</dict>
-		<key>Headers/PWSLLocationManager.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			vaBfdvJTXekMwHkYAmO2MfZTsUKNis2BuNaUIEKExcQ=
-			</data>
-		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			D/qXCo/MZGflVAdUlv7Espyt5Kr5ePL/iU9S5hSMv2E=
+			zPasA75YXWJdM04WPMUOr1AA7phjso2NcWxOfz2UvbA=
+			</data>
+		</dict>
+		<key>PINCache.bundle/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			4ecr9U7MJO6EOBXggsNWE6TojXaisSn4OqgnHGaa2eM=
+			</data>
+		</dict>
+		<key>PINCache.bundle/PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			VQPci+mzt51D4Gkzdhclc7ew69EyAAH58tMJ/0yFvo0=
+			</data>
+		</dict>
+		<key>PINOperation.bundle/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			T7JnKRHz8hPtGsH+HBRersF22evRQhbHOhB9kCnCTFw=
+			</data>
+		</dict>
+		<key>PINOperation.bundle/PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Uh6274Qwdz5cAQ4YOP6d2PpdYre3bRzqjX2NqtyxROI=
+			</data>
+		</dict>
+		<key>PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			mIg/im4ANhP38nvtrrjq/BuJApmlKpKO/hUFhEihzIQ=
+			</data>
+		</dict>
+		<key>SSZipArchive.bundle/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			QIEXHSqrDNrrwfSQZmVu4f4az8QBNo6+QRMu+cL4mrY=
+			</data>
+		</dict>
+		<key>SSZipArchive.bundle/PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			A7LHCDOjMaKx79Ef8WjtAqjq39Xn0fvzDuzHUJpK6kc=
 			</data>
 		</dict>
 	</dict>
