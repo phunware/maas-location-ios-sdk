@@ -5,6 +5,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.14.0][] - 2024-07-12
+
+### Added
+
+- Added privacy manifest
+
+### Changed
+
+- Improved nullability annotations
+- Bumped minimum iOS deployment target to 15.5
+- Updated to PWCore 3.13.0
+
 ## [3.13.2][] - 2024-05-17
 
 ### Removed
@@ -423,6 +435,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Initial release (BETA)
 
+[3.14.0]: https://github.com/phunware/maas-location-ios-sdk/compare/3.13.2...3.14.0
 [3.13.2]: https://github.com/phunware/maas-location-ios-sdk/compare/3.13.1...3.13.2
 [3.13.1]: https://github.com/phunware/maas-location-ios-sdk/compare/3.13.0...3.13.1
 [3.13.0]: https://github.com/phunware/maas-location-ios-sdk/compare/3.12.0...3.13.0
