@@ -64,6 +64,11 @@
  */
 @property (nonatomic, strong) NSDictionary *userInfo;
 
+/**
+Pass routing points to the wayfinding algorithm to prioritize the route during dead reckoning.”
+ */
+- (void)passRoutePoints:(NSArray<NSNumber *> *)routePoints;
+
 #pragma mark - Internal Use Only
 #pragma mark Diagnostics
 
