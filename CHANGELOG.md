@@ -5,6 +5,28 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.15.0][] - 2026-09-22
+
+### Added
+
+- Added `passRoutePoints:` so route points can be provided to the location algorithm to prioritize the route during dead reckoning
+- Added support for location algorithm tuning parameters configured in MaaS, with predefined defaults when a value is not provided
+- Added support for using the raw compass heading for dead reckoning, configurable in MaaS
+- Added support for enabling route priority, configurable in MaaS
+- Added segment snapping to highlighted route edges
+
+### Changed
+
+- Updated the position algorithm for improved accuracy
+
+### Fixed
+
+- Fixed missing rubber band while moving parameter, which now uses the MaaS value or the predefined default
+
+### Removed
+
+- Removed obsolete location provider implementations
+
 ## [3.14.0][] - 2024-07-12
 
 ### Added
@@ -435,6 +457,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Initial release (BETA)
 
+[3.15.0]: https://github.com/phunware/maas-location-ios-sdk/compare/3.14.0...3.15.0
 [3.14.0]: https://github.com/phunware/maas-location-ios-sdk/compare/3.13.2...3.14.0
 [3.13.2]: https://github.com/phunware/maas-location-ios-sdk/compare/3.13.1...3.13.2
 [3.13.1]: https://github.com/phunware/maas-location-ios-sdk/compare/3.13.0...3.13.1
